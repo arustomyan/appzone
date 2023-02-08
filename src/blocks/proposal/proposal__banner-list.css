@@ -1,0 +1,6 @@
+.proposal__banner-list {
+  transform: translateX(-100vw);
+  display: flex;
+  flex-shrink: 0;
+  gap: 50px;
+}

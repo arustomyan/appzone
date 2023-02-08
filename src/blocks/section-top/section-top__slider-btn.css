@@ -1,4 +1,4 @@
-.section-top__slider-btn {
+.slider-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,6 +10,6 @@
   border-radius: 50%;
 }
 
-.section-top__slider-btn-next {
+.slider-btn-next {
   transform: rotateZ(180deg);
 }

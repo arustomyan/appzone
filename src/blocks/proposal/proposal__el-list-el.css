@@ -1,0 +1,19 @@
+.proposal__el-list-el {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 26px 28px 36px;
+}
+
+.proposal__el-list-el:nth-child(2) {
+  border-right: 1px solid #696969;
+  border-left: 1px solid #696969;
+}
+
+.proposal__el-list-el:nth-child(4) {
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #696969;
+}

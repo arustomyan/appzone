@@ -1,0 +1,4 @@
+.proposal__el-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}

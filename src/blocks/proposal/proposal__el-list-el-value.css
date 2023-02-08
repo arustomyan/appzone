@@ -1,0 +1,12 @@
+.proposal__el-list-el-value {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.proposal__el-list-el:nth-child(4) .proposal__el-list-el-value {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #0cdb92;
+}

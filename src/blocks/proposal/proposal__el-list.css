@@ -1,0 +1,9 @@
+.proposal__el-list {
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+
+  width: 100%;
+
+  border: 1px solid #696969;
+}

@@ -1,0 +1,13 @@
+.proposal__el {
+  position: relative;
+  z-index: 2;
+
+  padding: 28px 80px 80px;
+
+  background: #252525;
+  border-radius: 40px;
+}
+
+.proposal__el:nth-child(2) {
+  background: #171818;
+}

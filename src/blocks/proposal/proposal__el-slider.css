@@ -1,0 +1,21 @@
+.proposal__el-slider {
+  user-select: none;
+
+  position: relative;
+
+  overflow: hidden;
+  align-self: flex-end;
+
+  max-width: 620px;
+}
+
+.proposal__el-slider .slider-btn {
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  bottom: 20px;
+}
+
+.proposal__el-slider .slider-btn-prev {
+  right: 110px;
+}

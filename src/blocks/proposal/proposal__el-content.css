@@ -1,0 +1,6 @@
+.proposal__el-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 542px;
+}

@@ -6,22 +6,21 @@
 /* Блок с точками */
 .slick-dots {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 40px;
+  left: 0;
 
   display: flex;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
 
-  padding: 0 21px;
+  padding: 0 40px;
+
+  transition: all 0.3s ease-in-out;
 }
 
 /* Элемент точки */
 .slick-dots li {
-  width: 9px;
-  height: 9px;
   list-style: none;
 }
 
@@ -33,17 +32,22 @@
 .slick-dots li button {
   display: block;
 
-  width: 9px;
-  height: 9px;
+  width: 10px;
+  height: 10px;
 
   font-size: 0;
   line-height: 9px;
 
   background: #d3d3d3;
   border-radius: 50%;
+
+  transition: all 0.3s ease-in-out;
 }
 
 /* Активная точка */
 .slick-dots .slick-active button {
-  background: #ff2041;
+  width: 40px;
+  height: 10px;
+  background: linear-gradient(270deg, #2794f9 0%, #0c5fdb 100%);
+  border-radius: 100px;
 }

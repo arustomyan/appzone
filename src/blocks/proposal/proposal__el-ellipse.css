@@ -1,0 +1,39 @@
+.proposal__el-ellipse01 {
+  position: absolute;
+  z-index: 0;
+  top: 215px;
+  left: -197px;
+  transform: rotate(-15.87deg);
+
+  filter: blur(125px);
+}
+
+.proposal__el-ellipse02 {
+  position: absolute;
+  z-index: 0;
+  top: 454px;
+  left: 156px;
+  transform: rotate(-15.87deg);
+
+  filter: blur(125px);
+}
+
+.proposal__el-ellipse03 {
+  position: absolute;
+  z-index: 0;
+  top: -162px;
+  right: -154px;
+  transform: rotate(-15.87deg);
+
+  filter: blur(125px);
+}
+
+.proposal__el-ellipse04 {
+  position: absolute;
+  z-index: 0;
+  top: 217px;
+  right: -124px;
+  transform: rotate(-15.87deg);
+
+  filter: blur(125px);
+}

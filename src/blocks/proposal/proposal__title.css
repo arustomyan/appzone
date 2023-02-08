@@ -1,0 +1,9 @@
+.proposal__title {
+  max-width: 870px;
+}
+
+.proposal__title-offset {
+  display: block;
+  margin-left: 80px;
+  line-height: 110%;
+}

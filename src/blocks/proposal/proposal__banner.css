@@ -1,0 +1,11 @@
+.proposal__banner {
+  display: flex;
+  gap: 100vw;
+
+  width: 100%;
+  padding-top: 97px;
+  padding-bottom: 90px;
+
+  border-top: #a2a2a2 1px solid;
+  border-bottom: #a2a2a2 1px solid;
+}

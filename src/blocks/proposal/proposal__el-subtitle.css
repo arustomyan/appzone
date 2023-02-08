@@ -1,0 +1,9 @@
+.proposal__el-subtitle {
+  display: inline-block;
+
+  max-width: 342px;
+  margin-bottom: 56px;
+
+  font-size: 26px;
+  line-height: 140%;
+}
