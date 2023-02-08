@@ -1,0 +1,36 @@
+@import url("../fonts/stylesheet.css");
+@import url("./reset.css");
+@import url("./global.css");
+
+@import url("./slider/slider.css");
+
+/* stylelint-disable no-invalid-position-at-import-rule */
+
+@import url("../blocks/logo.css");
+@import url("../blocks/title.css");
+@import url("../blocks/container/container.css");
+@import url("../blocks/text/text_green.css");
+
+@import url("../blocks/button/button.css");
+
+@import url("../blocks/header/header.css");
+@import url("../blocks/header/header__container.css");
+@import url("../blocks/header/header__text.css");
+@import url("../blocks/header/header__order-call.css");
+
+@import url("../blocks/order-call/order-call.css");
+
+@import url("../blocks/section-top/section-top.css");
+@import url("../blocks/section-top/section-top__container.css");
+@import url("../blocks/section-top/section-top__usp.css");
+@import url("../blocks/section-top/section-top__title.css");
+@import url("../blocks/section-top/section-top__title-description.css");
+@import url("../blocks/section-top/section-top_bg-block.css");
+@import url("../blocks/section-top/section-top_bg-track.css");
+@import url("../blocks/section-top/section-top_bg.css");
+@import url("../blocks/section-top/section-top__bb.css");
+@import url("../blocks/section-top/section-top__button.css");
+@import url("../blocks/section-top/section-top__slider-points-block.css");
+@import url("../blocks/section-top/section-top__slider-point.css");
+@import url("../blocks/section-top/section-top__slider-btns-block.css");
+@import url("../blocks/section-top/section-top__slider-btn.css");

@@ -1,0 +1,28 @@
+.section-top__title {
+  font-size: 110px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 110%;
+  color: #fff;
+}
+
+.section-top__title .text_green {
+  display: block;
+}
+
+@media (max-width: 840px) {
+  .section-top__title {
+    max-width: 590px;
+  }
+}
+
+@media (max-width: 601px) {
+  .section-top__title {
+    font-size: 32px;
+    line-height: 110%;
+  }
+
+  .section-top__title::after {
+    top: 4px;
+  }
+}

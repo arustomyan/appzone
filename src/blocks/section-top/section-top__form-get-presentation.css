@@ -1,0 +1,28 @@
+.section-top__form-get-presentation {
+  position: relative;
+  top: 95px;
+}
+
+.section-top__form-get-presentation .input {
+  max-width: 250px;
+}
+
+.section-top__form-get-presentation .button {
+  max-width: 247px;
+}
+
+@media (max-width: 1090px) {
+  .section-top__form-get-presentation .input {
+    max-width: 350px;
+  }
+
+  .section-top__form-get-presentation .button {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 601px) {
+  .section-top__form-get-presentation {
+    display: none;
+  }
+}

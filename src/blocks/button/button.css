@@ -1,0 +1,90 @@
+.button {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 100%;
+  height: 83px;
+  padding: 10px;
+
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 26px;
+  color: #fff;
+  text-align: center;
+
+  background: linear-gradient(270deg, #2794f9 0%, #0c5fdb 100%);
+  border-radius: 10px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: linear-gradient(270deg, #45b2ff 0%, #2a7df9 100%);
+}
+
+.button:active {
+  background: #0041bd;
+  transition: none;
+}
+
+.button::before {
+  content: " ";
+
+  position: absolute;
+  z-index: 2;
+  top: -50%;
+  left: -50px;
+  transform: rotate(45deg);
+
+  width: 35px;
+  height: 200%;
+
+  background: linear-gradient(94deg, #fff, rgb(255 255 255 / 1%));
+
+  animation: anirr 2s ease;
+  animation-iteration-count: infinite;
+}
+
+.button::after {
+  content: " ";
+
+  display: inline-block;
+
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+
+  background-image: url("@images/icon/icon_arrow-btn.svg");
+}
+
+@keyframes anime {
+  0% {
+    left: -50px;
+  }
+
+  30%,
+  100% {
+    left: calc(100% + 50px);
+  }
+}
+
+@keyframes anirr {
+  0% {
+    left: -50px;
+  }
+
+  30%,
+  100% {
+    left: calc(100% + 50px);
+  }
+}
+
+@media (max-width: 601px) {
+  .button {
+    font-size: 16px;
+    line-height: 125%;
+  }
+}

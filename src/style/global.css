@@ -1,0 +1,14 @@
+body {
+  overflow-x: hidden;
+
+  min-height: 100%;
+
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 140%;
+  color: #fff;
+
+  background-color: #020203;
+}

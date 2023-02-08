@@ -1,0 +1,36 @@
+<header class="header @@page__header">
+  <div class="container header__container">
+    @@if(page === "index"){
+    <a class="logo section-top__logo" href="#">
+      <img src="@images/logo/logo.svg" class="logo__img" alt="logo" />
+    </a>
+
+    } @@if(page === "thanks"){
+    <a class="logo section-top__logo" href="../index.html">
+      <img src="@images/logo/logo.svg" class="logo__img" alt="logo" />
+    </a>
+    }
+    <span class="header__text">стильная зона Apple</span>
+
+    <div class="order-call header__order-call">
+      <img
+        src="@images/icon/icon_order-call.svg"
+        class="order-call__img"
+        alt=""
+      />
+
+      <div class="order-call__block">
+        <a href="tel:+79208661156">+7 (920) 866-11-56</a>
+
+        @@if(page === "index"){
+        <button class="order-call__button">заказать звонок</button>
+        } @@if(page === "thanks"){
+        <p class="order-call__button">
+          позвоните сейчас чтобы<br />
+          не ждать звонка
+        </p>
+        }
+      </div>
+    </div>
+  </div>
+</header>

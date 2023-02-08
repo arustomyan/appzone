@@ -1,0 +1,49 @@
+.slick-list {
+  position: relative;
+  z-index: 0;
+}
+
+/* Блок с точками */
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 21px;
+}
+
+/* Элемент точки */
+.slick-dots li {
+  width: 9px;
+  height: 9px;
+  list-style: none;
+}
+
+.slick-track {
+  display: flex;
+}
+
+/* Точка */
+.slick-dots li button {
+  display: block;
+
+  width: 9px;
+  height: 9px;
+
+  font-size: 0;
+  line-height: 9px;
+
+  background: #d3d3d3;
+  border-radius: 50%;
+}
+
+/* Активная точка */
+.slick-dots .slick-active button {
+  background: #ff2041;
+}

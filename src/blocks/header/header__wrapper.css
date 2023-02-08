@@ -1,0 +1,12 @@
+.header__wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+@media (max-width: 601px) {
+  .header__wrapper {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,12 @@
+.section-top__bullet-text {
+  z-index: 1;
+
+  max-width: 300px;
+
+  font-family: Nunito, sans-serif;
+  font-size: max(18px, min(22px, 1.89vw));
+  font-weight: 800;
+  line-height: 130%;
+  color: #ff2041;
+  text-transform: uppercase;
+}

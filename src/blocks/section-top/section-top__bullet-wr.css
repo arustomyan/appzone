@@ -1,0 +1,4 @@
+.section-top__bullet-wr {
+  display: flex;
+  flex-direction: column;
+}

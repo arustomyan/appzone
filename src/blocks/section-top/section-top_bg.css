@@ -1,0 +1,24 @@
+.section-top_bg {
+  width: 100vw;
+  height: 100%;
+
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.section-top_bg01 {
+  background-image: url("@images/section-top/bg_section-top01.jpg");
+}
+
+.section-top_bg02 {
+  background-image: url("@images/section-top/bg_section-top02.jpg");
+}
+
+.section-top_bg03 {
+  background-image: url("@images/section-top/bg_section-top03.jpg");
+}
+
+.section-top_bg04 {
+  background-image: url("@images/section-top/bg_section-top04.jpg");
+}

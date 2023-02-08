@@ -1,0 +1,10 @@
+.section-top__bullet-title {
+  z-index: 1;
+
+  display: block;
+
+  max-width: 300px;
+
+  font-size: 18px;
+  font-weight: 600;
+}

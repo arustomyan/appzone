@@ -1,0 +1,13 @@
+.section-top__slider-point {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.section-top__slider-point_active {
+  width: 40px;
+  height: 10px;
+  background: linear-gradient(270deg, #2794f9 0%, #0c5fdb 100%);
+  border-radius: 100px;
+}

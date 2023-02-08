@@ -1,0 +1,47 @@
+.section-top__fgp-container {
+  max-width: 1540px;
+}
+
+.section-top__form {
+  max-width: 1440px;
+  margin: 0 auto 12px;
+}
+
+.section-top__form .input {
+  max-width: 338px;
+}
+
+.section-top__fgp-buttton {
+  max-width: 337px;
+}
+
+.section-top__buttton {
+  display: none;
+}
+
+@media (max-width: 601px) {
+  .section-top__buttton {
+    z-index: 1;
+    display: block;
+  }
+
+  .section-top__fgp-container {
+    display: none;
+  }
+}
+
+/* style.min.css | http://localhost:3000/style.min.css?_v=20230127120401 */
+
+@media (max-width: 1230px) {
+  .section-top__form {
+    flex-direction: column;
+  }
+
+  .section-top__form .input {
+    max-width: 470px;
+  }
+
+  .section-top__fgp-buttton {
+    max-width: 470px;
+  }
+}

@@ -1,0 +1,9 @@
+.section-top__usp {
+  margin-bottom: 102px;
+}
+
+@media (max-width: 601px) {
+  .section-top__usp {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,44 @@
+.section-top__bullet {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 33%;
+  max-width: 460px;
+  height: 140px;
+  padding: 10px 24px;
+
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgb(255 1 38 / 20%);
+}
+
+.section-top__bullet::before {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.section-top__bullet01 {
+  padding: 23.5px 24px;
+}
+
+.section-top__bullet02,
+.section-top__bullet03 {
+  padding: 13px 24px 17px;
+}
+
+.section-top__bullet01::before {
+  content: url("@images/section-top/bullet01.png");
+}
+
+.section-top__bullet02::before {
+  content: url("@images/section-top/bullet02.png");
+}
+
+.section-top__bullet03::before {
+  content: url("@images/section-top/bullet03.png");
+}
