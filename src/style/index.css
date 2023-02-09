@@ -315,11 +315,145 @@
   gap: 20px;
 }
 
-.slider-btn {
+@import url("../blocks/founder/founder.css");
+
+.reviews {
+  padding-bottom: 100px;
 }
 
-.slider-btn-prev {
+.reviews__content {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 90px;
+  margin-left: calc(calc(100% - 1380px) / 2);
+  padding-top: 165px;
+  padding-left: 20px;
 }
 
-.slider-btn-next {
+.reviews__title-block {
+  max-width: 550px;
+}
+
+.reviews__title {
+  display: block;
+  margin-bottom: 69px;
+}
+
+.reviews__title-number {
+  display: block;
+}
+
+.reviews__title-offset {
+  display: inline-block;
+  max-width: 295px;
+  vertical-align: top;
+}
+
+.reviews__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.reviews__slider-block-wrapper {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+
+.reviews__slider-btns-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-self: flex-end;
+}
+
+.reviews__slider-block {
+  overflow: hidden;
+  max-width: 870px;
+}
+
+.reviews__slider-block .slick-list {
+}
+
+.reviews__slider-el {
+  width: 320px;
+  height: 648px;
+  margin-left: 30px;
+}
+
+.reviews__slider-el-img {
+}
+
+.reviews__pre-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 64px 80px;
+
+  background: #0f1010;
+  background-image: url("@images/reviews/reviews__pre-form-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  border-radius: 40px;
+}
+
+.reviews__pre-form-title {
+  max-width: 775px;
+
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: lowercase;
+}
+
+.reviews__pre-form-button {
+  max-width: 328px;
+}
+
+.reviews__announcement {
+  position: absolute;
+  top: 0;
+  left: -108px;
+  transform-origin: 100% 100%;
+  transform: translate(-100%, -50%) rotateZ(-90deg);
+
+  font-size: 66px;
+  font-weight: 700;
+  line-height: 110%;
+  color: transparent;
+
+  opacity: 0.5;
+
+  -webkit-text-stroke: 1px #0cdb92;
+}
+
+.reviews__slider-union-wrapper {
+  position: absolute;
+  top: -148px;
+  left: -943px;
+
+  flex-shrink: 0;
+
+  width: 1920px;
+  height: 459px;
+
+  /* left: -50%; */
+}
+
+.reviews__slider-circle {
+  position: absolute;
+  top: -56px;
+  left: -4px;
+
+  width: 384px;
+  height: 384px;
+
+  opacity: 0.4;
+  background: #202020;
+  filter: blur(75px);
+  border-radius: 50%;
 }

@@ -40,6 +40,23 @@ export function sliders() {
     dots: true,
   });
 
+  $(".reviews__slider-block").slick({
+    arrows: false,
+    infinite: true,
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    variableWidth: true,
+
+    dots: false,
+  });
+
+  $(".reviews__slider-btns-block .slider-btn-next").click(() => {
+    $(".reviews__slider-block").slick("slickNext");
+  });
+  $(".reviews__slider-btns-block .slider-btn-prev").click(() => {
+    $(".reviews__slider-block").slick("slickPrev");
+  });
+
   $(".economy__block-slider-list").slick({
     infinite: true,
     slidesToScroll: 1,
