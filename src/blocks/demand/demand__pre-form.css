@@ -1,0 +1,14 @@
+.demand__pre-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 64px 80px;
+
+  background: #0f1010;
+  background-image: url("@images/demand/demand__pre-form-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  border-radius: 40px;
+}

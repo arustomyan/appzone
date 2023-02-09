@@ -1,0 +1,29 @@
+.demand__info-block {
+  position: relative;
+
+  align-self: flex-end;
+
+  max-width: 492px;
+  padding: 64px 70px;
+
+  background: #171818;
+  border-radius: 40px;
+}
+
+.demand__info-block::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 70px;
+  transform: translateY(-50%);
+
+  width: 66px;
+  height: 66px;
+
+  background-image: url("@images/demand/demand__info-icon.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 50%;
+}

@@ -1,0 +1,9 @@
+.demand__info-block-title {
+  display: inline-block;
+
+  margin-bottom: 40px;
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+}

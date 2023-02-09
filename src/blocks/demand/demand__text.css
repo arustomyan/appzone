@@ -1,0 +1,9 @@
+.demand__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.demand__text:not(:last-child) {
+  margin-bottom: 20px;
+}
