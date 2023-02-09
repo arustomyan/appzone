@@ -39,4 +39,29 @@ export function sliders() {
     fade: true,
     dots: true,
   });
+
+  $(".economy__block-slider-list").slick({
+    infinite: true,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    fade: true,
+    dots: false,
+    arrows: false,
+  });
+
+  $(".economy__block-slider-list").on("beforeChange", (a, b, c, d) => {
+    $(`.economy__block-description-img-el`).removeClass(
+      "economy__block-description-img-el_active",
+    );
+    $(`#economy__block-description-img-el0${d}`).addClass(
+      "economy__block-description-img-el_active",
+    );
+  });
+
+  $(".economy__slider-btns-block .slider-btn-next").click(() => {
+    $(".economy__block-slider-list").slick("slickNext");
+  });
+  $(".economy__slider-btns-block .slider-btn-prev").click(() => {
+    $(".economy__block-slider-list").slick("slickPrev");
+  });
 }

@@ -75,3 +75,251 @@
 @import url("../blocks/demand/demand__pre-form.css");
 @import url("../blocks/demand/demand__pre-form-title.css");
 @import url("../blocks/demand/demand__pre-form-button.css");
+
+.economy {
+  background-color: #252525;
+  background-image: url("@images/texture/Grain-Texture.png");
+  background-position: 0 0;
+}
+
+.economy__container {
+  padding-top: 118px;
+  padding-bottom: 160px;
+}
+
+.economy__title {
+  display: block;
+  max-width: 1033px;
+  margin: 0 auto 78px;
+  text-align: center;
+}
+
+.economy__title .text_green {
+  display: block;
+}
+
+.economy__block-wrapper {
+  position: relative;
+  z-index: 0;
+}
+
+.economy__block-ellipse-blur01 {
+  position: absolute;
+  top: 6px;
+  left: -85px;
+  filter: blur(125px);
+}
+
+.economy__block-ellipse-blur02 {
+  position: absolute;
+  top: 277px;
+  left: 220px;
+  filter: blur(100px);
+}
+
+.economy__block-ellipse-blur03 {
+  position: absolute;
+  top: 60px;
+  right: -60px;
+  filter: blur(125px);
+}
+
+.economy__block {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+
+  height: 557px;
+  padding: 66px 80px 20px;
+
+  background: #171818;
+  border-radius: 40px;
+}
+
+.economy__block-pricelist {
+  max-width: 164px;
+  padding-top: 10px;
+}
+
+.economy__block-el {
+  padding: 26px 30px;
+}
+
+.economy__block-el:nth-child(2) {
+  border-top: 1px solid #696969;
+  border-bottom: 1px solid #696969;
+}
+
+.economy__block-price-title {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+  color: #828282;
+}
+
+.economy__block-price-text {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.economy__block-slider {
+  position: relative;
+  height: 100%;
+  padding-bottom: 56px;
+}
+
+.economy__block-slider-circle-blur {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 139px;
+  height: 139px;
+
+  opacity: 0.8;
+  background: #d9d9d9;
+  filter: blur(100px);
+  border-radius: 50%;
+}
+
+.economy__block-slider-list {
+  overflow: hidden;
+  display: block;
+  flex: auto;
+
+  max-width: 340px;
+  height: 100%;
+}
+
+.economy__block-slider-list .slick-list,
+.economy__block-slider-list .slick-track {
+  height: 100%;
+}
+
+.economy__block-slider-el {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100%;
+}
+
+.economy__block-slider-el01 img {
+  width: 226px;
+  height: 306px;
+}
+
+.economy__block-slider-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+}
+
+.economy__block-description {
+  max-width: 410px;
+  padding-top: 10px;
+}
+
+.economy__block-description-text {
+  margin-bottom: 55px;
+}
+
+.economy__block-description-text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.economy__block-description-img-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+
+.economy__block-description-img-el {
+  position: relative;
+  z-index: 0;
+
+  flex-shrink: 0;
+
+  width: 92px;
+  height: 92px;
+
+  border-radius: 50%;
+}
+
+.economy__block-description-img-el::before {
+  content: "";
+
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  flex-shrink: 0;
+
+  width: 92px;
+  height: 92px;
+
+  opacity: 0;
+  background: linear-gradient(270deg, #2794f9 0%, #0c5fdb 100%);
+  border-radius: 50%;
+
+  transition: all 0.5s ease;
+}
+
+.economy__block-description-img-el_active::before {
+  opacity: 1;
+}
+
+.economy__block-description-img-el-wrap {
+  content: "";
+
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  width: 80px;
+  height: 80px;
+
+  visibility: visible;
+  opacity: 1;
+  background: #252525;
+  border-radius: 50%;
+}
+
+.economy__slider-btns-block {
+  display: flex;
+  gap: 20px;
+}
+
+.slider-btn {
+}
+
+.slider-btn-prev {
+}
+
+.slider-btn-next {
+}
