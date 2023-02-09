@@ -1,0 +1,138 @@
+.founder {
+  min-height: 100vh;
+}
+
+.founder__container-bg {
+  padding-top: 118px;
+}
+
+.founder__bg {
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  height: 100vh;
+
+  background-image: url("@images/founder/bg__founder.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.founder__title {
+  display: block;
+  max-width: 595px;
+  margin-left: auto;
+}
+
+.founder__title-offset {
+  display: block;
+  margin-left: 76px;
+}
+
+.overflow {
+}
+
+.height {
+  height: 600px;
+}
+
+.founder__container {
+  padding-top: 526px;
+  padding-bottom: 140px;
+}
+
+.founder__content {
+  max-width: 403px;
+  margin-right: 115px;
+  margin-left: auto;
+}
+
+.founder__content-block {
+}
+
+.founder__text-wrapper {
+  margin-bottom: 23px;
+}
+
+.founder__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.founder__text-wrapper > .founder__text {
+  margin-bottom: 30px;
+}
+
+.founder__slogan {
+  font-size: 70px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 106.5%;
+  text-transform: lowercase;
+  letter-spacing: 0.04em;
+
+  border: 1px solid #0cdb92;
+}
+
+.founder__profile {
+  display: flex;
+  gap: 30px;
+}
+
+.founder__profile-block {
+}
+
+.founder__profile-block-name {
+  margin-bottom: 4px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.founder__profile-block-post {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #7b7b7b;
+}
+
+.founder__profile-block-social {
+  display: flex;
+  gap: 10px;
+}
+
+.founder__profile-block-inst {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.founder__pre-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 64px 80px;
+
+  background: #0f1010;
+  background-image: url("@images/demand/demand__pre-form-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  border-radius: 40px;
+}
+
+.founder__pre-form-title {
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 120%;
+  text-transform: lowercase;
+}
+
+.button {
+}
+
+.founder__pre-form-button {
+  max-width: 370px;
+}

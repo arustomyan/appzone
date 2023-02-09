@@ -66,6 +66,20 @@ export function sliders() {
     arrows: false,
   });
 
+  // $(".support__navigation-el").hover((e) => {
+  //   const id = +e.currentTarget.id.split("-")[1];
+  //   if (e.type === "mouseenter") {
+  //     $(`.support__navigation-el`).removeClass("support__navigation-el_hover");
+  //     $(`#support__slide-${id}`).addClass("support__navigation-el_hover");
+  //     $(".support__content-block-slider").slick("slickGoTo", id, false);
+  //   }
+  //   if (e.type === "mouseleave") {
+  //     $(`.support__navigation-el`).removeClass("support__navigation-el_hover");
+  //     $(`#support__slide-${id}`).addClass("support__navigation-el_hover");
+  //     $(".support__content-block-slider").slick("slickGoTo", id, false);
+  //   }
+  // });
+
   $(".economy__block-slider-list").on("beforeChange", (a, b, c, d) => {
     $(`.economy__block-description-img-el`).removeClass(
       "economy__block-description-img-el_active",
@@ -74,6 +88,23 @@ export function sliders() {
       "economy__block-description-img-el_active",
     );
   });
+
+  // let btn = document.querySelectorAll(".economy__block-description-img-el");
+
+  // for (const i of btn) {
+  //   const id = +i.id.split("economy__block-description-img-el")[1][1];
+  //   console.log(id);
+  //   i.onmouseover = () => {
+  //     $(".economy__block-slider-list").slick("slickGoTo", id);
+  //   };
+  // }
+
+  // $(".economy__block-description-img-el").hover((e) => {
+  //   if (e.type === "mouseenter") {
+  //     console.log(id[1][1]);
+  //     $(".economy__block-slider-list").slick("slickGoTo", +id[1][1]);
+  //   }
+  // });
 
   $(".economy__slider-btns-block .slider-btn-next").click(() => {
     $(".economy__block-slider-list").slick("slickNext");
