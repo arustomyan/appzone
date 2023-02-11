@@ -1,0 +1,10 @@
+.business-model__track {
+  display: flex;
+  gap: 255px;
+  align-items: flex-start;
+
+  width: fit-content;
+  height: 635px;
+  margin-bottom: 59px;
+  margin-left: calc(100% / 2 - 320px);
+}

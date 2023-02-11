@@ -1,0 +1,15 @@
+.support__content-block-el {
+  position: absolute;
+
+  width: 500px;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: visibility 0.5s ease, opacity 0.5s ease;
+}
+
+.support__content-block-el_active {
+  visibility: visible;
+  opacity: 1;
+}

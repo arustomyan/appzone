@@ -1,0 +1,10 @@
+.steps__title {
+  max-width: 406px;
+  margin-bottom: 60px;
+  font-size: 68px;
+  text-align: center;
+}
+
+.steps__title .text_green {
+  display: block;
+}

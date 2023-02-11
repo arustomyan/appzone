@@ -1,0 +1,24 @@
+.business-model__city-info-el {
+  position: absolute;
+  z-index: 2;
+
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+
+  width: max-content;
+  min-width: 230px;
+  padding: 90px 34px 34px;
+
+  visibility: hidden;
+  opacity: 0;
+  background: #252525;
+  border-radius: 40px;
+
+  transition: visibility 0.5s ease, opacity 0.5s ease;
+}
+
+.business-model__city-info-el_active {
+  visibility: visible;
+  opacity: 1;
+}

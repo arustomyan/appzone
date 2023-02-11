@@ -1,0 +1,13 @@
+.footer__center-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 1000px) {
+  .footer__center-info {
+    /* flex-direction: column; */
+    gap: 10px;
+  }
+}

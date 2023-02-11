@@ -1,0 +1,6 @@
+.steps__slider {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 519px;
+}

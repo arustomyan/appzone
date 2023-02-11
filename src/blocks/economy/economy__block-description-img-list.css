@@ -1,0 +1,6 @@
+.economy__block-description-img-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}

@@ -1,0 +1,6 @@
+.input_phone {
+  padding-left: 85px;
+  background-image: url("@images/input/icon_phone.svg");
+  background-repeat: no-repeat;
+  background-position: 32px center;
+}

@@ -1,0 +1,10 @@
+.economy__title {
+  display: block;
+  max-width: 1033px;
+  margin: 0 auto 78px;
+  text-align: center;
+}
+
+.economy__title .text_green {
+  display: block;
+}

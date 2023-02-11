@@ -1,0 +1,20 @@
+.cities__container {
+  overflow: hidden;
+
+  max-width: 1600px;
+  height: 900px;
+  padding-top: 130px;
+  padding-right: 118px;
+
+  background-image: linear-gradient(
+      270deg,
+      rgb(31 31 31 / 90%) 1.97%,
+      rgb(31 31 31 / 67%) 39.97%,
+      rgb(31 31 31 / 0%) 63.06%
+    ),
+    url("@images/cities/cities_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+  border-radius: 80px;
+}

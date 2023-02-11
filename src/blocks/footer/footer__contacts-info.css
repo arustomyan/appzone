@@ -1,0 +1,10 @@
+.footer__contacts-info {
+  margin-bottom: 8px;
+  line-height: 140%;
+}
+
+@media (max-width: 601px) {
+  .footer__contacts-info {
+    margin-bottom: 20px;
+  }
+}

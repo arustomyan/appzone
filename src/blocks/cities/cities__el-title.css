@@ -1,0 +1,9 @@
+.cities__el-title {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+}

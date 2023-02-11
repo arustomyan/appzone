@@ -1,0 +1,6 @@
+.support__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 114px;
+  padding-bottom: 140px;
+}

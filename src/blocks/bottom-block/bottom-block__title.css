@@ -1,0 +1,15 @@
+.bottom-block__title {
+  font-size: 110px;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.bottom-block__title-offset {
+  display: block;
+
+  margin-left: 81px;
+
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 110%;
+}

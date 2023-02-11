@@ -1,0 +1,85 @@
+.cities__marker {
+  cursor: pointer;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+
+  transition: transform 0.3s ease;
+}
+
+#cities__marker-0 {
+  top: 322px;
+  left: 440px;
+}
+
+#cities__marker-1 {
+  top: 783px;
+  left: 472px;
+}
+
+#cities__marker-2 {
+  top: 618px;
+  left: 450px;
+}
+
+#cities__marker-3 {
+  top: 706px;
+  left: 585px;
+}
+
+#cities__marker-4 {
+  top: 306px;
+  left: 662px;
+}
+
+#cities__marker-5 {
+  top: 379px;
+  left: 636px;
+}
+
+#cities__marker-6 {
+  top: 637px;
+  left: 683px;
+}
+
+#cities__marker-7 {
+  top: 598px;
+  left: 837px;
+}
+
+#cities__marker-8 {
+  top: 362px;
+  left: 796px;
+}
+
+#cities__marker-9 {
+  top: 258px;
+  left: 616px;
+}
+
+#cities__marker-10 {
+  top: 240px;
+  left: 111px;
+}
+
+#cities__marker-11 {
+  top: 127px;
+  left: 616px;
+}
+
+#cities__marker-12 {
+  top: 140px;
+  left: 529px;
+}
+
+#cities__marker-13 {
+  top: 186px;
+  left: 239px;
+}
+
+.cities__marker:hover {
+  transform: scale(1.2);
+}

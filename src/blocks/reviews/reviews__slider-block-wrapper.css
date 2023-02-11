@@ -1,0 +1,5 @@
+.reviews__slider-block-wrapper {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}

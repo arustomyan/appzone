@@ -1,0 +1,8 @@
+.steps__pre-form-title {
+  max-width: 710px;
+
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: lowercase;
+}

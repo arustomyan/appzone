@@ -1,0 +1,13 @@
+.reviews__slider-circle {
+  position: absolute;
+  top: -56px;
+  left: -4px;
+
+  width: 384px;
+  height: 384px;
+
+  opacity: 0.4;
+  background: #202020;
+  filter: blur(75px);
+  border-radius: 50%;
+}

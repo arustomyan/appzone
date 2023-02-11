@@ -1,0 +1,11 @@
+.footer__made-in {
+  display: block;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .footer__made-in {
+    text-align: center;
+  }
+}

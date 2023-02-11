@@ -1,0 +1,17 @@
+.economy__block-slider-el {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100%;
+}
+
+.economy__block-slider-el01 img {
+  width: 226px;
+  height: 306px;
+}

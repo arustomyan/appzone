@@ -1,0 +1,13 @@
+.economy__block-slider-list {
+  overflow: hidden;
+  display: block;
+  flex: auto;
+
+  max-width: 340px;
+  height: 100%;
+}
+
+.economy__block-slider-list .slick-list,
+.economy__block-slider-list .slick-track {
+  height: 100%;
+}

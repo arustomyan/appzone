@@ -1,0 +1,6 @@
+.input_email {
+  padding-left: 85px;
+  background-image: url("@images/input/icon_mail.svg");
+  background-repeat: no-repeat;
+  background-position: 32px center;
+}

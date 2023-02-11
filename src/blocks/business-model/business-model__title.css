@@ -1,0 +1,10 @@
+.business-model__title {
+  max-width: 633px;
+  margin-left: 160px;
+  font-size: 60px;
+}
+
+.business-model__title-offset {
+  display: block;
+  margin-left: 80px;
+}

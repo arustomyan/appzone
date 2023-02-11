@@ -1,0 +1,13 @@
+.economy__block {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+
+  height: 557px;
+  padding: 66px 80px 20px;
+
+  background: #171818;
+  border-radius: 40px;
+}

@@ -1,0 +1,6 @@
+.reviews__slider-btns-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-self: flex-end;
+}

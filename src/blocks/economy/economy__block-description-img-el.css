@@ -1,0 +1,36 @@
+.economy__block-description-img-el {
+  position: relative;
+  z-index: 0;
+
+  flex-shrink: 0;
+
+  width: 92px;
+  height: 92px;
+
+  border-radius: 50%;
+}
+
+.economy__block-description-img-el::before {
+  content: "";
+
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  flex-shrink: 0;
+
+  width: 92px;
+  height: 92px;
+
+  opacity: 0;
+  background: linear-gradient(270deg, #2794f9 0%, #0c5fdb 100%);
+  border-radius: 50%;
+
+  transition: all 0.5s ease;
+}
+
+.economy__block-description-img-el_active::before {
+  opacity: 1;
+}

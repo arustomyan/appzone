@@ -1,0 +1,16 @@
+.reviews__announcement {
+  position: absolute;
+  top: 0;
+  left: -108px;
+  transform-origin: 100% 100%;
+  transform: translate(-100%, -50%) rotateZ(-90deg);
+
+  font-size: 66px;
+  font-weight: 700;
+  line-height: 110%;
+  color: transparent;
+
+  opacity: 0.5;
+
+  -webkit-text-stroke: 1px #0cdb92;
+}

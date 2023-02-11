@@ -1,0 +1,20 @@
+.economy__block-ellipse-blur01 {
+  position: absolute;
+  top: 6px;
+  left: -85px;
+  filter: blur(125px);
+}
+
+.economy__block-ellipse-blur02 {
+  position: absolute;
+  top: 277px;
+  left: 220px;
+  filter: blur(100px);
+}
+
+.economy__block-ellipse-blur03 {
+  position: absolute;
+  top: 60px;
+  right: -60px;
+  filter: blur(125px);
+}

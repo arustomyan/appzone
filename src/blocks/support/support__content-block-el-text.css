@@ -1,0 +1,9 @@
+.support__content-block-el-text {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.support__content-block-el-text:not(:last-child) {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,6 @@
+.support {
+  background-image: url("@images/support/support__bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}

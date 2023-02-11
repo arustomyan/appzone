@@ -1,0 +1,15 @@
+.footer__logo {
+  max-width: 211px;
+  margin-bottom: 18px;
+}
+
+.footer__logo img {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .footer__logo {
+    width: 250px;
+    margin-bottom: 0;
+  }
+}

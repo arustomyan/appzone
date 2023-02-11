@@ -1,0 +1,23 @@
+.business-model__city-info-el-location {
+  position: relative;
+  width: fit-content;
+  padding-left: 36px;
+}
+
+.business-model__city-info-el-location::before {
+  content: "";
+
+  position: absolute;
+  top: 9px;
+  left: 0;
+
+  display: block;
+
+  width: 18px;
+  height: 26px;
+
+  background-image: url("@images/business-model/location_marker.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+}

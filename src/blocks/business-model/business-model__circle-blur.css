@@ -1,0 +1,12 @@
+.business-model__circle-blur {
+  position: absolute;
+  top: 203px;
+  left: 50%;
+  transform: translate(-410px);
+
+  width: 384px;
+  height: 384px;
+
+  background: #202020;
+  filter: blur(75px);
+}

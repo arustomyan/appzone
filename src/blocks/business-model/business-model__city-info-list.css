@@ -1,0 +1,6 @@
+.business-model__city-info-list {
+  position: absolute;
+  top: 318px;
+  left: 50%;
+  transform: translateX(150px);
+}

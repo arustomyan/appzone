@@ -1,0 +1,10 @@
+.galery__content-center {
+  flex-basis: 51.97%;
+  max-width: 998px;
+  padding-top: 211px;
+}
+
+.galery__content-center-bottom {
+  display: flex;
+  gap: 60px;
+}

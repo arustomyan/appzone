@@ -1,0 +1,8 @@
+.economy__block-el {
+  padding: 26px 30px;
+}
+
+.economy__block-el:nth-child(2) {
+  border-top: 1px solid #696969;
+  border-bottom: 1px solid #696969;
+}

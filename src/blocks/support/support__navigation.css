@@ -1,0 +1,5 @@
+.support__navigation {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

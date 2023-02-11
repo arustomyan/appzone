@@ -1,0 +1,11 @@
+.business-model__progress-bar-toddler {
+  position: absolute;
+  top: 0;
+  left: 230px;
+
+  width: 20px;
+  height: 20px;
+
+  background: linear-gradient(270deg, #2794f9 0%, #0c5fdb 100%);
+  border-radius: 50%;
+}

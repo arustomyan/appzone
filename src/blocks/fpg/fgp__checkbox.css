@@ -1,0 +1,22 @@
+.fgp__checkbox {
+  display: flex;
+  gap: 12px;
+
+  font-size: 14px;
+  line-height: 120%;
+  color: #696969;
+  text-transform: lowercase;
+}
+
+.fgp__checkbox::before {
+  content: "";
+
+  flex-shrink: 0;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("@images/icon/icon_checkbox.svg");
+  background-position: 50% 0;
+  background-size: contain;
+}

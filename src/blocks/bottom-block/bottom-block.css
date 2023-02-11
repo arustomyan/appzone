@@ -1,0 +1,9 @@
+.bottom-block {
+  padding-top: 119px;
+  padding-bottom: 140px;
+
+  background-image: url("@images/bottom-block/bb-bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}

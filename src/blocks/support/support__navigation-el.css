@@ -1,0 +1,40 @@
+.support__navigation-el {
+  cursor: pointer;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 98px;
+
+  border-bottom: 1px solid #696969;
+}
+
+.support__navigation-el::before {
+  content: "";
+
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  opacity: 0;
+  background-image: url("@images/support/support-navigation__bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  transition: opacity 0.5s ease;
+}
+
+.support__navigation-el:first-child {
+  border-top: 1px solid #696969;
+}
+
+.support__navigation-el_hover::before {
+  opacity: 1;
+}

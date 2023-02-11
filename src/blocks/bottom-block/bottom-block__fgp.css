@@ -1,0 +1,18 @@
+.bottom-block__fgp {
+  max-width: 504px;
+  padding-top: 21px;
+}
+
+.bottom-block__fgp-ellipse1 {
+  position: absolute;
+  top: -84px;
+  right: -98px;
+  filter: blur(50px);
+}
+
+.bottom-block__fgp-ellipse2 {
+  position: absolute;
+  top: 26px;
+  right: -25px;
+  filter: blur(50px);
+}

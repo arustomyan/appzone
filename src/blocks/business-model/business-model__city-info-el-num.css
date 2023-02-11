@@ -1,0 +1,15 @@
+.business-model__city-info-el-num {
+  position: absolute;
+  top: 23px;
+  right: 29px;
+
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 106.5%;
+  color: transparent;
+  letter-spacing: 0.04em;
+
+  opacity: 0.4;
+
+  -webkit-text-stroke: 1px #0cdb92;
+}

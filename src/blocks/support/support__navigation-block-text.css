@@ -1,0 +1,9 @@
+.support__navigation-block-text {
+  margin-bottom: 20px;
+  line-height: 140%;
+  color: #828282;
+}
+
+.support__navigation-block-text + .support__navigation-block-text {
+  margin-bottom: 62px;
+}

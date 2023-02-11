@@ -1,0 +1,9 @@
+.footer__contacts {
+  height: 100%;
+}
+
+@media (max-width: 1000px) {
+  .footer__contacts {
+    text-align: center;
+  }
+}

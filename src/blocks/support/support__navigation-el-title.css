@@ -1,0 +1,14 @@
+.support__navigation-el-title {
+  position: relative;
+  z-index: 1px;
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 150%;
+
+  transition: color 0.5s ease;
+}
+
+.support__navigation-el_hover .support__navigation-el-title {
+  color: #171818;
+}

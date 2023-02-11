@@ -1,0 +1,13 @@
+.fgp {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 47px 60px 56px;
+
+  background: #0f1010;
+  background-image: url("@images/texture/Grain-Texture.png");
+  background-position: 50% 0;
+  background-size: contain;
+  border-radius: 40px;
+}

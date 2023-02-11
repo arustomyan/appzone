@@ -1,0 +1,10 @@
+.business-model__slider-photo {
+  position: relative;
+  z-index: 0;
+  width: 590px;
+  height: 410px;
+}
+
+.business-model__slider-photo_active {
+  align-self: flex-end;
+}

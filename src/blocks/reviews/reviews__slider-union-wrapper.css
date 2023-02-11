@@ -1,0 +1,12 @@
+.reviews__slider-union-wrapper {
+  position: absolute;
+  top: -148px;
+  left: -943px;
+
+  flex-shrink: 0;
+
+  width: 1920px;
+  height: 459px;
+
+  /* left: -50%; */
+}

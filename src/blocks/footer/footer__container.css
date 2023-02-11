@@ -1,0 +1,16 @@
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+  .container.footer__container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

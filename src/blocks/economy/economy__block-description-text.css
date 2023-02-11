@@ -1,0 +1,7 @@
+.economy__block-description-text {
+  margin-bottom: 55px;
+}
+
+.economy__block-description-text:not(:last-child) {
+  margin-bottom: 20px;
+}
