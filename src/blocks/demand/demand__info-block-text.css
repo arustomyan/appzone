@@ -1,3 +1,17 @@
+.demand__info-block-text {
+  line-height: 140%;
+}
+
 .demand__info-block-text:not(:last-child) {
   margin-bottom: 20px;
+}
+
+@media (max-width: 601px) {
+  .demand__info-block-text {
+    font-size: 12px;
+  }
+
+  .demand__info-block-text:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }

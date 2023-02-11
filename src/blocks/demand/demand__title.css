@@ -2,3 +2,10 @@
   max-width: 518px;
   margin-bottom: 69px;
 }
+
+@media (max-width: 601px) {
+  .demand__title {
+    max-width: 205px;
+    margin-bottom: 39px;
+  }
+}

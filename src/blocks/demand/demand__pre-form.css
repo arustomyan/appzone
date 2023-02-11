@@ -12,3 +12,11 @@
   background-size: cover;
   border-radius: 40px;
 }
+
+@media (max-width: 601px) {
+  .demand__pre-form {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 26px;
+  }
+}

@@ -3,3 +3,11 @@
   justify-content: space-between;
   margin-bottom: 95px;
 }
+
+@media (max-width: 601px) {
+  .demand__content {
+    flex-direction: column;
+    gap: 31px;
+    margin-bottom: 50px;
+  }
+}

@@ -1,9 +1,19 @@
 .demand__text {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 140%;
 }
 
 .demand__text:not(:last-child) {
   margin-bottom: 20px;
+}
+
+@media (max-width: 601px) {
+  .demand__text {
+    font-size: 14px;
+  }
+
+  .demand__text:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }

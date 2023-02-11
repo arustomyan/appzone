@@ -10,7 +10,5 @@
 @media (max-width: 601px) {
   .container {
     max-width: 340px;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 }

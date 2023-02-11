@@ -7,3 +7,10 @@
   font-weight: 700;
   line-height: 110%;
 }
+
+@media (max-width: 601px) {
+  .demand__info-block-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}

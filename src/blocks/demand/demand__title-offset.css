@@ -2,3 +2,10 @@
   display: block;
   margin-left: 80px;
 }
+
+@media (max-width: 601px) {
+  .demand__title-offset {
+    max-width: 169px;
+    margin-left: 26px;
+  }
+}

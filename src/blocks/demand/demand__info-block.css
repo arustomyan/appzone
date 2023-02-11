@@ -27,3 +27,15 @@
   background-size: cover;
   border-radius: 50%;
 }
+
+@media (max-width: 601px) {
+  .demand__info-block {
+    padding: 26px;
+  }
+
+  .demand__info-block::before {
+    right: 26px;
+    width: 44px;
+    height: 44px;
+  }
+}
