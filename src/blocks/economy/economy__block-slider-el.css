@@ -15,3 +15,29 @@
   width: 226px;
   height: 306px;
 }
+
+@media (max-width: 601px) {
+  .economy__block-slider-el {
+    height: 222px;
+  }
+
+  .economy__block-slider-el01 img {
+    width: 126.44px;
+    height: 172px;
+  }
+
+  .economy__block-slider-el02 img {
+    width: 143.18px;
+    height: 119.01px;
+  }
+
+  .economy__block-slider-el03 img {
+    width: 139.46px;
+    height: 163.63px;
+  }
+
+  .economy__block-slider-el04 img {
+    width: 189.66px;
+    height: 176.65px;
+  }
+}

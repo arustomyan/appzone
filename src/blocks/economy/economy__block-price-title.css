@@ -8,3 +8,8 @@
   line-height: 140%;
   color: #828282;
 }
+@media (max-width: 601px) {
+  .economy__block-price-title {
+    font-size: 12px;
+  }
+}

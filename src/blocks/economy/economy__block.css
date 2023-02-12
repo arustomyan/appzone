@@ -11,3 +11,11 @@
   background: #171818;
   border-radius: 40px;
 }
+
+@media (max-width: 601px) {
+  .economy__block {
+    flex-direction: column;
+    height: auto;
+    padding: 26px;
+  }
+}

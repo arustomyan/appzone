@@ -1,4 +1,6 @@
 .slider-btn {
+  cursor: pointer;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,8 +10,26 @@
 
   border: 1px solid rgb(255 255 255 / 50%);
   border-radius: 50%;
+
+  transition: transform 0.2s ease-in-out;
 }
 
 .slider-btn-next {
   transform: rotateZ(180deg);
+}
+
+.slider-btn-prev:hover {
+  transform: scale(1.1);
+}
+
+.slider-btn-next:hover {
+  transform: rotateZ(180deg) scale(1.1);
+}
+
+.slider-btn-prev:active {
+  transform: scale(0.9);
+}
+
+.slider-btn-next:active {
+  transform: rotateZ(180deg) scale(0.9);
 }

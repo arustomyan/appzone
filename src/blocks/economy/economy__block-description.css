@@ -1,4 +1,11 @@
 .economy__block-description {
+  order: 1;
   max-width: 410px;
   padding-top: 10px;
+}
+
+@media (max-width: 601px) {
+  .economy__block-description {
+    order: 1;
+  }
 }

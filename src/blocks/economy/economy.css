@@ -1,5 +1,15 @@
 .economy {
+  padding-top: 118px;
+  padding-bottom: 160px;
+
   background-color: #252525;
   background-image: url("@images/texture/Grain-Texture.png");
   background-position: 0 0;
+}
+
+@media (max-width: 601px) {
+  .economy {
+    padding-top: 71px;
+    padding-bottom: 80px;
+  }
 }

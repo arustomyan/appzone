@@ -6,8 +6,27 @@
   color: #fff;
 }
 
-.section-top__title .text_green {
+.section-top__title01 .text_green {
   display: block;
+}
+
+.section-top__title02 {
+  max-width: 693px;
+  font-size: 80px;
+}
+
+.section-top__title03 {
+  max-width: 1193px;
+  font-size: 80px;
+}
+
+.section-top__title03 .text_green {
+  display: block;
+}
+
+.section-top__title04 {
+  max-width: 1193px;
+  font-size: 80px;
 }
 
 @media (max-width: 840px) {
@@ -25,4 +44,8 @@
   .section-top__title::after {
     top: 4px;
   }
+}
+
+.section-top_bg .section-top__title {
+  margin-bottom: 262px;
 }

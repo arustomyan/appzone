@@ -1,0 +1,31 @@
+@media (min-width: 601px) {
+  .economy__slider-points-block {
+    display: none;
+  }
+}
+
+.economy__slider-points-block {
+  position: absolute;
+  bottom: 45px;
+  left: 26px;
+
+  display: flex;
+  gap: 14px;
+}
+
+.economy__slider-point {
+  width: 6px;
+  height: 6px;
+
+  background-color: #fff;
+  border-radius: 50%;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.economy__slider-point_active {
+  width: 30px;
+  height: 6px;
+  background: linear-gradient(270deg, #2794f9 0%, #0c5fdb 100%);
+  border-radius: 100px;
+}

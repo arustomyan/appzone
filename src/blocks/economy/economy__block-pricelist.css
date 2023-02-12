@@ -2,3 +2,15 @@
   max-width: 164px;
   padding-top: 10px;
 }
+
+@media (max-width: 601px) {
+  .economy__block-pricelist {
+    display: flex;
+    flex-wrap: wrap;
+    order: 3;
+
+    max-width: 100%;
+    margin-bottom: 70px;
+    padding-top: 0;
+  }
+}

@@ -1,8 +1,11 @@
 .section-top__slider-point {
   width: 10px;
   height: 10px;
+
   background-color: #fff;
   border-radius: 50%;
+
+  transition: all 0.5s ease-in-out;
 }
 
 .section-top__slider-point_active {

@@ -84,9 +84,11 @@ export function sliders() {
     $(`.economy__block-description-img-el`).removeClass(
       "economy__block-description-img-el_active",
     );
+    $(`.economy__slider-point`).removeClass("economy__slider-point_active");
     $(`#economy__block-description-img-el0${d}`).addClass(
       "economy__block-description-img-el_active",
     );
+    $(`#economySliderPoint-${d}`).addClass("economy__slider-point_active");
   });
 
   // let btn = document.querySelectorAll(".economy__block-description-img-el");
@@ -109,6 +111,7 @@ export function sliders() {
   $(".economy__slider-btns-block .slider-btn-next").click(() => {
     $(".economy__block-slider-list").slick("slickNext");
   });
+
   $(".economy__slider-btns-block .slider-btn-prev").click(() => {
     $(".economy__block-slider-list").slick("slickPrev");
   });

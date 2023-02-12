@@ -22,3 +22,11 @@
 .section-top_bg04 {
   background-image: url("@images/section-top/bg_section-top04.jpg");
 }
+
+.section-top_bg .container {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+
+  /* padding-bottom: 262px; */
+}

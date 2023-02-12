@@ -13,3 +13,11 @@
   filter: blur(100px);
   border-radius: 50%;
 }
+
+@media (max-width: 601px) {
+  .economy__block-slider-circle-blur {
+    width: 93px;
+    height: 93px;
+    filter: blur(50px);
+  }
+}

@@ -4,3 +4,9 @@
   justify-content: space-between;
   margin-bottom: 27px;
 }
+
+@media (max-width: 601px) {
+  .economy__block-description-img-list {
+    display: none;
+  }
+}

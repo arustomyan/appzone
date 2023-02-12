@@ -6,3 +6,28 @@
   border-top: 1px solid #696969;
   border-bottom: 1px solid #696969;
 }
+
+@media (max-width: 601px) {
+  .economy__block-el {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 20px;
+  }
+
+  .economy__block-el:nth-child(1) {
+    width: 100%;
+    border-bottom: 1px solid #696969;
+  }
+
+  .economy__block-el:nth-child(2) {
+    width: 50%;
+    border-top: none;
+    border-right: 1px solid #696969;
+    border-bottom: none;
+  }
+
+  .economy__block-el:nth-child(3) {
+    width: 50%;
+  }
+}

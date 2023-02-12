@@ -1,5 +1,13 @@
 .section-top_bg-track {
-  transform: translateX(-300vw);
+  transform: translateX(-100vw);
+
+  /* transform: translateX(-100vw); */
+
+  /* transform: translateX(-200vw); */
+
+  /* transform: translateX(-300vw); */
+
+  /* transform: translateX(-400vw); */
 
   display: flex;
 
