@@ -1,9 +1,24 @@
 .galery__content {
-  /* overflow: hidden; */
   display: flex;
   justify-content: space-between;
 
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+.galery__content.galery__content-mobile {
+  display: none;
+}
+
+@media (max-width: 601px) {
+  .galery__content {
+    display: none;
+  }
+
+  .galery__content.galery__content-mobile {
+    overflow: hidden;
+    display: block;
+    width: 100vw;
+  }
 }

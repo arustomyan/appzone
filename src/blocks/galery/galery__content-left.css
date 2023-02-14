@@ -3,3 +3,17 @@
   max-width: 401px;
   padding-top: 86px;
 }
+
+@media (max-width: 601px) {
+  .galery__content-left {
+    display: flex;
+    flex-basis: 100%;
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: center;
+
+    max-width: 100%;
+    margin-bottom: 10px;
+    padding-top: 0;
+  }
+}

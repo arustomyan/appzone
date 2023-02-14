@@ -8,3 +8,24 @@
   display: flex;
   gap: 60px;
 }
+
+@media (max-width: 601px) {
+  .galery__content-center {
+    padding-top: 0;
+  }
+
+  @media (max-width: 601px) {
+    .galery__content-center-bottom {
+      display: flex;
+      flex-basis: 100%;
+      gap: 20px;
+      align-items: flex-start;
+      justify-content: center;
+
+      max-width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-top: 0;
+    }
+  }
+}
