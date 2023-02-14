@@ -1,4 +1,5 @@
 .founder {
+  height: auto;
   min-height: 100vh;
 }
 
@@ -12,8 +13,17 @@
   left: 0;
 
   height: 100vh;
+  margin-bottom: 300px;
 
-  background-image: url("@images/founder/bg__founder.jpg");
+  background: radial-gradient(
+      47.58% 54.14% at 21.22% 42.33%,
+      rgb(0 0 0 / 0%) 42.75%,
+      rgb(2 2 3 / 60%) 100%
+    ),
+    linear-gradient(180deg, rgb(2 2 3 / 50%) 0%, rgb(2 2 3 / 0%) 26.5%),
+    linear-gradient(270deg, rgb(2 2 3 / 50%) 0%, rgb(2 2 3 / 0%) 54.82%),
+    linear-gradient(0deg, #020203 12.22%, rgb(7 7 7 / 0%) 46.51%),
+    url("@images/founder/bg__founder.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -22,6 +32,7 @@
 .founder__title {
   display: block;
   max-width: 595px;
+  margin-bottom: 69px;
   margin-left: auto;
 }
 
@@ -30,21 +41,15 @@
   margin-left: 76px;
 }
 
-.overflow {
-}
-
 .height {
   height: 600px;
 }
 
 .founder__container {
-  padding-top: 526px;
-  padding-bottom: 140px;
 }
 
 .founder__content {
   max-width: 403px;
-  margin-right: 115px;
   margin-left: auto;
 }
 
@@ -55,23 +60,33 @@
   margin-bottom: 23px;
 }
 
+.founder__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 .founder__text:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.founder__text-wrapper > .founder__text {
-  margin-bottom: 30px;
-}
-
 .founder__slogan {
+  display: inline-block;
+
+  margin-bottom: 30px;
+
   font-size: 70px;
   font-weight: 700;
   font-style: normal;
   line-height: 106.5%;
+  color: transparent;
   text-transform: lowercase;
+
+  /* identical to box height, or 75px */
+
   letter-spacing: 0.04em;
 
-  border: 1px solid #0cdb92;
+  -webkit-text-stroke: 1px #0cdb92;
 }
 
 .founder__profile {
@@ -80,6 +95,9 @@
 }
 
 .founder__profile-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .founder__profile-block-name {
@@ -123,6 +141,8 @@
 }
 
 .founder__pre-form-title {
+  max-width: 708px;
+
   font-size: 40px;
   font-weight: 700;
   font-style: normal;
@@ -135,4 +155,31 @@
 
 .founder__pre-form-button {
   max-width: 370px;
+}
+
+.overflow {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 403px;
+  height: 424px;
+  margin-right: 121px;
+  margin-left: auto;
+}
+
+.overflow::after {
+  content: "";
+
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background: linear-gradient(180deg, #fff0 80%, rgb(0 0 0 / 24.1%) 100%);
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
 }

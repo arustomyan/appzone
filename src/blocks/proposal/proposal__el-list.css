@@ -7,3 +7,9 @@
 
   border: 1px solid #696969;
 }
+
+@media (max-width: 601px) {
+  .proposal__el-list {
+    margin-bottom: 30px;
+  }
+}

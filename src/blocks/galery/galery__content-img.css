@@ -1,20 +1,33 @@
 .galery__content-left-img1 {
+  transform: translate(-500px, 0);
   margin-bottom: 60px;
+}
+
+.galery__content-left-img2 {
+  transform: translate(-500px, 500px);
 }
 
 .galery__content-center-img1 {
   position: relative;
+  transform: scale(1.62);
   margin-bottom: 60px;
 }
 
 .galery__content-center-img2 {
+  transform: translate(0, 500px);
   max-width: 406px;
 }
 
 .galery__content-center-img3 {
+  transform: translate(0, 500px);
   max-width: 532px;
 }
 
 .galery__content-right-img1 {
+  transform: translate(500px, 0);
   margin-bottom: 60px;
+}
+
+.galery__content-right-img2 {
+  transform: translate(500px, 500px);
 }

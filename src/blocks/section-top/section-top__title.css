@@ -35,17 +35,24 @@
   }
 }
 
-@media (max-width: 601px) {
-  .section-top__title {
-    font-size: 32px;
-    line-height: 110%;
-  }
-
-  .section-top__title::after {
-    top: 4px;
-  }
-}
-
 .section-top_bg .section-top__title {
   margin-bottom: 262px;
+}
+
+@media (max-width: 601px) {
+  .section-top__title {
+    font-size: 48px;
+  }
+
+  .section-top__title02 {
+    font-size: 32px;
+  }
+
+  .section-top__title03 {
+    font-size: 32px;
+  }
+
+  .section-top__title04 {
+    font-size: 32px;
+  }
 }

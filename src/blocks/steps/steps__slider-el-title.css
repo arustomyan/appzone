@@ -1,5 +1,8 @@
 .steps__slider-el-title {
   display: block;
+
+  margin-bottom: 10px;
+
   font-size: 34px;
   font-weight: 700;
   line-height: 150%;

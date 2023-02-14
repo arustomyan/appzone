@@ -58,6 +58,8 @@
   margin-left: 10px;
 
   background-image: url("@images/icon/icon_arrow-btn.svg");
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 @keyframes anime {
@@ -84,7 +86,14 @@
 
 @media (max-width: 601px) {
   .button {
+    height: 62px;
     font-size: 16px;
-    line-height: 125%;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  .button::after {
+    width: 14px;
+    height: 14px;
   }
 }

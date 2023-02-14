@@ -6,6 +6,7 @@
   margin-left: 80px;
 
   font-size: 24px;
+  line-height: 140%;
 }
 
 .section-top__title-description::before {
@@ -22,7 +23,7 @@
   background-color: #fff;
 }
 
-@media (max-width: 1160px) {
+/* @media (max-width: 1160px) {
   .section-top__title-description {
     max-width: 67vw;
   }
@@ -32,10 +33,17 @@
   .section-top__title-description {
     max-width: 509px;
   }
-}
+} */
 
 @media (max-width: 601px) {
   .section-top__title-description {
+    margin-left: 44px;
     font-size: 16px;
+  }
+
+  .section-top__title-description::before {
+    top: 12px;
+    left: -14px;
+    width: 30px;
   }
 }

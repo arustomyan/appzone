@@ -1,3 +1,9 @@
 .reviews__title-block {
   max-width: 550px;
 }
+
+@media (max-width: 601px) {
+  .reviews__title-block {
+    margin-bottom: 40px;
+  }
+}

@@ -26,6 +26,24 @@
 @import url("../blocks/header/header__text.css");
 @import url("../blocks/header/header__order-call.css");
 
+.section-top__logo .header__text {
+  display: none;
+}
+
+@media (max-width: 601px) {
+  .section-top__logo .header__text {
+    position: relative;
+    top: -10px;
+
+    display: block;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+  }
+}
+
 @import url("../blocks/order-call/order-call.css");
 
 @import url("../blocks/section-top/section-top.css");
@@ -44,10 +62,12 @@
 @import url("../blocks/section-top/section-top__slider-btn.css");
 
 @import url("../blocks/proposal/proposal.css");
+@import url("../blocks/proposal/proposal__sticky-block.css");
 @import url("../blocks/proposal/proposal__container.css");
 @import url("../blocks/proposal/proposal__title-block.css");
 @import url("../blocks/proposal/proposal__title.css");
 @import url("../blocks/proposal/proposal__info-block.css");
+@import url("../blocks/proposal/proposal__info-block-text.css");
 @import url("../blocks/proposal/proposal__list-wrapper.css");
 @import url("../blocks/proposal/proposal__list.css");
 @import url("../blocks/proposal/proposal__el.css");
@@ -67,6 +87,24 @@
 @import url("../blocks/proposal/proposal__banner.css");
 @import url("../blocks/proposal/proposal__banner-list.css");
 @import url("../blocks/proposal/proposal__banner-el.css");
+
+.proposal__container-top {
+  position: sticky;
+  top: 0;
+  margin-bottom: 180px;
+}
+
+.proposal__overflow-block {
+  overflow: hidden;
+  margin-bottom: -800px;
+  padding-bottom: 800px;
+}
+
+@media (max-height: 1170px) {
+  .proposal__container-top {
+    top: -439px;
+  }
+}
 
 @import url("../blocks/demand/demand.css");
 @import url("../blocks/demand/demand__container.css");
@@ -133,6 +171,7 @@
 @import url("../blocks/support/support__navigation-el-title.css");
 @import url("../blocks/support/support__navigation-el-img.css");
 @import url("../blocks/support/support__title.css");
+@import url("../blocks/support/support__content-block.css");
 @import url("../blocks/support/support__content-block-slider.css");
 @import url("../blocks/support/support__content-block-el.css");
 @import url("../blocks/support/support__content-block-el-text-block.css");
@@ -226,6 +265,14 @@
 @import url("../blocks/business-model/business-model__union.css");
 @import url("../blocks/business-model/business-model__circle-blur.css");
 
+.business-model__height-block {
+  height: auto;
+}
+
+.business-model__sticky-block {
+  position: sticky;
+}
+
 @import url("../blocks/galery/galery.css");
 @import url("../blocks/galery/galery__content.css");
 @import url("../blocks/galery/galery__title.css");
@@ -233,3 +280,129 @@
 @import url("../blocks/galery/galery__content-center.css");
 @import url("../blocks/galery/galery__content-right.css");
 @import url("../blocks/galery/galery__content-img.css");
+
+.apple {
+  height: 200vh;
+}
+
+.apple__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100%;
+  padding-bottom: 130px;
+}
+
+.apple__img-blur1 {
+  position: absolute;
+  z-index: 1;
+  top: 120px;
+  left: -25px;
+  transform: rotateZ(-30.66deg);
+
+  filter: blur(65px);
+}
+
+.apple__img-blur2 {
+  position: absolute;
+  z-index: 0;
+  top: 31px;
+  right: 65px;
+  transform: rotateZ(85.06deg);
+
+  filter: blur(65px);
+}
+
+.apple__container-sticky {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  margin-bottom: 200px;
+  padding-top: 246px;
+}
+
+.apple__logo-apple {
+  position: relative;
+  z-index: 2;
+
+  /* transform: scale(10); */
+
+  /* transform: scale(3); */
+  margin-bottom: 20px;
+}
+
+.apple__title {
+  z-index: 2;
+  display: block;
+  font-size: 48px;
+  text-align: center;
+}
+
+.apple__title-main {
+  display: block;
+  font-size: 80px;
+}
+
+.apple__subtitle {
+  display: block;
+  max-width: 761px;
+}
+
+.galery__sticky-block {
+  position: sticky;
+  top: 0;
+  margin-bottom: 140px;
+}
+
+.galery__fake-height {
+  height: 5000px;
+}
+
+.steps__slick {
+  overflow: hidden;
+  height: 894px;
+  margin-top: 41px;
+  padding-top: 318px;
+}
+
+.steps__height-block {
+  height: 10000px;
+}
+
+.steps__sticky-block {
+  position: sticky;
+  top: 0;
+}
+
+.steps__lione {
+  position: absolute;
+  top: 0;
+  top: 50%;
+
+  width: 100vw;
+  height: 20px;
+
+  background-color: aliceblue;
+}
+
+.steps__line,
+.steps__circle,
+.steps__arrow {
+  transition: stroke 0.5s ease, fill 0.5s ease;
+}
+
+.steps__arrow {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#steps__sliderEl-0 {
+  opacity: 1;
+}

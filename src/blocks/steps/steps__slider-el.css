@@ -1,8 +1,12 @@
 .steps__slider-el {
   width: 100%;
-  height: 283px;
+
+  /* height: 283px; */
   padding: 40px;
 
+  opacity: 0.2;
   background: #171818;
   border-radius: 40px;
+
+  transition: opacity 0.5s ease-in;
 }

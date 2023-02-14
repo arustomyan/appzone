@@ -2,3 +2,16 @@
   max-width: 250px;
   margin-bottom: 110px;
 }
+
+.support__navigation-block .support__title {
+  display: none;
+}
+
+@media (max-width: 601px) {
+  .support__navigation-block .support__title {
+    display: block;
+    max-width: 146px;
+    margin-bottom: 37px;
+    font-size: 28px;
+  }
+}

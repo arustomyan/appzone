@@ -1,4 +1,16 @@
 .proposal__container {
+  height: auto;
   padding-top: 118px;
+}
+
+.proposal__container-bottom {
   padding-bottom: 136px;
+}
+
+@media (max-width: 601px) {
+  .proposal__container {
+    max-width: 360px;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }

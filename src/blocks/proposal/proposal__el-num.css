@@ -3,3 +3,9 @@
   font-weight: 700;
   line-height: 150%;
 }
+
+@media (max-width: 601px) {
+  .proposal__el-num {
+    font-size: 22px;
+  }
+}

@@ -7,3 +7,9 @@
 
   border-bottom: 1px solid #696969;
 }
+
+@media (max-width: 601px) {
+  .proposal__el-title-block {
+    margin-bottom: 15px;
+  }
+}

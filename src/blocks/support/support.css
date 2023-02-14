@@ -4,3 +4,9 @@
   background-position: 50% 0;
   background-size: cover;
 }
+
+@media (max-width: 601px) {
+  .support {
+    background-image: url("@images/support/support__bg-m.jpg");
+  }
+}

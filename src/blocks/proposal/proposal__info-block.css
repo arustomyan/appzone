@@ -30,3 +30,16 @@
   background: linear-gradient(270deg, #2794f9 0%, #0c5fdb 100%);
   border-radius: 50%;
 }
+
+@media (max-width: 601px) {
+  .proposal__info-block {
+    padding: 24px 26px;
+    border-radius: 26px;
+  }
+
+  .proposal__info-block::before {
+    right: 26px;
+    width: 30px;
+    height: 30px;
+  }
+}

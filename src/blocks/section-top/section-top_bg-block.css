@@ -5,3 +5,26 @@
   bottom: 0;
   left: 0;
 }
+
+.section-top_bg-block.section-top_bg-slider {
+  display: none;
+}
+
+@media (max-width: 601px) {
+  .section-top_bg-block {
+    display: none;
+  }
+
+  .section-top_bg-block.section-top_bg-slider {
+    display: block;
+    background: linear-gradient(0deg, rgb(0 0 0 / 70%), rgb(0 0 0 / 70%));
+  }
+
+  .section-top_bg-block.section-top_bg-slider .slick-list {
+    height: 100%;
+  }
+
+  .section-top_bg-block.section-top_bg-slider .slick-track {
+    height: 100%;
+  }
+}

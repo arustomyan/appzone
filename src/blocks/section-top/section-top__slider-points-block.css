@@ -2,3 +2,16 @@
   display: flex;
   gap: 30px;
 }
+
+@media (max-width: 601px) {
+  .section-top__slider-points-block {
+    display: none;
+  }
+
+  .section-top_bg-slider .slick-dots {
+    z-index: 2;
+    bottom: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

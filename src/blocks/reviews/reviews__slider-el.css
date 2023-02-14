@@ -3,3 +3,10 @@
   height: 648px;
   margin-left: 30px;
 }
+
+@media (max-width: 601px) {
+  .reviews__slider-el {
+    width: 200px;
+    height: 405px;
+  }
+}

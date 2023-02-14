@@ -7,3 +7,14 @@
 .support__navigation-block-text + .support__navigation-block-text {
   margin-bottom: 62px;
 }
+
+@media (max-width: 601px) {
+  .support__navigation-block-text {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .support__navigation-block-text + .support__navigation-block-text {
+    margin-bottom: 37px;
+  }
+}

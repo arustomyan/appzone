@@ -12,3 +12,22 @@
   max-width: 295px;
   vertical-align: top;
 }
+
+@media (max-width: 601px) {
+  .reviews__title-text {
+    display: inline;
+  }
+
+  .reviews__title {
+    display: inline-block;
+    max-width: 250px;
+    margin-bottom: 39px;
+  }
+
+  .reviews__title-offset {
+    position: relative;
+    top: 3px;
+    max-width: 118px;
+    vertical-align: top;
+  }
+}

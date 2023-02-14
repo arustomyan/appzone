@@ -6,3 +6,10 @@
   line-height: 120%;
   text-transform: lowercase;
 }
+
+@media (max-width: 601px) {
+  .reviews__pre-form-title {
+    font-size: 26px;
+    text-align: center;
+  }
+}

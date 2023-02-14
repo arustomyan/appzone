@@ -38,3 +38,21 @@
 .support__navigation-el_hover::before {
   opacity: 1;
 }
+
+@media (max-width: 601px) {
+  .support__navigation-el {
+    height: 62px;
+  }
+
+  .support__navigation-el::before {
+    display: none;
+  }
+
+  .support__navigation-el:first-child {
+    border-top: 1px solid #696969;
+  }
+
+  .support__navigation-el_hover::before {
+    opacity: 1;
+  }
+}

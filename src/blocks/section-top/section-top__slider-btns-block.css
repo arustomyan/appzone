@@ -2,3 +2,9 @@
   display: flex;
   gap: 20px;
 }
+
+@media (max-width: 601px) {
+  .section-top__slider-btns-block {
+    display: none;
+  }
+}

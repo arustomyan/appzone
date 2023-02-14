@@ -48,6 +48,26 @@ export function sliders() {
     variableWidth: true,
 
     dots: false,
+    responsive: [
+      {
+        breakpoint: 601,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          infinite: false,
+          dots: true,
+        },
+      },
+    ],
+  });
+
+  $(".section-top_bg-block.section-top_bg-slider").slick({
+    arrows: false,
+    infinite: true,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    variableWidth: false,
+    dots: true,
   });
 
   $(".reviews__slider-btns-block .slider-btn-next").click(() => {

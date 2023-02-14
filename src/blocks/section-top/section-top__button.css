@@ -1,3 +1,9 @@
 .section-top__button {
   max-width: 323px;
 }
+
+@media (max-width: 601px) {
+  .section-top__button {
+    max-width: 247px;
+  }
+}

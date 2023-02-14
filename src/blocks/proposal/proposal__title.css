@@ -7,3 +7,9 @@
   margin-left: 80px;
   line-height: 110%;
 }
+
+@media (max-width: 601px) {
+  .proposal__title-offset {
+    margin-left: 32px;
+  }
+}

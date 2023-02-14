@@ -4,6 +4,11 @@
 
 @media (max-width: 601px) {
   .logo {
-    width: 120px;
+    width: 146px;
+  }
+
+  .logo img {
+    width: 146px;
+    height: 18px;
   }
 }

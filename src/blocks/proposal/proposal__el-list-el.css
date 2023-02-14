@@ -17,3 +17,35 @@
   width: 100%;
   border-top: 1px solid #696969;
 }
+
+@media (max-width: 601px) {
+  .proposal__el-list-el {
+    gap: 4px;
+    justify-content: center;
+    padding: 18px 20px;
+  }
+
+  .proposal__el-list-el:nth-child(1) {
+    max-width: 175px;
+    border-right: 1px solid #696969;
+    border-bottom: 1px solid #696969;
+  }
+
+  .proposal__el-list-el:nth-child(2) {
+    max-width: 125px;
+    border-right: none;
+    border-bottom: 1px solid #696969;
+    border-left: none;
+  }
+
+  .proposal__el-list-el:nth-child(3) {
+    max-width: 127px;
+    border-right: 1px solid #696969;
+  }
+
+  .proposal__el-list-el:nth-child(4) {
+    align-items: flex-start;
+    max-width: 171px;
+    border-top: none;
+  }
+}

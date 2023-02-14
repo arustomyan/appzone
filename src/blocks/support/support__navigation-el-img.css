@@ -19,3 +19,9 @@
   visibility: visible;
   opacity: 1;
 }
+
+@media (max-width: 601px) {
+  .support__navigation-el-img {
+    display: none;
+  }
+}

@@ -4,3 +4,9 @@
   gap: 20px;
   align-self: flex-end;
 }
+
+@media (max-width: 601px) {
+  .reviews__slider-btns-block {
+    display: none;
+  }
+}

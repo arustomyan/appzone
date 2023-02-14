@@ -1,5 +1,8 @@
 .steps__slider-img {
   display: block;
-  margin-bottom: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
+}
+
+#steps__sliderEl-fake {
+  visibility: hidden;
 }

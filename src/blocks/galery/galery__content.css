@@ -1,5 +1,5 @@
 .galery__content {
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   justify-content: space-between;
 

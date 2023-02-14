@@ -1,3 +1,21 @@
+.reviews__text {
+  line-height: 140%;
+}
+
 .reviews__text:not(:last-child) {
   margin-bottom: 20px;
+}
+
+@media (max-width: 601px) {
+  .reviews__text {
+    font-size: 14px;
+  }
+
+  .reviews__text:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .reviews__text-br {
+    display: block;
+  }
 }

@@ -1,0 +1,5 @@
+@media (max-width: 601px) {
+  .order-call.header__order-call {
+    display: none;
+  }
+}

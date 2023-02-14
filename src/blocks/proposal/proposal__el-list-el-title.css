@@ -4,3 +4,9 @@
   line-height: 150%;
   color: #828282;
 }
+
+@media (max-width: 601px) {
+  .proposal__el-list-el-title {
+    font-size: 12px;
+  }
+}

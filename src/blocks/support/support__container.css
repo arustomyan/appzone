@@ -4,3 +4,10 @@
   padding-top: 114px;
   padding-bottom: 140px;
 }
+
+@media (max-width: 601px) {
+  .support__container {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+}

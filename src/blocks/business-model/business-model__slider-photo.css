@@ -5,6 +5,10 @@
   height: 410px;
 }
 
-.business-model__slider-photo_active {
-  align-self: flex-end;
+#businessModel__sliderPhoto-0 {
+  transform: translateY(225px);
+}
+
+#businessModel__sliderPhoto-2 {
+  transform: translateY(151px);
 }

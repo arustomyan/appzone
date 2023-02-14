@@ -8,6 +8,13 @@
   border-radius: 40px;
 }
 
-.proposal__el:nth-child(2) {
+.proposal__container-bottom .proposal__el {
   background: #171818;
+}
+
+@media (max-width: 601px) {
+  .proposal__el {
+    padding: 22px 30px 30px;
+    border-radius: 26px;
+  }
 }

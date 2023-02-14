@@ -10,3 +10,15 @@
   line-height: 150%;
   color: #0cdb92;
 }
+
+@media (max-width: 601px) {
+  .proposal__el-list-el-value {
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  .proposal__el-list-el:nth-child(4) .proposal__el-list-el-value {
+    font-size: 16px;
+    line-height: 100%;
+  }
+}
