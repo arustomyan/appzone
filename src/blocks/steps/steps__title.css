@@ -8,3 +8,11 @@
 .steps__title .text_green {
   display: block;
 }
+
+@media (max-width: 601px) {
+  .steps__title {
+    max-width: 179px;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+}

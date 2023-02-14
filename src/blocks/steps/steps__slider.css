@@ -12,3 +12,21 @@
 .steps__title-block {
   position: relative;
 }
+
+.steps__slider-mobile {
+  display: none;
+}
+
+@media (max-width: 601px) {
+  .steps__slider {
+    display: none;
+  }
+
+  .steps__slider.steps__slider-mobile {
+    display: block;
+  }
+
+  .steps__slider.steps__slider-mobile .slick-list {
+    overflow: hidden;
+  }
+}

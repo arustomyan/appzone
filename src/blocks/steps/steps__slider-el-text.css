@@ -1,0 +1,12 @@
+.steps__slider-el-text {
+  display: block;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+@media (max-width: 601px) {
+  .steps__slider-el-text {
+    font-size: 12px;
+    line-height: 140%;
+  }
+}

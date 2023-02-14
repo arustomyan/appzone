@@ -7,3 +7,10 @@
   font-weight: 700;
   line-height: 150%;
 }
+
+@media (max-width: 601px) {
+  .steps__slider-el-title {
+    margin-bottom: 4px;
+    font-size: 22px;
+  }
+}

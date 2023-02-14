@@ -110,6 +110,31 @@ const activeSlide = (slide) => {
   );
 };
 
+const ActiveStepsSlide = (slide) => {
+  for (let i = 1; i <= 9; i++) {
+    if (i <= slide) {
+      document.querySelector(`#steps__arrow-${i}`).style.opacity = 1;
+      document
+        .querySelector(`#steps__line-${i}`)
+        .setAttribute("stroke", "#1775E7");
+      document
+        .querySelector(`#steps__circle-${i}`)
+        .setAttribute("fill", "url(#paint0_linear_411_680)");
+    } else {
+      console.log("работаем братья", i);
+      document.querySelector(`#steps__arrow-${i}`).style.opacity = 0;
+      document
+        .querySelector(`#steps__line-${i}`)
+        .setAttribute("stroke", "#2e2e2e");
+      if (i != 9) {
+        document
+          .querySelector(`#steps__circle-${i}`)
+          .setAttribute("fill", "#2e2e2e");
+      }
+    }
+  }
+};
+
 export function sliders() {
   $(".proposal__el-slider").slick({
     prevArrow: slidersPrevBtn,
@@ -119,6 +144,21 @@ export function sliders() {
     slidesToShow: 1,
     fade: true,
     dots: true,
+  });
+
+  $(".steps__slider-mobile").slick({
+    prevArrow: slidersPrevBtn,
+    nextArrow: slidersNextBtn,
+    infinite: false,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    fade: true,
+    dots: false,
+    adaptiveHeight: true,
+  });
+
+  $(".steps__slider-mobile").on("beforeChange", (a, b, c, d) => {
+    ActiveStepsSlide(d);
   });
 
   $(".reviews__slider-block").slick({

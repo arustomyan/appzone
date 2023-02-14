@@ -3,6 +3,9 @@
   margin-bottom: 3px;
 }
 
-#steps__sliderEl-fake {
-  visibility: hidden;
+@media (max-width: 601px) {
+  .steps__slider-img {
+    width: 52px;
+    height: 52px;
+  }
 }

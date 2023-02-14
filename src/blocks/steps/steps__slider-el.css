@@ -1,7 +1,5 @@
 .steps__slider-el {
   width: 100%;
-
-  /* height: 283px; */
   padding: 40px;
 
   opacity: 0.2;
@@ -9,4 +7,15 @@
   border-radius: 40px;
 
   transition: opacity 0.5s ease-in;
+}
+
+@media (max-width: 601px) {
+  .steps__slider-el {
+    width: 300px;
+    height: fit-content;
+    padding: 26px;
+
+    opacity: 1;
+    border-radius: 20px;
+  }
 }

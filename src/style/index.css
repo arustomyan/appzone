@@ -196,6 +196,79 @@
 @import url("../blocks/steps/steps__pre-form-button.css");
 @import url("../blocks/steps/steps__img-blur.css");
 
+#steps__sliderEl-fake {
+  visibility: hidden;
+}
+
+.steps__slick {
+  overflow: hidden;
+  height: 894px;
+  margin-top: 41px;
+  padding-top: 318px;
+}
+
+@media (max-width: 601px) {
+  .steps__slick {
+    position: relative;
+
+    height: fit-content;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 0;
+    padding-bottom: 70px;
+  }
+
+  .slider-btn {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .slider-btn svg {
+    transform: scale(0.71);
+  }
+
+  .slider-btn-next {
+    left: 66px;
+  }
+}
+
+.steps__height-block {
+  height: 10000px;
+}
+
+.steps__sticky-block {
+  position: sticky;
+  top: 0;
+}
+
+.steps__lione {
+  position: absolute;
+  top: 0;
+  top: 50%;
+
+  width: 100vw;
+  height: 20px;
+
+  background-color: aliceblue;
+}
+
+.steps__line,
+.steps__circle,
+.steps__arrow {
+  transition: stroke 0.5s ease, fill 0.5s ease;
+}
+
+.steps__arrow {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#steps__sliderEl-0 {
+  opacity: 1;
+}
+
 @import url("../blocks/cities/cities.css");
 @import url("../blocks/cities/cities__container.css");
 @import url("../blocks/cities/cities__marker.css");
@@ -391,46 +464,4 @@
 
 .galery__fake-height {
   height: 5000px;
-}
-
-.steps__slick {
-  overflow: hidden;
-  height: 894px;
-  margin-top: 41px;
-  padding-top: 318px;
-}
-
-.steps__height-block {
-  height: 10000px;
-}
-
-.steps__sticky-block {
-  position: sticky;
-  top: 0;
-}
-
-.steps__lione {
-  position: absolute;
-  top: 0;
-  top: 50%;
-
-  width: 100vw;
-  height: 20px;
-
-  background-color: aliceblue;
-}
-
-.steps__line,
-.steps__circle,
-.steps__arrow {
-  transition: stroke 0.5s ease, fill 0.5s ease;
-}
-
-.steps__arrow {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-#steps__sliderEl-0 {
-  opacity: 1;
 }

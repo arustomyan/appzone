@@ -4,3 +4,10 @@
   line-height: 140%;
   text-align: center;
 }
+
+@media (max-width: 601px) {
+  .steps__description {
+    max-width: 222px;
+    font-size: 12px;
+  }
+}
