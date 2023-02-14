@@ -3,3 +3,9 @@
   padding-bottom: 37px;
   background: #171818;
 }
+
+@media (max-width: 601px) {
+  .business-model {
+    overflow: hidden;
+  }
+}

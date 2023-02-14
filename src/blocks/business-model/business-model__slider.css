@@ -1,3 +1,9 @@
 .business-model__slider {
   margin-top: -147px;
 }
+
+@media (max-width: 601px) {
+  .business-model__slider {
+    margin-top: 0;
+  }
+}

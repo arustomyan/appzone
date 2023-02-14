@@ -1,5 +1,6 @@
 .business-model__circle-blur {
   position: absolute;
+  z-index: 0;
   top: 203px;
   left: 50%;
   transform: translate(-410px);
@@ -9,4 +10,13 @@
 
   background: #202020;
   filter: blur(75px);
+  border-radius: 50%;
+}
+
+@media (max-width: 601px) {
+  .business-model__circle-blur {
+    top: -76px;
+    transform: translate(-79%);
+    filter: blur(75px);
+  }
 }

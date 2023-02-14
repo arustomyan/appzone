@@ -21,3 +21,14 @@
   background-position: 50% 0;
   background-size: contain;
 }
+
+@media (max-width: 601px) {
+  .business-model__city-info-el-location {
+    padding-left: 25px;
+  }
+
+  .business-model__city-info-el-location::before {
+    width: 13px;
+    height: 19px;
+  }
+}

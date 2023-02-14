@@ -15,10 +15,19 @@
   background: #252525;
   border-radius: 40px;
 
-  transition: visibility 0.5s ease, opacity 0.5s ease;
+  transition: visibility 0.5s ease, opacity 0.5s ease, width 0.5s ease,
+    height 0.5s ease;
 }
 
 .business-model__city-info-el_active {
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 601px) {
+  .business-model__city-info-el {
+    transform: translateX(-50%);
+    padding: 40px 20px 20px;
+    border-radius: 26px;
+  }
 }

@@ -29,6 +29,87 @@ const slidersNextBtn = `<div class="slider-btn slider-btn-next">
           </svg>
         </div>`;
 
+const activeSlide = (slide) => {
+  switch (slide) {
+    case 0:
+      $(".business-model__progress-bar-date").css("transform", "translateX(0)");
+      $(".business-model__progress-bar-el").css("font-size", "16px");
+      $(".business-model__progress-bar-el").css("opacity", "0.2");
+      $(".business-model__progress-bar-el:nth-child(1)").css(
+        "font-size",
+        "22px",
+      );
+      $(".business-model__progress-bar-el:nth-child(1)").css("opacity", "1");
+
+      break;
+    case 1:
+      $(".business-model__progress-bar-date").css(
+        "transform",
+        "translateX(-163px)",
+      );
+      $(".business-model__progress-bar-el").css("font-size", "16px");
+      $(".business-model__progress-bar-el").css("opacity", "0.2");
+      $(".business-model__progress-bar-el:nth-child(2)").css(
+        "font-size",
+        "22px",
+      );
+      $(".business-model__progress-bar-el:nth-child(2)").css("opacity", "1");
+
+      break;
+    case 2:
+      $(".business-model__progress-bar-date").css(
+        "transform",
+        "translateX(-326px)",
+      );
+      $(".business-model__progress-bar-el").css("font-size", "16px");
+      $(".business-model__progress-bar-el").css("opacity", "0.2");
+      $(".business-model__progress-bar-el:nth-child(3)").css(
+        "font-size",
+        "22px",
+      );
+      $(".business-model__progress-bar-el:nth-child(3)").css("opacity", "1");
+      break;
+    case 3:
+      $(".business-model__progress-bar-date").css(
+        "transform",
+        "translateX(-481px)",
+      );
+      $(".business-model__progress-bar-el").css("font-size", "16px");
+      $(".business-model__progress-bar-el").css("opacity", "0.2");
+      $(".business-model__progress-bar-el:nth-child(4)").css(
+        "font-size",
+        "22px",
+      );
+      $(".business-model__progress-bar-el:nth-child(4)").css("opacity", "1");
+      break;
+
+    default:
+      break;
+  }
+  $(".business-model__progress-bar-img-mob").css(
+    "transition",
+    "transform 0.5s ease",
+  );
+  $(".business-model__progress-bar-img-mob").css(
+    "transform",
+    "translateX(-154px)",
+  );
+  setTimeout(() => {
+    $(".business-model__progress-bar-img-mob").css("transition", "none");
+    $(".business-model__progress-bar-img-mob").css(
+      "transform",
+      "translateX(-42px)",
+    );
+  }, 500);
+
+  $(`.business-model__city-info-el`).removeClass(
+    "business-model__city-info-el_active",
+  );
+  $(`#businessModel__info-${slide}`).addClass(
+    "business-model__city-info-el_active",
+  );
+};
+
 export function sliders() {
   $(".proposal__el-slider").slick({
     prevArrow: slidersPrevBtn,
@@ -70,9 +151,24 @@ export function sliders() {
     dots: true,
   });
 
+  $(".business-model__track-slider").slick({
+    arrows: false,
+    infinite: true,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    variableWidth: true,
+    dots: false,
+    centerMode: true,
+  });
+
+  $(".business-model__track-slider").on("beforeChange", (a, b, c, d) => {
+    activeSlide(d);
+  });
+
   $(".reviews__slider-btns-block .slider-btn-next").click(() => {
     $(".reviews__slider-block").slick("slickNext");
   });
+
   $(".reviews__slider-btns-block .slider-btn-prev").click(() => {
     $(".reviews__slider-block").slick("slickPrev");
   });

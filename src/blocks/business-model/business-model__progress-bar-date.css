@@ -2,4 +2,16 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  transition: transform 0.5s ease;
+}
+
+@media (max-width: 601px) {
+  .business-model__progress-bar-date {
+    gap: 70px;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    width: fit-content;
+    margin-left: calc(100vw / 2);
+  }
 }

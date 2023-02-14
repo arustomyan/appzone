@@ -12,3 +12,27 @@
 #businessModel__sliderPhoto-2 {
   transform: translateY(151px);
 }
+
+@media (max-width: 601px) {
+  .business-model__slider-photo {
+    max-width: 300px;
+    max-height: 209px;
+
+    /* margin-right: calc((100vw - 300px) / 2);
+    margin-left: calc((100vw - 300px) / 2); */
+
+    /* margin-right: 20px;
+    margin-left: 20px; */
+  }
+
+  #businessModel__sliderPhoto-0 {
+    transform: none;
+  }
+
+  #businessModel__sliderPhoto-2 {
+    transform: none;
+  }
+
+  .business-model__slider-photo {
+  }
+}

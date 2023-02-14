@@ -13,3 +13,11 @@
 
   -webkit-text-stroke: 1px #0cdb92;
 }
+
+@media (max-width: 601px) {
+  .business-model__city-info-el-num {
+    top: 10.39%;
+    bottom: 63.05%;
+    font-size: 30px;
+  }
+}

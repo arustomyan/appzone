@@ -3,3 +3,9 @@
   overflow: hidden;
   width: 100vw;
 }
+
+@media (max-width: 601px) {
+  .business-model__slick-block {
+    overflow: visible;
+  }
+}

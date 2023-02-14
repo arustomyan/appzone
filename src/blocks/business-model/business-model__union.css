@@ -4,3 +4,11 @@
   left: 50%;
   transform: translateX(-54%);
 }
+
+@media (max-width: 601px) {
+  .business-model__union {
+    top: -90px;
+    left: 68%;
+    max-width: 1173.44px;
+  }
+}

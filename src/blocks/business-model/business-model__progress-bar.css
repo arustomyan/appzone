@@ -6,3 +6,9 @@
   max-width: 1380px;
   margin: 0 auto;
 }
+
+@media (max-width: 601px) {
+  .business-model__progress-bar {
+    width: fit-content;
+  }
+}

@@ -1,3 +1,10 @@
 .business-model__city-info-el-format {
+  margin-bottom: 15px;
   color: #828282;
+}
+
+@media (max-width: 601px) {
+  .business-model__city-info-el-format {
+    margin-bottom: 10px;
+  }
 }

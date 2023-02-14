@@ -1,10 +1,25 @@
 .business-model__title {
+  position: relative;
+  z-index: 5;
+
   max-width: 633px;
   margin-left: 160px;
+
   font-size: 60px;
 }
 
 .business-model__title-offset {
   display: block;
   margin-left: 80px;
+}
+
+@media (max-width: 601px) {
+  .business-model__title {
+    margin-bottom: 45px;
+    margin-left: 0;
+  }
+
+  .business-model__title-offset {
+    margin-left: 26px;
+  }
 }

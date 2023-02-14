@@ -8,4 +8,20 @@
   text-align: center;
 
   opacity: 0.2;
+
+  transition: opacity 0.5s ease, font-size 0.5s ease;
+}
+
+@media (max-width: 601px) {
+  .business-model__progress-bar-el {
+    flex-shrink: 0;
+    max-width: fit-content;
+    font-size: 16px;
+  }
+
+  .business-model__progress-bar-el:nth-child(1) {
+    margin-left: -50px;
+    font-size: 22px;
+    opacity: 1;
+  }
 }

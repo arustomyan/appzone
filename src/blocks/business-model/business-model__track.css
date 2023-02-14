@@ -8,3 +8,27 @@
   margin-bottom: 59px;
   margin-left: calc(100% / 2 - 320px);
 }
+
+.business-model__track-slider {
+  display: none;
+}
+
+@media (max-width: 601px) {
+  .business-model__track {
+    display: none;
+  }
+
+  .business-model__track.business-model__track-slider {
+    overflow: hidden;
+    display: block;
+
+    max-width: 100%;
+    height: fit-content;
+    margin-bottom: 129px;
+    margin-left: 0;
+  }
+
+  .business-model__track-slider .slick-track {
+    gap: calc((100vw - 300px) / 2);
+  }
+}

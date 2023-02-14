@@ -7,3 +7,9 @@
   font-weight: 200;
   line-height: 140%;
 }
+
+@media (max-width: 601px) {
+  .business-model__city-info-el-adress {
+    font-size: 14px;
+  }
+}
