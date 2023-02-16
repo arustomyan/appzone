@@ -4,8 +4,10 @@
   position: relative;
 
   overflow: hidden;
+  flex: 1;
   align-self: flex-end;
 
+  min-width: 530px;
   max-width: 620px;
 }
 
@@ -20,9 +22,19 @@
   right: 110px;
 }
 
+@media (max-width: 1150px) {
+  .proposal__el-slider {
+    flex: auto;
+    align-self: center;
+    width: 100%;
+    min-width: 0;
+  }
+}
+
 @media (max-width: 601px) {
   .proposal__el-slider {
     width: 300px;
+    min-width: auto;
     height: 293px;
   }
 

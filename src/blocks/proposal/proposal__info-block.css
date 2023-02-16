@@ -4,8 +4,8 @@
 
   flex-shrink: 0;
 
-  max-width: 377px;
-  padding: 38px 40px;
+  max-width: min(377px, max(220px, 37.7vw));
+  padding: min(38px, max(24px, 3.8vw)) min(40px, max(26px, 4vw));
 
   background: #171818;
   border-radius: 40px;
@@ -31,8 +31,9 @@
   border-radius: 50%;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 800px) {
   .proposal__info-block {
+    max-width: min(377px, 100%);
     padding: 24px 26px;
     border-radius: 26px;
   }

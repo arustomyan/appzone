@@ -91,12 +91,11 @@
 .proposal__container-top {
   position: sticky;
   top: 0;
-  margin-bottom: 180px;
+  margin-bottom: -498px;
 }
 
 .proposal__overflow-block {
   overflow: hidden;
-  margin-bottom: -800px;
   padding-bottom: 800px;
 }
 

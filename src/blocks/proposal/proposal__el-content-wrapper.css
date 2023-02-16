@@ -1,9 +1,10 @@
 .proposal__el-content-wrapper {
   display: flex;
+  gap: 20px;
   justify-content: space-between;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 1150px) {
   .proposal__el-content-wrapper {
     flex-direction: column;
   }

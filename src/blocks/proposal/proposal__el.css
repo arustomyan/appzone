@@ -2,7 +2,8 @@
   position: relative;
   z-index: 2;
 
-  padding: 28px 80px 80px;
+  padding: 28px min(80px, max(30px, 4vw + 10px))
+    min(80px, max(30px, 4vw + 10px));
 
   background: #252525;
   border-radius: 40px;

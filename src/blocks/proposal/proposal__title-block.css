@@ -5,11 +5,16 @@
   margin-bottom: 78px;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 800px) {
   .proposal__title-block {
     flex-direction: column;
     gap: 46px;
-    max-width: 300px;
     margin: 0 auto 30px;
+  }
+}
+
+@media (max-width: 601px) {
+  .proposal__title-block {
+    max-width: 300px;
   }
 }

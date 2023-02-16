@@ -4,7 +4,7 @@
 
 .proposal__title-offset {
   display: block;
-  margin-left: 80px;
+  margin-left: min(80px, max(32px, 3vw));
   line-height: 110%;
 }
 

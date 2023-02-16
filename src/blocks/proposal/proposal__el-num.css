@@ -1,5 +1,5 @@
 .proposal__el-num {
-  font-size: 41px;
+  font-size: min(41px, max(26px, 3.4vw));
   font-weight: 700;
   line-height: 150%;
 }

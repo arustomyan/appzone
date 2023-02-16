@@ -1,5 +1,5 @@
 .proposal__el-title {
-  font-size: 56px;
+  font-size: min(56px, max(26px, 4.666vw));
   font-weight: 700;
   line-height: 150%;
 }

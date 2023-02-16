@@ -1,6 +1,14 @@
 .proposal__el-content {
   display: flex;
+  flex: 1;
   flex-direction: column;
+
   width: 100%;
   max-width: 542px;
+}
+
+@media (max-width: 1150px) {
+  .proposal__el-content {
+    max-width: 100%;
+  }
 }
