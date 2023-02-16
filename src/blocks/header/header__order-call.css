@@ -1,5 +1,13 @@
+.header__order-call-mobile {
+  display: none;
+}
+
 @media (max-width: 601px) {
   .order-call.header__order-call {
     display: none;
+  }
+
+  .header__order-call-mobile {
+    display: inline-block;
   }
 }

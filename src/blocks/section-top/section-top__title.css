@@ -1,5 +1,5 @@
 .section-top__title {
-  font-size: 110px;
+  font-size: min(110px, max(48px, 9.16vw));
   font-weight: 700;
   font-style: normal;
   line-height: 110%;
@@ -12,12 +12,12 @@
 
 .section-top__title02 {
   max-width: 693px;
-  font-size: 80px;
+  font-size: min(80px, max(32px, 6.6vw));
 }
 
 .section-top__title03 {
   max-width: 1193px;
-  font-size: 80px;
+  font-size: min(80px, max(32px, 6.6vw));
 }
 
 .section-top__title03 .text_green {
@@ -26,13 +26,7 @@
 
 .section-top__title04 {
   max-width: 1193px;
-  font-size: 80px;
-}
-
-@media (max-width: 840px) {
-  .section-top__title {
-    max-width: 590px;
-  }
+  font-size: min(80px, max(32px, 6.6vw));
 }
 
 .section-top_bg .section-top__title {

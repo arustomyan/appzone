@@ -41,6 +41,9 @@ const goToNextSlide = () => {
   if (slides[slides.length - 1].getBoundingClientRect().left > 20) {
     track.style.transition = `transform 0.3s ease-in-out`;
     track.style.transform = `translateX(-${(activeSlide + 1) * 100}vw)`;
+    setTimeout(() => {
+      track.style.transition = "none";
+    }, transitionTime);
   } else {
     track.style.transition = `transform 0.3s ease-in-out`;
     track.style.transform = `translateX(-${500}vw)`;

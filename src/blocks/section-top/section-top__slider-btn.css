@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: center;
 
-  width: 70px;
-  height: 70px;
+  width: min(70px, max(50px, 7.5vw));
+  height: min(70px, max(50px, 7.5vw));
 
   border: 1px solid rgb(255 255 255 / 50%);
   border-radius: 50%;

@@ -4,14 +4,19 @@
   text-align: center;
 }
 
-@media (max-width: 1030px) {
-  .header__text {
-    max-width: 330px;
-  }
-}
-
-@media (max-width: 885px) {
+@media (max-width: 800px) {
   .header__text {
     display: none;
+  }
+
+  .section-top__logo .header__text {
+    position: relative;
+    top: -0;
+
+    display: block;
+
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
   }
 }

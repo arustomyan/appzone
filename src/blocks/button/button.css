@@ -4,7 +4,7 @@
   overflow: hidden;
 
   width: 100%;
-  height: 83px;
+  height: min(83px, max(62px, 10.33vw));
   padding: 10px;
 
   font-family: "SF Pro Display", sans-serif;
