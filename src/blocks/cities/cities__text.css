@@ -1,3 +1,13 @@
 .cities__text {
   margin-bottom: 32px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+@media (max-width: 601px) {
+  .cities__text {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
 }

@@ -83,3 +83,9 @@
 .cities__marker:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 601px) {
+  .cities__markers {
+    display: none;
+  }
+}

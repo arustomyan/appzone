@@ -1,3 +1,21 @@
 .cities {
   padding-bottom: 140px;
 }
+
+@media (max-width: 601px) {
+  .cities {
+    padding-bottom: 0;
+
+    background-color: #1e1e1e;
+    background-image: linear-gradient(
+        270deg,
+        rgb(31 31 31 / 90%) 1.97%,
+        rgb(31 31 31 / 67%) 39.97%,
+        rgb(31 31 31 / 0%) 63.06%
+      ),
+      url("@images/cities/cities_bg-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: contain;
+  }
+}

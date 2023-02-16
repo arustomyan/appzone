@@ -1,3 +1,32 @@
 .cities__slider {
   position: relative;
 }
+
+.cities__slider-mobile {
+  display: none;
+}
+
+@media (max-width: 601px) {
+  .cities__slider {
+    display: none;
+  }
+
+  .cities__slider-mobile {
+    display: block;
+    margin-right: -20px;
+  }
+
+  .cities__slider-mobile .slick-track {
+    gap: 20px;
+  }
+
+  .cities__slider-mobile .slick-list {
+    overflow: hidden;
+  }
+
+  .cities__slider-mobile .slick-dots {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

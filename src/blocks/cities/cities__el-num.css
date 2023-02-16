@@ -9,3 +9,9 @@
 
   -webkit-text-stroke: 1px #0cdb92;
 }
+
+@media (max-width: 601px) {
+  .cities__el-num {
+    font-size: 18px;
+  }
+}

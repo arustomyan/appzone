@@ -1,6 +1,4 @@
 .cities__el {
-  position: absolute;
-
   display: flex;
   gap: 80px;
   align-items: center;
@@ -9,8 +7,6 @@
   width: auto;
   padding: 30px 40px;
 
-  visibility: hidden;
-  opacity: 0;
   background: #171818;
   border-radius: 40px;
 
@@ -20,4 +16,19 @@
 .cities__el_active {
   visibility: visible;
   opacity: 1;
+}
+
+@media (min-width: 601px) {
+  .cities__el {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 601px) {
+  .cities__el {
+    padding: 20px 26px;
+    border-radius: 20px;
+  }
 }

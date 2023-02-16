@@ -18,3 +18,18 @@
   background-size: contain;
   border-radius: 80px;
 }
+
+@media (max-width: 601px) {
+  .cities__container {
+    overflow: visible;
+
+    max-width: 340px;
+    height: auto;
+    padding-top: 71px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+
+    background-image: none;
+    border-radius: 0;
+  }
+}

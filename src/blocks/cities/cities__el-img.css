@@ -7,3 +7,10 @@
 
   border-radius: 50%;
 }
+
+@media (max-width: 601px) {
+  .cities__el-img {
+    width: 70px;
+    height: 70px;
+  }
+}

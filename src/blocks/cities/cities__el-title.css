@@ -7,3 +7,9 @@
   font-weight: 700;
   line-height: 110%;
 }
+
+@media (max-width: 601px) {
+  .cities__el-title {
+    font-size: 20px;
+  }
+}

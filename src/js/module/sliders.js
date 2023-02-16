@@ -222,6 +222,16 @@ export function sliders() {
     arrows: false,
   });
 
+  $(".cities__slider-mobile").slick({
+    infinite: true,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    fade: false,
+    dots: true,
+    arrows: false,
+    // variableWidth: true,
+  });
+
   // $(".support__navigation-el").hover((e) => {
   //   const id = +e.currentTarget.id.split("-")[1];
   //   if (e.type === "mouseenter") {
