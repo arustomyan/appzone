@@ -167,9 +167,17 @@ export function sliders() {
     slidesToScroll: 1,
     slidesToShow: 3,
     variableWidth: true,
-
     dots: false,
     responsive: [
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 1,
+          // centerMode: true,
+          // infinite: false,
+          dots: true,
+        },
+      },
       {
         breakpoint: 601,
         settings: {

@@ -1,5 +1,16 @@
 .reviews__slider-block-wrapper {
   position: relative;
+
   display: flex;
+  flex: 2;
   gap: 20px;
+  align-items: flex-end;
+
+  padding-top: 165px;
+}
+
+@media (max-width: 850px) {
+  .reviews__slider-block-wrapper {
+    padding-top: 0;
+  }
 }

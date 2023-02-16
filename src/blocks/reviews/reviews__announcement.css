@@ -14,3 +14,44 @@
 
   -webkit-text-stroke: 1px #0cdb92;
 }
+
+@media (max-width: 1740px) and (min-width: 1642px) {
+  .reviews__announcement {
+    left: min(-10px, -100vw + 1632px);
+  }
+}
+
+.reviews__announcement2 {
+  display: none;
+}
+
+@media (max-width: 1642px) {
+  .reviews__announcement {
+    display: none;
+  }
+
+  .reviews__announcement2 {
+    position: absolute;
+    top: 30px;
+    right: -70px;
+    transform-origin: 100% 0%;
+    transform: rotateZ(-90deg) translateY(-100%);
+
+    display: block;
+
+    font-size: min(66px, max(30px, 5vw));
+    font-weight: 700;
+    line-height: 100%;
+    color: transparent;
+
+    opacity: 0.5;
+
+    -webkit-text-stroke: 1px #0cdb92;
+  }
+}
+
+@media (max-width: 601px) {
+  .reviews__announcement2 {
+    right: 0;
+  }
+}

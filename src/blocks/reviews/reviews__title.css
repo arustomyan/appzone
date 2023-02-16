@@ -9,8 +9,13 @@
 
 .reviews__title-offset {
   display: inline-block;
-  max-width: 295px;
   vertical-align: top;
+}
+
+@media (max-width: 850px) {
+  .reviews__title {
+    max-width: 350px;
+  }
 }
 
 @media (max-width: 601px) {

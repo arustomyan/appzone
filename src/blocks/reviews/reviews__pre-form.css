@@ -1,9 +1,10 @@
 .reviews__pre-form {
   display: flex;
+  gap: 20px;
   align-items: center;
   justify-content: space-between;
 
-  padding: 64px 80px;
+  padding: min(64px, max(40px, 5vw)) min(80px, max(26px, 3.7vw));
 
   background: #0f1010;
   background-image: url("@images/reviews/reviews__pre-form-bg.jpg");
@@ -13,7 +14,7 @@
   border-radius: 40px;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 850px) {
   .reviews__pre-form {
     flex-direction: column;
     gap: 30px;

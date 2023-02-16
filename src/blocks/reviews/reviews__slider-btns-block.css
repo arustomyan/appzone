@@ -5,7 +5,7 @@
   align-self: flex-end;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 850px) {
   .reviews__slider-btns-block {
     display: none;
   }

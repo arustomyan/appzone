@@ -3,7 +3,7 @@
   max-width: 870px;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 850px) {
   .reviews__slider-block {
     position: relative;
 

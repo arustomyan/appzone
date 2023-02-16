@@ -1,10 +1,10 @@
 .reviews__slider-el {
-  width: 320px;
-  height: 648px;
+  /* width: 320px;
+  height: 648px; */
   margin-left: 30px;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 850px) {
   .reviews__slider-el {
     width: 200px;
     height: 405px;
