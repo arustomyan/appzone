@@ -4,12 +4,19 @@
 }
 
 .footer__logo img {
+  display: block;
   width: 100%;
+  margin: 0 auto;
 }
 
 @media (max-width: 1000px) {
   .footer__logo {
-    width: 250px;
-    margin-bottom: 0;
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: 601px) {
+  .footer__logo {
+    width: 185px;
   }
 }

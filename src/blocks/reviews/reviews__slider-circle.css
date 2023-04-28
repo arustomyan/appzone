@@ -2,6 +2,7 @@
   position: absolute;
   top: -56px;
   left: -4px;
+  transform: translate3d(0, 0, 0);
 
   width: 384px;
   height: 384px;

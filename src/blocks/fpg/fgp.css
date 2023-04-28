@@ -1,7 +1,7 @@
 .fgp {
   position: relative;
 
-  overflow: hidden;
+  overflow: clip;
 
   padding: 47px 60px 56px;
 
@@ -10,4 +10,11 @@
   background-position: 50% 0;
   background-size: contain;
   border-radius: 40px;
+}
+
+@media (max-width: 601px) {
+  .fgp {
+    padding: 18px;
+    background: #252525;
+  }
 }

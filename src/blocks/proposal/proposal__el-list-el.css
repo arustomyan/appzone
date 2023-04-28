@@ -52,6 +52,31 @@
 
 @media (max-width: 601px) {
   .proposal__el-list-el {
-    padding: 18px 20px;
+    justify-content: center;
+    padding: 10px 20px;
+  }
+
+  .proposal__el-list-el:nth-child(1) {
+    width: 58.3333%;
+    border-right: 1px solid #696969;
+    border-bottom: 1px solid #696969;
+  }
+
+  .proposal__el-list-el:nth-child(2) {
+    width: 41.66%;
+    border-right: none;
+    border-bottom: 1px solid #696969;
+    border-left: none;
+  }
+
+  .proposal__el-list-el:nth-child(3) {
+    width: 42.33%;
+    border-right: 1px solid #696969;
+  }
+
+  .proposal__el-list-el:nth-child(4) {
+    align-items: flex-start;
+    width: 57%;
+    border-top: none;
   }
 }

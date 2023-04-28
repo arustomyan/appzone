@@ -1,9 +1,24 @@
 .business-model__slider {
+  overflow: hidden;
   margin-top: -147px;
 }
 
+@media (max-width: 1200px) {
+  .business-model__slider {
+    overflow: visible;
+    margin-top: 0;
+    padding-top: 78px;
+  }
+}
 @media (max-width: 601px) {
   .business-model__slider {
-    margin-top: 0;
+    padding-top: 0;
   }
+}
+
+.fff {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
 }

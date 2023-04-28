@@ -11,14 +11,21 @@
   display: none;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 800px) {
   .galery__content {
     display: none;
   }
 
   .galery__content.galery__content-mobile {
     overflow: hidden;
-    display: block;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* display: block; */
+    width: 100%;
+
+    /* width: 104vw; */
+    height: 100vh;
   }
 }

@@ -3,7 +3,7 @@
   z-index: 0;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) translate3d(0, 0, 0);
 
   width: 139px;
   height: 139px;

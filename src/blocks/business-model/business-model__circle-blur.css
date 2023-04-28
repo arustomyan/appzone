@@ -3,7 +3,7 @@
   z-index: 0;
   top: 203px;
   left: 50%;
-  transform: translate(-410px);
+  transform: translate(-410px) translate3d(0, 0, 0);
 
   width: 384px;
   height: 384px;
@@ -16,7 +16,7 @@
 @media (max-width: 601px) {
   .business-model__circle-blur {
     top: -76px;
-    transform: translate(-79%);
+    transform: translate(-79%) translate3d(0, 0, 0);
     filter: blur(75px);
   }
 }

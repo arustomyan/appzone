@@ -2,7 +2,7 @@
   overflow: hidden;
 
   max-width: 1600px;
-  height: 900px;
+  height: min(900px, max(56.25vw));
   padding-top: 130px;
   padding-right: 118px;
 
@@ -19,12 +19,34 @@
   border-radius: 80px;
 }
 
+@media (max-width: 1600px) {
+  .cities__container {
+    padding-top: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+  .cities__container {
+    overflow: visible;
+
+    height: auto;
+    padding-top: 71px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+
+    background-image: none;
+    border-radius: 0;
+  }
+}
+
 @media (max-width: 601px) {
   .cities__container {
     overflow: visible;
 
     max-width: 340px;
-    height: auto;
+
+    /* height: auto; */
     padding-top: 71px;
     padding-right: 20px;
     padding-bottom: 80px;

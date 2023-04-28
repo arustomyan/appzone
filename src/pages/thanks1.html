@@ -12,10 +12,14 @@
   <body id="thanks1-body">
     @@include('../html/header.html', {page: "thanks"})
     <main>
+      @@include('../html/thanks.html')
     </main>
+    
+    @@include('../html/footer.html', {page: "thanks"})
+    @@include('../html/popup__policy.html')
 
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/app.min.js"></script>
+    <script src="../js/jsThanks.min.js"></script>
   </body>
   <!-- prettier-no-ignore  -->
 </html>

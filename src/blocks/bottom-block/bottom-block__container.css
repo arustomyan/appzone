@@ -1,4 +1,13 @@
 .bottom-block__container {
   display: flex;
+  gap: 30px;
   justify-content: space-between;
+}
+
+@media (max-width: 1020px) {
+  .bottom-block__container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
 }

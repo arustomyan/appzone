@@ -1,5 +1,5 @@
 .cities__title {
-  margin-bottom: 69px;
+  margin-bottom: min(69px, max(4.31vw));
 }
 
 .cities__title .text_green {

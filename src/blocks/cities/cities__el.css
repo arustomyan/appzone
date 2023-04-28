@@ -7,10 +7,18 @@
   width: auto;
   padding: 30px 40px;
 
+  visibility: hidden;
+  opacity: 0;
   background: #171818;
   border-radius: 40px;
 
   transition: visibility 0.5s ease, opacity 0.5s ease;
+}
+
+@media (min-width: 1150px) {
+  .cities__el {
+    position: absolute;
+  }
 }
 
 .cities__el_active {
@@ -18,17 +26,19 @@
   opacity: 1;
 }
 
-@media (min-width: 601px) {
-  .cities__el {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
+@media (max-width: 1150px) {
+  .cities__slider.cities__slider-mobile li.cities__el {
+    gap: 0;
+
+    padding: 20px 26px;
+
+    visibility: visible;
+    opacity: 1;
+    border-radius: 20px;
   }
 }
-
 @media (max-width: 601px) {
-  .cities__el {
-    padding: 20px 26px;
-    border-radius: 20px;
+  .cities__slider.cities__slider-mobile li.cities__el {
+    width: 300px;
   }
 }

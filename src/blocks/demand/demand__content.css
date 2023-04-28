@@ -4,7 +4,7 @@
   margin-bottom: 95px;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 900px) {
   .demand__content {
     flex-direction: column;
     gap: 31px;

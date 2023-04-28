@@ -1,11 +1,20 @@
 .proposal__banner {
-  display: flex;
-  gap: 100vw;
+  position: relative;
 
-  width: 100%;
+  display: flex;
+
+  width: fit-content;
+  margin-bottom: 120px;
   padding-top: 97px;
   padding-bottom: 90px;
 
   border-top: #a2a2a2 1px solid;
   border-bottom: #a2a2a2 1px solid;
+}
+
+@media (max-width: 1000px) {
+  .proposal__banner {
+    margin-bottom: 80px;
+    padding: 50px 0;
+  }
 }

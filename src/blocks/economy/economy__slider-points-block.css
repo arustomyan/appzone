@@ -1,6 +1,11 @@
-@media (min-width: 601px) {
+@media (min-width: 1100px) {
   .economy__slider-points-block {
     display: none;
+  }
+}
+@media (max-width: 1100px) and (min-width: 601px) {
+  .economy__slider-points-block {
+    left: 60px;
   }
 }
 

@@ -1,6 +1,6 @@
 .reviews__title {
   display: block;
-  margin-bottom: 69px;
+  margin-bottom: 20px;
 }
 
 .reviews__title-number {
@@ -10,6 +10,12 @@
 .reviews__title-offset {
   display: inline-block;
   vertical-align: top;
+}
+
+@media (max-width: 1642px) {
+  .reviews__title {
+    font-size: min(54px, max(32px, 4.2vw));
+  }
 }
 
 @media (max-width: 850px) {

@@ -1,9 +1,14 @@
 const mainBlock = document.querySelector(".steps__height-block");
 const stickyBlock = document.querySelector(".steps__sticky-block");
 const scrollTrack = document.querySelector(".steps__slider");
-const slidersEl = [...document.querySelectorAll(".steps__slider-el")];
-
-const countScroll = 800;
+const slidersEl = [
+  ...document.querySelectorAll(
+    ".steps__slider:not(.steps__slider-mobile) .steps__slider-el",
+  ),
+];
+let countScroll = 800;
+const COUNT_SLIDES = slidersEl.length;
+const arr = [0];
 
 const getTransform = (elem, property) => {
   const style = window.getComputedStyle(elem);
@@ -20,61 +25,24 @@ const getTransform = (elem, property) => {
   }
 };
 
-// const goToSlide = (slide) => {
-//   if (slide < 0 || slide >= SLIDE_COUNT) {
-//     return;
-//   }
-
-//   const [, translateY] = getTransform(scrollTrack, "transform");
-//   const prevSlide = sliders[slide];
-//   const nextSlide = sliders[slide + 1];
-//   const distance = (prevSlide.offsetHeight + nextSlide.offsetHeight) / 2 + 60;
-
-//   prevSlide.style.opacity = "0.2";
-//   nextSlide.style.opacity = "1";
-//   scrollTrack.style.transform = `translateY(${translateY - distance}px)`;
-
-//   for (let i = 0; i < SLIDE_COUNT; i++) {
-//     arrows[i].style.opacity = i <= slide ? 1 : 0;
-//     lines[i].setAttribute("stroke", i <= slide ? "#1775E7" : "#2e2e2e");
-//     circles[i].setAttribute(
-//       "fill",
-//       i <= slide ? "url(#paint0_linear_411_680)" : "#2e2e2e",
-//     );
-//   }
-// };
-
 const goToSlide = (() => {
   let previousSlide = 0;
   return (slide) => {
     if (previousSlide === slide) return;
 
-    const [, translateY] = getTransform(scrollTrack, "transform");
-
-    console.log(previousSlide, slide);
     if (previousSlide < slide) {
-      const pos1 =
-        (slidersEl[slide - 1].getBoundingClientRect().height +
-          slidersEl[slide].getBoundingClientRect().height) /
-          2 +
-        60;
-
-      slidersEl[slide - 1].style.opacity = "0.2";
+      if (slide != 9) {
+        slidersEl[slide - 1].style.opacity = "0.2";
+      }
       slidersEl[slide].style.opacity = "1";
-      scrollTrack.style.transform = `translateY(${translateY - pos1}px)`;
     }
 
     if (previousSlide > slide) {
-      const pos1 =
-        (slidersEl[slide].getBoundingClientRect().height +
-          slidersEl[slide + 1].getBoundingClientRect().height) /
-          2 +
-        60;
-
       slidersEl[slide + 1].style.opacity = "0.2";
-      slidersEl[slide].style.opacity = "1";
-      scrollTrack.style.transform = `translateY(${translateY + pos1}px)`;
     }
+
+    slidersEl[slide].style.opacity = "1";
+    scrollTrack.style.transform = `translateY(-${arr[slide]}px)`;
 
     for (let i = 1; i <= 9; i++) {
       if (i <= slide) {
@@ -86,7 +54,6 @@ const goToSlide = (() => {
           .querySelector(`#steps__circle-${i}`)
           .setAttribute("fill", "url(#paint0_linear_411_680)");
       } else {
-        console.log("работаем братья", i);
         document.querySelector(`#steps__arrow-${i}`).style.opacity = 0;
         document
           .querySelector(`#steps__line-${i}`)
@@ -103,8 +70,19 @@ const goToSlide = (() => {
   };
 })();
 
+const animate = () => {
+  const mainBlockPosTop = mainBlock.getBoundingClientRect().top;
+  const stickyBlockPosTop = stickyBlock.getBoundingClientRect().top;
+  const scroll = stickyBlockPosTop - mainBlockPosTop;
+
+  if (scroll <= countScroll * 10) {
+    const slide = Math.floor(scroll / countScroll);
+    goToSlide(Math.min(slide, 9));
+  }
+};
+
 export const steps = () => {
-  window.addEventListener("load", () => {
+  const onLoad = () => {
     const width = document.documentElement.clientWidth;
     stickyBlock.style.top = `0px`;
 
@@ -113,27 +91,24 @@ export const steps = () => {
       return;
     }
 
-    let position = 0;
-    let translateX = 0;
-    let resaved = true;
+    for (let i = 1; i < COUNT_SLIDES; i++) {
+      const pos1 =
+        (slidersEl[i - 1].getBoundingClientRect().height +
+          slidersEl[i].getBoundingClientRect().height) /
+          2 +
+        60;
+      arr.push(arr[i - 1] + pos1);
+    }
 
-    const animate = () => {
-      const top = stickyBlock.getBoundingClientRect().top;
-      const scrolled = Math.round(top) === 0;
+    const maxScroll =
+      mainBlock.getBoundingClientRect().height -
+      stickyBlock.getBoundingClientRect().height;
 
-      if (!scrolled) return;
-      if (resaved) {
-        position = window.pageYOffset;
-        [, translateX] = getTransform(scrollTrack, "transform");
-        resaved = false;
-      }
-      const scroll = Math.abs(window.pageYOffset - position);
-      if (scroll <= countScroll * 10) {
-        const slide = Math.floor(scroll / countScroll);
-        goToSlide(slide);
-      }
-    };
+    // значение скролла на один слайд:
+    countScroll = maxScroll / COUNT_SLIDES;
+  };
 
-    window.addEventListener("scroll", animate);
-  });
+  window.addEventListener("scroll", animate);
+  window.addEventListener("load", onLoad);
+  window.addEventListener("resize", onLoad);
 };

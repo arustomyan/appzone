@@ -20,3 +20,15 @@
   background-position: 50% 0;
   background-size: contain;
 }
+
+@media (max-width: 601px) {
+  .fgp__checkbox {
+    gap: 10px;
+    font-size: 11px;
+  }
+
+  .fgp__checkbox::before {
+    width: 14px;
+    height: 14px;
+  }
+}

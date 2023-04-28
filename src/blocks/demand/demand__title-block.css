@@ -1,3 +1,9 @@
 .demand__title-block {
-  max-width: 518px;
+  max-width: min(518px, max(400px, 100vw - 562px));
+}
+
+@media (max-width: 900px) {
+  .demand__title-block {
+    max-width: 518px;
+  }
 }

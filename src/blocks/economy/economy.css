@@ -1,4 +1,6 @@
 .economy {
+  overflow: hidden;
+
   padding-top: 118px;
   padding-bottom: 160px;
 

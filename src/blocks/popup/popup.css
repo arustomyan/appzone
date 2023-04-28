@@ -1,0 +1,22 @@
+.popup {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  opacity: 0;
+
+  transition: none;
+  animation: animate 0.3s ease-in-out;
+}

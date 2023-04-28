@@ -10,20 +10,20 @@ global.app = {
   plugins,
 };
 
-import {copy, copyfavicon, copyBX} from "./gulp/tasks/copy.js";
+import {copy, copyfavicon, copyBX, copyJS_sliders} from "./gulp/tasks/copy.js";
 import {formprocessor} from "./gulp/tasks/formprocessor.js";
 import {reset} from "./gulp/tasks/reset.js";
 import {html, htmlPages} from "./gulp/tasks/html.js";
 import {server} from "./gulp/tasks/server.js";
 import {style, stylePages} from "./gulp/tasks/style.js";
-import {js} from "./gulp/tasks/js.js";
+import {js, jsThanks} from "./gulp/tasks/js.js";
 import {images} from "./gulp/tasks/images.js";
 import {copyFonts} from "./gulp/tasks/fonts.js";
 import {jsPlugins} from "./gulp/tasks/jsPlugins.js";
 import {stylePlugins} from "./gulp/tasks/stylePlugins.js";
 
 function watcher() {
-  // gulp.watch(path.watch.files, copy);
+  gulp.watch(path.watch.files, copy);
   gulp.watch(path.watch.html, html);
   gulp.watch(path.watch.html, htmlPages);
   gulp.watch(path.watch.style, style);
@@ -36,12 +36,14 @@ function watcher() {
 const mainTasks = gulp.series(
   copyFonts,
   jsPlugins,
+  copyJS_sliders,
+  jsThanks,
   stylePlugins,
-  // formprocessor,
+  formprocessor,
   gulp.parallel(
-    // copy,
+    copy,
     copyfavicon,
-    // copyBX,
+    copyBX,
     html,
     htmlPages,
     style,

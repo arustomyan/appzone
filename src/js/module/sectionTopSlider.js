@@ -72,10 +72,13 @@ const goToPrevSlide = () => {
   }
 };
 export function sectionTopSlider() {
-  btnNext.addEventListener("click", () => {
+  setInterval(() => {
     goToNextSlide();
-  });
-  btnPrev.addEventListener("click", () => {
-    goToPrevSlide();
-  });
+  }, 3000);
+  // btnNext.addEventListener("click", () => {
+  //   goToNextSlide();
+  // });
+  // btnPrev.addEventListener("click", () => {
+  //   goToPrevSlide();
+  // });
 }

@@ -20,7 +20,7 @@
   opacity: 1;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 1100px) {
   .support__navigation-el-img {
     display: none;
   }

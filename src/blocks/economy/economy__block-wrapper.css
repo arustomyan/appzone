@@ -2,3 +2,26 @@
   position: relative;
   z-index: 0;
 }
+
+.economy__block-wrapper::before {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: calc(100% - 60px);
+  height: 100%;
+
+  opacity: 0.6;
+  background: #1a1a1c;
+  border-radius: 40px;
+}
+
+@media (max-width: 601px) {
+  .economy__block-wrapper::before {
+    display: none;
+  }
+}

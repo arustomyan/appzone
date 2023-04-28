@@ -1,0 +1,8 @@
+.fgp__button {
+}
+
+@media (max-width: 601px) {
+  .fgp__button::after {
+    display: none;
+  }
+}

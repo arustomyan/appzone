@@ -7,5 +7,6 @@
 @media (max-width: 1150px) {
   .proposal__el-content-wrapper {
     flex-direction: column;
+    justify-content: start;
   }
 }

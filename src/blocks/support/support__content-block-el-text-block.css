@@ -5,3 +5,9 @@
 #support__contentBlockEl-0 .support__content-block-el-text-block {
   margin-bottom: 24px;
 }
+
+@media (max-width: 601px) {
+  .support__content-block-el-text-block {
+    margin-bottom: 8px;
+  }
+}

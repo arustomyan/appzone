@@ -3,8 +3,16 @@
   line-height: 140%;
 }
 
-@media (max-width: 601px) {
+.footer__contacts-info-br {
+  display: block;
+}
+
+@media (max-width: 1000px) {
   .footer__contacts-info {
     margin-bottom: 20px;
+  }
+
+  .footer__contacts-info-br {
+    display: inline;
   }
 }

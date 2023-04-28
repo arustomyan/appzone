@@ -4,7 +4,9 @@
   align-self: flex-end;
 
   max-width: 492px;
-  padding: 64px 70px;
+
+  /* padding: 64px 70px; */
+  padding: min(64px, max(26px, 4.3vw)) min(70px, max(26px, 4.3vw));
 
   background: #171818;
   border-radius: 40px;
@@ -26,6 +28,18 @@
   background-position: 50% 50%;
   background-size: cover;
   border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+  .demand__info-block {
+    align-self: flex-start;
+  }
+
+  .demand__info-block::before {
+    right: 26px;
+    width: 44px;
+    height: 44px;
+  }
 }
 
 @media (max-width: 601px) {

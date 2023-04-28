@@ -7,7 +7,14 @@
 
 @media (max-width: 1000px) {
   .footer__location {
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer__location-logo {
+    width: 36px;
+    height: 36px;
   }
 }

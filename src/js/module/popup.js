@@ -1,6 +1,5 @@
 const body = document.querySelector("body");
 const header = document.querySelector("header");
-const ss = document.querySelector(".ss");
 
 export const openPopup = (valueObj) => {
   let titlePopup = document.querySelector("#popup-title");
@@ -39,7 +38,6 @@ export const openPopup = (valueObj) => {
   }px`;
 
   $(document).on("keydown", function (e) {
-    console.log(e);
     if (e.which === 27) {
       $(".popup.popup_open .popup__overlay").trigger("click");
       e.preventDefault();

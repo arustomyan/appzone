@@ -1,8 +1,17 @@
 .fgp__title {
+  position: relative;
+  z-index: 5;
+
   margin-bottom: 34px;
 
-  font-size: 28px;
+  font-size: min(28px, max(20px, 3.3vw));
   font-weight: 700;
   line-height: 120%;
   text-transform: lowercase;
+}
+
+@media (max-width: 601px) {
+  .fgp__title {
+    margin-bottom: 20px;
+  }
 }

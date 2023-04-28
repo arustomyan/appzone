@@ -1,5 +1,6 @@
 .bottom-block__title {
-  font-size: 110px;
+  max-width: 788px;
+  font-size: min(110px, max(48px, 7.16vw));
   font-weight: 700;
   line-height: 110%;
 }
@@ -9,7 +10,29 @@
 
   margin-left: 81px;
 
-  font-size: 48px;
+  font-size: min(48px, max(32px, 3.3vw));
   font-weight: 700;
   line-height: 110%;
+}
+
+@media (max-width: 1020px) {
+  .bottom-block__title {
+    margin-bottom: 68px;
+  }
+}
+
+@media (max-width: 601px) {
+  .bottom-block__title {
+    margin-bottom: 68px;
+    font-size: 48px;
+  }
+
+  .bottom-block__title br {
+    display: none;
+  }
+
+  .bottom-block__title-offset {
+    margin-left: 53px;
+    font-size: 24px;
+  }
 }

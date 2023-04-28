@@ -1,8 +1,14 @@
 .steps__description {
   max-width: 406px;
-  font-size: 20px;
+  font-size: min(20px, max(14px, 2vw));
   line-height: 140%;
   text-align: center;
+}
+
+@media (max-width: 1250px) {
+  .steps__description {
+    max-width: calc(100% - 150px);
+  }
 }
 
 @media (max-width: 601px) {

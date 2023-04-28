@@ -13,8 +13,8 @@
   transition: all 0.3s ease;
 } */
 
-/* @media (max-width: 1350px) {
-  .footer__order-call {
-    margin-right: 0;
+@media (max-width: 1000px) {
+  .footer__order-call-button {
+    font-size: 14px;
   }
-} */
+}

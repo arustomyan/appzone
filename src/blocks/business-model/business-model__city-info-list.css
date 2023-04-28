@@ -7,11 +7,22 @@
   width: fit-content;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 1200px) {
   .business-model__city-info-list {
-    position: absolute;
-    top: 173px;
+    top: 120px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .business-model__city-info-list {
+    top: 278px;
     left: 50%;
     transform: none;
+  }
+}
+
+@media (max-width: 601px) {
+  .business-model__city-info-list {
+    top: 158px;
   }
 }

@@ -1,0 +1,16 @@
+.popup_open {
+  display: flex;
+  opacity: 1;
+  animation: animate 0.3s ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    display: flex;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -4,3 +4,10 @@
   background-repeat: no-repeat;
   background-position: 32px center;
 }
+
+@media (max-width: 601px) {
+  .input_phone {
+    padding-left: 50px;
+    background-position: 17px center;
+  }
+}

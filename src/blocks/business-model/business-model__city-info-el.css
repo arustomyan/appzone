@@ -1,4 +1,6 @@
 .business-model__city-info-el {
+  will-change: opacity;
+
   position: absolute;
   z-index: 2;
 
@@ -24,9 +26,14 @@
   opacity: 1;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 1050px) {
   .business-model__city-info-el {
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 601px) {
+  .business-model__city-info-el {
     padding: 40px 20px 20px;
     border-radius: 26px;
   }

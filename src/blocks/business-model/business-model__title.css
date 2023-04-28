@@ -1,11 +1,8 @@
 .business-model__title {
   position: relative;
   z-index: 5;
-
   max-width: 633px;
   margin-left: 160px;
-
-  font-size: 60px;
 }
 
 .business-model__title-offset {

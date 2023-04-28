@@ -11,80 +11,90 @@
 }
 
 #cities__marker-0 {
-  top: 322px;
-  left: 440px;
+  top: 35.77%;
+  left: 27.5%;
 }
 
 #cities__marker-1 {
-  top: 783px;
-  left: 472px;
+  top: 87%;
+  left: 29.5%;
 }
 
 #cities__marker-2 {
-  top: 618px;
-  left: 450px;
+  top: 68.66%;
+  left: 28.12%;
 }
 
 #cities__marker-3 {
-  top: 706px;
-  left: 585px;
+  top: 78.44%;
+  left: 36.56%;
 }
 
 #cities__marker-4 {
-  top: 306px;
-  left: 662px;
+  top: 34%;
+  left: 41.37%;
 }
 
 #cities__marker-5 {
-  top: 379px;
-  left: 636px;
+  top: 42.111%;
+  left: 39.75%;
 }
 
 #cities__marker-6 {
-  top: 637px;
-  left: 683px;
+  top: 70.77%;
+  left: 39.87%;
 }
 
 #cities__marker-7 {
-  top: 598px;
-  left: 837px;
+  top: 66.44%;
+  left: 52.31%;
 }
 
 #cities__marker-8 {
-  top: 362px;
-  left: 796px;
+  top: 40.22%;
+  left: 49.75%;
 }
 
 #cities__marker-9 {
-  top: 258px;
-  left: 616px;
+  top: 28.66%;
+  left: 38.5%;
 }
 
 #cities__marker-10 {
-  top: 240px;
-  left: 111px;
+  top: 26.66%;
+  left: 12.33%;
 }
 
 #cities__marker-11 {
-  top: 127px;
-  left: 616px;
+  top: 14.11%;
+  left: 38.5%;
 }
 
 #cities__marker-12 {
-  top: 140px;
-  left: 529px;
+  top: 15.555%;
+  left: 33.06%;
 }
 
 #cities__marker-13 {
-  top: 186px;
-  left: 239px;
+  top: 20.66%;
+  left: 14.93%;
+}
+
+#cities__marker-14 {
+  top: 54.6%;
+  left: 37.8%;
+}
+
+#cities__marker-15 {
+  top: 81.33%;
+  left: 32.8%;
 }
 
 .cities__marker:hover {
   transform: scale(1.2);
 }
 
-@media (max-width: 601px) {
+@media (max-width: 1150px) {
   .cities__markers {
     display: none;
   }

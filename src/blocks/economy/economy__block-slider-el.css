@@ -16,8 +16,14 @@
   height: 306px;
 }
 
+@media (max-width: 1100px) {
+  .economy__block-slider-el {
+    height: 360px;
+  }
+}
 @media (max-width: 601px) {
   .economy__block-slider-el {
+    max-width: 260px;
     height: 222px;
   }
 

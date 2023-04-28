@@ -2,12 +2,12 @@
   position: absolute;
   top: -140px;
   right: 100px;
-  transform: translateX(100%);
+  transform: translateX(100%) translate3d(0, 0, 0);
 }
 
 .steps__img-blur-2 {
   position: absolute;
   top: 35px;
   left: 0;
-  transform: translateX(-100%);
+  transform: translateX(-100%) translate3d(0, 0, 0);
 }

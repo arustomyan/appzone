@@ -18,3 +18,27 @@
   background-color: #fff;
   border-radius: 50%;
 }
+
+@media (max-width: 1000px) {
+  .proposal__banner-el {
+    font-size: 40px;
+  }
+
+  .proposal__banner-el:not(:last-child)::after {
+    width: 7px;
+    height: 7px;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 601px) {
+  .proposal__banner-el {
+    font-size: 32px;
+  }
+
+  .proposal__banner-el:not(:last-child)::after {
+    width: 7px;
+    height: 7px;
+    margin-left: 16px;
+  }
+}

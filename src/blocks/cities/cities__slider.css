@@ -6,13 +6,15 @@
   display: none;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 1150px) {
   .cities__slider {
     display: none;
   }
 
   .cities__slider-mobile {
     display: block;
+    max-width: 450px;
+    height: 100%;
     margin-right: -20px;
   }
 
@@ -28,5 +30,17 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 601px) {
+  .cities__slider-mobile {
+    overflow: hidden;
+    width: 300px;
+    margin-right: 0;
+  }
+
+  .cities__slider-mobile .slick-list {
+    overflow: visible;
   }
 }

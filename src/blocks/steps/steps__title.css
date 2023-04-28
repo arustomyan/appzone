@@ -1,7 +1,7 @@
 .steps__title {
   max-width: 406px;
   margin-bottom: 60px;
-  font-size: 68px;
+  font-size: min(68px, max(32px, 5.5vw));
   text-align: center;
 }
 

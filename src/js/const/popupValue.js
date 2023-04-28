@@ -1,62 +1,50 @@
-const titleAsk = `
-        <div>
-          <h2 class="popup__title popup__title-ask">
-            Получите ответы на все <br />
-            интересующие вопросы
-          </h2>
-          <span class="popup__subtitle popup__subtitle-ask">
-            от нашего сотрудника и скачайте материалы по франшизе <br />ASIASALE
-            на почту
-          </span>
-        </div>
+const titleSignUp = `
+        <h2 class="popup__title popup__title-sign-up text_green">Запишитесь</h2>
+        <span class="popup__subtitle popup__subtitle-sign-up">
+          на онлайн-консультацию, чтобы узнать подробнее о франшизе appzone.co
+        </span>
 `;
-const titlePossibility = `
-        <div>
-          <h2 class="popup__title popup__title-possibility">
-            Не упустите возможность
-          </h2>
-          <span class="popup__subtitle">
-            стать партнёром компании ASIASALE федерального уровня. Оставьте
-            заявку на личную онлайн-консультацию от нашего менеджера
-          </span>
-        </div>
+const titleOpen = `
+        <h2 class="popup__title popup__title-ask text_green">
+          Откройте бизнес<br />в вашем городе
+        </h2>
+        <span class="popup__subtitle popup__subtitle-ask">
+          по проверенной бизнес-модели appzone.co
+        </span>
 `;
-const titleConsultation = `
-        <div>
-          <h2 class="popup__title popup__title-consultation">
-            Получите бесплатную
-            <br />30-минутную консультацию
-          </h2>
-          <span class="popup__subtitle">
-            нашего сотрудника по франшизе ASIASALE. Дополнительные материалы
-            скачайте на электронную почту
-          </span>
-        </div>
+const titleLeave = `
+        <p class="popup__title-leave">Уже уходите?</p>
+        <h2 class="popup__title popup__title-sign-up text_green">
+          Не упускайте шанс
+        </h2>
+        <span class="popup__subtitle popup__subtitle-sign-up">
+          присоединиться<br />
+          к франшизе appzone.co
+        </span>
 `;
 
 export const popupValue = {
-  Consultation: {
-    title: titleConsultation,
-    image: "image-popup__consultation",
-    button: "Заказать онлайн-консультацию",
+  open: {
+    title: titleOpen,
+    image: "popup__img-open",
+    button: "запустить франшизу",
     sectionNameText:
-      "Получите бесплатную 30-минутную консультацию нашего сотрудника по франшизе ASIASALE. Дополнительные материалы скачайте на электронную почту",
+      "Откройте бизнес в вашем городе по проверенной бизнес-модели appzone.co",
     valueInput: "Закрытая",
   },
-  Possibility: {
-    title: titlePossibility,
-    image: "image-popup__possibility",
-    button: "Получить консультацию менеджера",
+  sidnUp: {
+    title: titleSignUp,
+    image: "popup__img-sign-up",
+    button: "записаться на консультацию",
     sectionNameText:
-      "Не упустите возможность стать партнёром компании ASIASALE федерального уровня. Оставьте заявку на личную онлайн-консультацию от нашего менеджера",
+      "Запишитесь на онлайн-консультацию, чтобы узнать подробнее о франшизе appzone.co",
     valueInput: "Закрытая",
   },
-  Ask: {
-    title: titleAsk,
-    image: "image-popup__ask",
-    button: "Задать вопросы",
-    sectionNameText:
-      "Получите ответы на все интересующие вопросы от нашего сотрудника и скачайте материалы по франшизе ASIASALE на почту",
+  leave: {
+    title: titleLeave,
+    image: "popup__img-leave",
+    button: "присоединиться к команде",
+    sectionNameText: "Не упускайте шанс присоединиться к франшизе appzone.co",
     valueInput: "Закрытая",
   },
 };

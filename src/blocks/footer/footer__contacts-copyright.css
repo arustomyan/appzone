@@ -2,8 +2,16 @@
   margin-bottom: 20px;
 }
 
-@media (max-width: 601px) {
+.footer__contacts-copyright-br {
+  display: block;
+}
+
+@media (max-width: 1000px) {
   .footer__contacts-copyright {
     margin-bottom: 20px;
+  }
+
+  .footer__contacts-copyright-br {
+    display: inline;
   }
 }

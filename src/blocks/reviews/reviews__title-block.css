@@ -19,5 +19,6 @@
   .reviews__title-block {
     min-width: 0;
     margin-bottom: 40px;
+    padding-top: 75px;
   }
 }

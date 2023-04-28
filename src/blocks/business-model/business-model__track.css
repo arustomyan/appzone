@@ -13,7 +13,7 @@
   display: none;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 1200px) {
   .business-model__track {
     display: none;
   }

@@ -15,7 +15,7 @@
 
 @media (max-width: 601px) {
   .proposal__el {
-    padding: 22px 30px 30px;
+    padding: 15px 30px;
     border-radius: 26px;
   }
 }

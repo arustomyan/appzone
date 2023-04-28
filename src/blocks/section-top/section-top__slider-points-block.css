@@ -28,8 +28,11 @@
 
   .section-top_bg-slider .slick-dots {
     z-index: 2;
-    bottom: 105px;
+    bottom: min(230px / 2, max(calc(100vh - 850px) / 2, 20px));
     left: 50%;
     transform: translateX(-50%);
+
+    width: fit-content;
+    padding-left: 0;
   }
 }

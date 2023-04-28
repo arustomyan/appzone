@@ -2,7 +2,7 @@
   position: relative;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 800px) {
   .business-model__progress-bar-wrap {
     width: fit-content;
   }

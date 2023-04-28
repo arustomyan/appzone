@@ -4,3 +4,9 @@
   text-align: center;
   text-decoration-line: underline;
 }
+
+@media (max-width: 1000px) {
+  .footer__center-block .footer__politics-text {
+    display: none;
+  }
+}

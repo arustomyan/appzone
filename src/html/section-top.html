@@ -55,7 +55,26 @@
     </div>
   </div>
 
-  <div class="section-top_bg-block section-top_bg-slider">
+  <div id="player" class="video__youtube">
+    <video
+      preload="yes"
+      preload="metadata"
+      muted="muted"
+      autoplay
+      playsinline
+      loop
+      id="sectionTopVideo"
+      poster="@images/section-top/bg_section-top.jpg"
+      data-wf-ignore="true"
+      data-object-fit="cover"
+    >
+      <source src="@images/video.mp4" type="video/mp4" />
+      <source src="@images/video.webm" type="video/webm" />
+    </video>
+  </div>
+  <!-- <div id="player" class="video__youtube"></div> -->
+
+  <!-- <div class="section-top_bg-block section-top_bg-slider">
     <div class="section-top_bg section-top_bg01">
       <div class="container section-top__container">
         <h1 class="title section-top__title section-top__title01">
@@ -91,7 +110,7 @@
         </h1>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="container section-top__container">
     <div class="section-top__usp">
@@ -105,7 +124,7 @@
     <div class="section-top__bb">
       <button
         class="button section-top__button"
-        id="section-top__buttton"
+        id="sectionTop__button"
         type="button"
       >
         получить бизнес-план

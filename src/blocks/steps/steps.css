@@ -1,4 +1,11 @@
 .steps {
   top: 0;
+  overflow: clip;
   padding-bottom: 140px;
+}
+
+@media (max-width: 1250px) {
+  .steps {
+    padding-top: 60px;
+  }
 }

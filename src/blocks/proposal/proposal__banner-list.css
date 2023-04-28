@@ -1,6 +1,50 @@
 .proposal__banner-list {
-  transform: translateX(-100vw);
   display: flex;
   flex-shrink: 0;
   gap: 50px;
+}
+
+.proposal__banner-list:nth-child(1) {
+  margin-right: 100vw;
+  animation: bvl 200s linear;
+  animation-iteration-count: infinite;
+}
+
+.proposal__banner-list:nth-child(2) {
+  /* position: absolute; */
+
+  /* left: -100%; */
+
+  /* display: none; */
+
+  color: aqua;
+  animation: bvl2 900000s linear;
+
+  /* animation-delay: 5s; */
+  animation-iteration-count: infinite;
+}
+
+@keyframes bvl {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes bvl2 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@media (max-width: 601px) {
+  .proposal__banner-list {
+    gap: 16px;
+  }
 }

@@ -1,3 +1,8 @@
 .footer__vk {
   margin-bottom: 17px;
 }
+@media (max-width: 1000px) {
+  a.footer__vk {
+    display: none;
+  }
+}

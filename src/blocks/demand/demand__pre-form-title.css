@@ -1,10 +1,17 @@
 .demand__pre-form-title {
   max-width: 775px;
 
-  font-size: 40px;
+  font-size: min(40px, max(26px, 3.2vw));
   font-weight: 700;
   line-height: 120%;
   text-transform: lowercase;
+}
+
+@media (max-width: 850px) {
+  .demand__pre-form-title {
+    max-width: 500px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 601px) {

@@ -1,8 +1,8 @@
 .reviews__slider-btns-block {
   display: flex;
-  flex-direction: column;
   gap: 20px;
   align-self: flex-end;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 850px) {

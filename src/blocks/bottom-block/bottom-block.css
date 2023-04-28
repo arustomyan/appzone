@@ -7,3 +7,14 @@
   background-position: 50% 0;
   background-size: cover;
 }
+
+@media (max-width: 601px) {
+  .bottom-block {
+    padding-top: 61px;
+    padding-bottom: 80px;
+
+    background: url("@images/bottom-block/bbMob-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -11,3 +11,9 @@
 .economy__block-slider-list .slick-track {
   height: 100%;
 }
+
+@media (max-width: 1100px) {
+  .economy__block-slider-list {
+    overflow: visible;
+  }
+}

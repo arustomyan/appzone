@@ -4,13 +4,22 @@
 }
 
 .proposal__container-bottom {
+  margin-top: -400px;
   padding-bottom: 136px;
 }
 
 @media (max-width: 601px) {
   .proposal__container {
     max-width: 360px;
+    padding-top: 71px;
     padding-right: 0;
+    padding-left: 0;
+  }
+
+  .proposal__container-bottom {
+    max-width: 360px;
+    padding-right: 0;
+    padding-bottom: 80px;
     padding-left: 0;
   }
 }

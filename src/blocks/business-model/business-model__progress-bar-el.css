@@ -1,4 +1,6 @@
 .business-model__progress-bar-el {
+  will-change: opacity, font-size;
+
   display: inline-block;
 
   font-size: 24px;
@@ -12,7 +14,7 @@
   transition: opacity 0.5s ease, font-size 0.5s ease;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 800px) {
   .business-model__progress-bar-el {
     flex-shrink: 0;
     max-width: fit-content;

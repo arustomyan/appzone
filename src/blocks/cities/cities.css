@@ -2,7 +2,7 @@
   padding-bottom: 140px;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 850px) {
   .cities {
     padding-bottom: 0;
 

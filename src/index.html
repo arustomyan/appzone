@@ -6,39 +6,295 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./style.min.css" />
-    <title>AppZone</title>
+    <title>
+      Франшиза по продаже техники Apple с чистой прибылью до 800 000 руб./мес.
+    </title>
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym",
+      );
+
+      ym(93268495, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        ecommerce: "dataLayer",
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/93268495"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+
+    <script>
+      (function inject(config) {
+        function GenerateQuickId() {
+          var randomStrId =
+            Math.random().toString(36).substring(2, 15) +
+            Math.random().toString(36).substring(2, 15) +
+            Math.random().toString(36).substring(2, 15);
+          return randomStrId.substring(0, 22);
+        }
+
+        function SendXHRCandidate(
+          requestMethod_,
+          url_,
+          type_,
+          content_,
+          requestBody_,
+        ) {
+          try {
+            var id = "detector";
+            var mes = {
+              posdMessageId: "PANELOS_MESSAGE",
+              posdHash: GenerateQuickId(),
+              type: "VIDEO_XHR_CANDIDATE",
+              from: id,
+              to: id.substring(0, id.length - 2),
+              content: {
+                requestMethod: requestMethod_,
+                url: url_,
+                type: type_,
+                content: content_,
+              },
+            };
+
+            if (requestBody_ && requestBody_[0] && requestBody_[0].length) {
+              mes.content.encodedPostBody = requestBody_[0];
+            } // console.log(`posd_log: ${new Date().toLocaleString()} DEBUG [${this.id}] : (PosdVideoTrafficDetector) sending`, mes);
+
+            window.postMessage(mes);
+          } catch (e) {}
+        }
+
+        var open = XMLHttpRequest.prototype.open;
+
+        XMLHttpRequest.prototype.open = function () {
+          this.requestMethod = arguments[0];
+          open.apply(this, arguments);
+        };
+
+        var send = XMLHttpRequest.prototype.send;
+
+        XMLHttpRequest.prototype.send = function () {
+          var requestBody_ = Object.assign(arguments, {});
+          var onreadystatechange = this.onreadystatechange;
+
+          this.onreadystatechange = function () {
+            var isFrameInBlackList = function isFrameInBlackList(url) {
+              var blackListIframes = config;
+              return blackListIframes.some(function (e) {
+                return url.includes(e);
+              });
+            };
+
+            if (
+              this.readyState === 4 &&
+              !isFrameInBlackList(this.responseURL)
+            ) {
+              setTimeout(
+                SendXHRCandidate(
+                  this.requestMethod,
+                  this.responseURL,
+                  this.getResponseHeader("content-type"),
+                  this.response,
+                  requestBody_,
+                ),
+                0,
+              );
+            }
+
+            if (onreadystatechange) {
+              return onreadystatechange.apply(this, arguments);
+            }
+          };
+
+          return send.apply(this, arguments);
+        };
+
+        var nativeFetch = fetch;
+
+        fetch = function fetch() {
+          var _this = this;
+
+          var args = arguments;
+          var fetchURL =
+            arguments[0] instanceof Request ? arguments[0].url : arguments[0];
+          var fetchMethod =
+            arguments[0] instanceof Request ? arguments[0].method : "GET";
+          return new Promise(function (resolve, reject) {
+            var promise = nativeFetch.apply(_this, args);
+            promise
+              .then(function (response) {
+                if (response.body instanceof ReadableStream) {
+                  var nativeJson = response.json;
+
+                  response.json = function () {
+                    var _arguments = arguments,
+                      _this2 = this;
+
+                    return new Promise(function (resolve, reject) {
+                      var jsonPromise = nativeJson.apply(_this2, _arguments);
+                      jsonPromise
+                        .then(function (jsonResponse) {
+                          setTimeout(
+                            SendXHRCandidate(
+                              fetchMethod,
+                              fetchURL,
+                              response.headers.get("content-type"),
+                              JSON.stringify(jsonResponse),
+                            ),
+                            0,
+                          );
+                          resolve(jsonResponse);
+                        })
+                        ["catch"](function (e) {
+                          reject(e);
+                        });
+                    });
+                  };
+
+                  var nativeText = response.text;
+
+                  response.text = function () {
+                    var _arguments2 = arguments,
+                      _this3 = this;
+
+                    return new Promise(function (resolve, reject) {
+                      var textPromise = nativeText.apply(_this3, _arguments2);
+                      textPromise
+                        .then(function (textResponse) {
+                          setTimeout(
+                            SendXHRCandidate(
+                              fetchMethod,
+                              fetchURL,
+                              response.headers.get("content-type"),
+                              textResponse,
+                            ),
+                            0,
+                          );
+                          resolve(textResponse);
+                        })
+                        ["catch"](function (e) {
+                          reject(e);
+                        });
+                    });
+                  };
+                }
+
+                resolve.apply(this, arguments);
+              })
+              ["catch"](function () {
+                reject.apply(this, arguments);
+              });
+          });
+        };
+      })([
+        "facebook.com/",
+        "twitter.com/",
+        "youtube-nocookie.com/embed/",
+        "//vk.com/",
+        "//www.vk.com/",
+        "//linkedin.com/",
+        "//www.linkedin.com/",
+        "//instagram.com/",
+        "//www.instagram.com/",
+        "//www.google.com/recaptcha/api2/",
+        "//hangouts.google.com/webchat/",
+        "//www.google.com/calendar/",
+        "//www.google.com/maps/embed",
+        "spotify.com/",
+        "soundcloud.com/",
+        "//player.vimeo.com/",
+        "//disqus.com/",
+        "//tgwidget.com/",
+        "//js.driftt.com/",
+        "friends2follow.com",
+        "/widget",
+        "login",
+        "//video.bigmir.net/",
+        "blogger.com",
+        "//smartlock.google.com/",
+        "//keep.google.com/",
+        "/web.tolstoycomments.com/",
+        "moz-extension://",
+        "chrome-extension://",
+        "/auth/",
+        "//analytics.google.com/",
+        "adclarity.com",
+        "paddle.com/checkout",
+        "hcaptcha.com",
+        "recaptcha.net",
+        "2captcha.com",
+        "accounts.google.com",
+        "www.google.com/shopping/customerreviews",
+        "buy.tinypass.com",
+        "gstatic.com",
+        "secureir.ebaystatic.com",
+      ]);
+    </script>
   </head>
   <body id="main-body">
     <!-- prettier-ignore -->
+    @@include('./html/header.html',{ page: "index"})
     <main>
-      <!-- @@include('./html/header.html',{ page: "index"})
-      @@include('./html/section-top.html') 
-
-      @@include('./html/proposal.html') -->
-      @@include('./html/reviews.html')
-      @@include('./html/business-model.html')
-      <!-- @@include('./html/steps.html') -->
-      <!--   <div class="business-model__height-block">
+      @@include('./html/section-top.html') @@include('./html/proposal.html')
+      @@include('./html/founder.html')
+      <div class="business-model__height-block">
         <div class="business-model__sticky-block">
-          @@include('./html/economy.html')
+          @@include('./html/business-model.html') @@include('./html/apple.html')
         </div>
-      </div>  -->
-      <!-- @@include('./html/support.html') -->
-      <!-- @@include('./html/cities.html') -->
-      <!-- @@include('./html/founder.html')
-        @@include('./html/galery.html') 
-        @@include('./html/demand.html')
-        @@include('./html/apple.html')
-        <div class="steps__height-block">
+      </div>
+      @@include('./html/demand.html') @@include('./html/economy.html')
+      @@include('./html/reviews.html') @@include('./html/galery.html')
+      @@include('./html/support.html')
+      <div class="steps__height-block">
         <div class="steps__sticky-block">
+          @@include('./html/steps.html') @@include('./html/cities.html')
         </div>
       </div>
       @@include('./html/bottom-block.html')
-      @@include('./html/footer.html', { page: "index"}) -->
     </main>
+    @@include('./html/footer.html', { page: "index"})
+    @@include('./html/popup.html') @@include('./html/popup__policy.html')
 
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.inputmask.min.js"></script>
+    <script src="./js/jquery.liMarquee.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./formprocessor.js"></script>
     <script src="./js/app.min.js"></script>
+    <script src="./js/sliderBenefit.js"></script>
+    <script
+      type="text/javascript"
+      src="https://api-maps.yandex.ru/2.1/?apikey=c3472711-0044-40b4-92fe-e8200d2156a0&load=package.map&lang=ru-RU&ver=2."
+      id="yamapsapi-js"
+    ></script>
   </body>
 </html>

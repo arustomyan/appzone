@@ -1,0 +1,118 @@
+<div class="popup" id="popup">
+  <div class="popup__container">
+    <div class="popup__close-btn" id="popup__close-btn">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M22 2L2 22"
+          stroke="white"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M2 2L22 22"
+          stroke="white"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+    <div class="popup__container-wrapper">
+      <img
+        src="@images/popup/Mesh-Grad-popup.png"
+        class="popup__img-blur"
+        alt=""
+      />
+      <div class="popup__images popup__img-leave" id="popupImg"></div>
+
+      <div id="popup-title">
+        <h2 class="popup__title popup__title-ask text_green">
+          Откройте бизнес<br />в вашем городе
+        </h2>
+        <span class="popup__subtitle popup__subtitle-ask">
+          по проверенной бизнес-модели appzone.co
+        </span>
+      </div>
+
+      <!-- 
+      <div id="popup-title">
+        <h2 class="popup__title popup__title-sign-up text_green">Запишитесь</h2>
+        <span class="popup__subtitle popup__subtitle-sign-up">
+          на онлайн-консультацию, чтобы узнать подробнее о франшизе appzone.co
+        </span>
+      </div> -->
+
+      <!-- <div id="popup-title">
+        <p class="popup__title-leave">Уже уходите?</p>
+        <h2 class="popup__title popup__title-sign-up text_green">
+          Не упускайте шанс
+        </h2>
+        <span class="popup__subtitle popup__subtitle-sign-up">
+          присоединиться<br />
+          к франшизе appzone.co
+        </span>
+      </div> -->
+
+      <div class="fgp popup__fgp">
+        <form class="fgp__form popup__form" novalidate>
+          <input
+            class="input input_phone"
+            type="tel"
+            name="phone"
+            placeholder="+7 (___) ___-__-__"
+          />
+
+          <input
+            class="input input_email"
+            type="email"
+            name="email"
+            placeholder="bestpartner@appzone.ru"
+          />
+
+          <input
+            class="input input_user"
+            type="text "
+            name="name"
+            placeholder="Цуканов Дмитрий"
+          />
+
+          <input type="text" name="section-name" value="Закрытая" hidden />
+          <input
+            type="text"
+            name="section-btn-text"
+            value="запустить франшизу"
+            hidden
+          />
+          <input
+            type="text"
+            name="section-name-text"
+            value="Откройте бизнес в вашем городе по проверенной бизнес-модели appzone.co"
+            hidden
+          />
+
+          <button class="fgp__button button popup__fgp-button" type="submit">
+            запустить франшизу
+          </button>
+        </form>
+        <span class="fgp__checkbox popup__checkbox">
+          <span class="">
+            Я подтверждаю, что ознакомлен и даю согласие на обработку
+            персональных данных на условиях и для целей, определяемых
+            <button class="button__policy" type="button">
+              политикой конфиденциальности
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup__overlay" id="overlay_popup"></div>
+</div>

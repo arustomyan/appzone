@@ -7,3 +7,13 @@
 .support__content-block-el-text:not(:last-child) {
   margin-bottom: 20px;
 }
+
+@media (max-width: 601px) {
+  .support__content-block-el-text {
+    font-size: 14px;
+  }
+
+  .support__content-block-el-text:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}

@@ -3,7 +3,7 @@
   z-index: 0;
   top: 215px;
   left: -197px;
-  transform: rotate(-15.87deg);
+  transform: rotate(-15.87deg) translate3d(0, 0, 0);
 
   filter: blur(125px);
 }
@@ -13,7 +13,7 @@
   z-index: 0;
   top: 454px;
   left: 156px;
-  transform: rotate(-15.87deg);
+  transform: rotate(-15.87deg) translate3d(0, 0, 0);
 
   filter: blur(125px);
 }
@@ -23,7 +23,7 @@
   z-index: 0;
   top: -162px;
   right: -154px;
-  transform: rotate(-15.87deg);
+  transform: rotate(-15.87deg) translate3d(0, 0, 0);
 
   filter: blur(125px);
 }
@@ -33,7 +33,7 @@
   z-index: 0;
   top: 217px;
   right: -124px;
-  transform: rotate(-15.87deg);
+  transform: rotate(-15.87deg) translate3d(0, 0, 0);
 
   filter: blur(125px);
 }

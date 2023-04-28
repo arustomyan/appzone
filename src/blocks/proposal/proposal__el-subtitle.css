@@ -10,7 +10,7 @@
 
 @media (max-width: 601px) {
   .proposal__el-subtitle {
-    margin-bottom: 35px;
+    margin-bottom: 10px;
     font-size: 18px;
   }
 }

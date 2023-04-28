@@ -1,6 +1,7 @@
 .founder {
   height: auto;
   min-height: 100vh;
+  padding-bottom: 30px;
 }
 
 .founder__container-bg {
@@ -12,8 +13,8 @@
   top: 0;
   left: 0;
 
-  height: 100vh;
-  margin-bottom: 300px;
+  /* height: 100vh; */
+  padding-bottom: 140px;
 
   background: radial-gradient(
       47.58% 54.14% at 21.22% 42.33%,
@@ -25,7 +26,7 @@
     linear-gradient(0deg, #020203 12.22%, rgb(7 7 7 / 0%) 46.51%),
     url("@images/founder/bg__founder.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 0% 0;
   background-size: cover;
 }
 
@@ -45,15 +46,10 @@
   height: 600px;
 }
 
-.founder__container {
-}
-
 .founder__content {
+  position: relative;
   max-width: 403px;
   margin-left: auto;
-}
-
-.founder__content-block {
 }
 
 .founder__text-wrapper {
@@ -81,9 +77,6 @@
   line-height: 106.5%;
   color: transparent;
   text-transform: lowercase;
-
-  /* identical to box height, or 75px */
-
   letter-spacing: 0.04em;
 
   -webkit-text-stroke: 1px #0cdb92;
@@ -117,6 +110,7 @@
 .founder__profile-block-social {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .founder__profile-block-inst {
@@ -130,7 +124,7 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 64px 80px;
+  padding: min(64px, max(40px, 5vw)) min(80px, max(26px, 3.7vw));
 
   background: #0f1010;
   background-image: url("@images/demand/demand__pre-form-bg.jpg");
@@ -143,21 +137,18 @@
 .founder__pre-form-title {
   max-width: 708px;
 
-  font-size: 40px;
+  font-size: min(40px, max(26px, 3.2vw));
   font-weight: 700;
   font-style: normal;
   line-height: 120%;
   text-transform: lowercase;
 }
 
-.button {
-}
-
 .founder__pre-form-button {
   max-width: 370px;
 }
 
-.overflow {
+.founder__overflow {
   position: relative;
 
   overflow: hidden;
@@ -168,7 +159,7 @@
   margin-left: auto;
 }
 
-.overflow::after {
+.founder__overflow::after {
   content: "";
 
   position: absolute;
@@ -182,4 +173,266 @@
 
   background: linear-gradient(180deg, #fff0 80%, rgb(0 0 0 / 24.1%) 100%);
   box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
+
+.founder__marks {
+  position: absolute;
+  right: 0;
+}
+
+.founder__marks2 {
+  position: absolute;
+  right: 0;
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .founder__title {
+    max-width: 542px;
+  }
+
+  .founder__overflow {
+    margin-right: 57px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .founder__bg {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    height: auto;
+
+    background: url("@images/founder/bgMob__founder.jpg");
+    background-repeat: no-repeat;
+    background-position: 0% -200px;
+    background-size: contain;
+  }
+
+  .founder__container-bg {
+    margin-bottom: 50px;
+    padding-top: 71px;
+  }
+
+  .founder__title {
+    max-width: 730px;
+    margin-bottom: max(405px, 64.8vw - 200px);
+    margin-left: 0;
+    font-size: 48px;
+  }
+
+  .founder__title-offset {
+    display: block;
+    margin-left: 50px;
+  }
+
+  .founder__overflow {
+    overflow: visible;
+
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .founder__content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .founder__overflow::after {
+    display: none;
+  }
+
+  .founder__text-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .founder__slogan {
+    margin-bottom: 30px;
+    font-size: 79px;
+  }
+
+  .founder__slogan + .founder__text {
+    margin-bottom: 30px;
+  }
+
+  .founder__profile-photo {
+    width: 99px;
+    height: 99px;
+  }
+
+  .founder__profile-block-name {
+    font-size: 18px;
+  }
+
+  .founder__profile-block-inst {
+    font-size: 16px;
+  }
+
+  .founder__profile-block-social img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .founder__pre-form {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 26px;
+    border-radius: 20px;
+  }
+
+  .founder__pre-form-title {
+    text-align: center;
+  }
+
+  .founder__marks {
+    display: none;
+  }
+
+  .founder__marks2 {
+    transform: translateX(100%);
+    display: block;
+  }
+}
+
+@media (max-width: 1100px) {
+  .founder__bg {
+    background-position: 0% -100px;
+  }
+}
+
+@media (max-width: 810px) {
+  .founder__content {
+    max-width: calc(100vw - 120px);
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 601px) {
+  .founder__bg {
+    margin-bottom: 0;
+    background-position: 0% 0;
+  }
+
+  .founder__container-bg {
+    margin-bottom: 0;
+    padding-top: 50px;
+  }
+
+  .founder__title {
+    max-width: 259px;
+    margin-bottom: 405px;
+    margin-left: 0;
+  }
+
+  .founder__title-offset {
+    display: block;
+    margin-left: 26px;
+  }
+
+  .founder__overflow {
+    overflow: visible;
+
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .founder__overflow::after {
+    display: none;
+  }
+
+  .founder__text {
+    font-size: 14px;
+  }
+
+  .founder__text:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .founder__text-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .founder__slogan {
+    margin-bottom: 30px;
+    font-size: 53px;
+  }
+
+  .founder__slogan + .founder__text {
+    margin-bottom: 30px;
+  }
+
+  .founder__profile-photo {
+    width: 99px;
+    height: 99px;
+  }
+
+  .founder__profile-block-name {
+    font-size: 18px;
+  }
+
+  .founder__profile-block-post {
+    font-size: 12px;
+  }
+
+  .founder__profile-block-inst {
+    font-size: 16px;
+  }
+
+  .founder__profile-block-social img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .founder__pre-form {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 26px;
+    border-radius: 20px;
+  }
+
+  .founder__pre-form-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 601px) {
+  .founder__pre-form-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .founder__marks2 {
+    top: -15px;
+    right: 0;
+    transform: translateY(-100%);
+
+    width: 60px;
+    height: 48px;
+  }
+
+  .founder__pre-form-button {
+    max-width: 205px;
+    height: 74px;
+    padding: 20px 58px 20px 30px;
+
+    font-size: 16px;
+    line-height: 100%;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .founder__pre-form-button::after {
+    position: absolute;
+    top: 29px;
+    right: 30px;
+  }
+
+  .founder__pre-form-button span {
+    display: block;
+  }
 }

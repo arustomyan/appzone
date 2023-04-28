@@ -13,12 +13,14 @@
   color: #171818;
 }
 
+@media (max-width: 1100px) {
+  .support__navigation-el_hover .support__navigation-el-title {
+    color: #fff;
+  }
+}
+
 @media (max-width: 601px) {
   .support__navigation-el-title {
     font-size: 20px;
-  }
-
-  .support__navigation-el_hover .support__navigation-el-title {
-    color: #fff;
   }
 }

@@ -1,44 +1,38 @@
 const mainBlock = document.querySelector(".founder");
 const stickyBlock = document.querySelector(".founder__bg");
 const scrollTrack = document.querySelector(".founder__content");
-const overflowBlock = document.querySelector(".overflow");
+const overflowBlock = document.querySelector(".founder__overflow");
 
-const countScroll = 800;
+let maxOfset = 0;
+
+const animate = () => {
+  if (document.documentElement.clientWidth < 1200) return;
+
+  const mainBlockPosTop = mainBlock.getBoundingClientRect().top;
+  const stickyBlockPosTop = stickyBlock.getBoundingClientRect().top;
+  const scroll = stickyBlockPosTop - mainBlockPosTop;
+
+  const valueOffset = Math.min(Math.abs(maxOfset), scroll);
+  scrollTrack.style.transform = `translateY(-${valueOffset}px)`;
+};
 
 export const founder = () => {
-  window.addEventListener("load", () => {
-    const height = document.documentElement.clientHeight;
+  const onLoad = () => {
+    const stickyBlockHeight = stickyBlock.getBoundingClientRect().height;
 
-    const mainBlockHeight = mainBlock.getBoundingClientRect().height;
     const overflowBlockHeight = overflowBlock.getBoundingClientRect().height;
     const scrollTrackHeight = scrollTrack.getBoundingClientRect().height;
-    const maxOfset = scrollTrackHeight - overflowBlockHeight + 71;
-    let position = 0;
-    let resaved = true;
+    maxOfset = scrollTrackHeight - overflowBlockHeight + 50;
 
-    mainBlock.style.height = `${mainBlockHeight + maxOfset}px`;
+    if (document.documentElement.clientWidth > 1200) {
+      mainBlock.style.height = `${stickyBlockHeight + maxOfset}px`;
+    } else {
+      mainBlock.style.height = "auto";
+      scrollTrack.style.transform = "none";
+    }
+  };
 
-    const animate = () => {
-      const top = stickyBlock.getBoundingClientRect().top;
-
-      console.log(scrollTrackHeight - overflowBlockHeight);
-      const scrolled = Math.round(top) === 0;
-      if (Math.round(top) > 0) scrollTrack.style.transform = `translateY(0px)`;
-      if (!scrolled) return;
-      if (resaved) {
-        position = window.pageYOffset;
-        resaved = false;
-      }
-      const scroll = Math.abs(window.pageYOffset - position);
-
-      const valueOffset = Math.min(Math.abs(maxOfset), scroll / 2);
-      console.log(
-        "🚀 ~ file: founder.js:34 ~ animate ~ valueOffset",
-        valueOffset,
-      );
-      scrollTrack.style.transform = `translateY(-${valueOffset}px)`;
-    };
-
-    window.addEventListener("scroll", animate);
-  });
+  window.addEventListener("scroll", animate);
+  window.addEventListener("load", onLoad);
+  window.addEventListener("resize", onLoad);
 };

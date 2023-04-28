@@ -5,7 +5,7 @@
 }
 
 @media (max-width: 1000px) {
-  .footer__made-in {
-    text-align: center;
+  .footer__center-block .footer__made-in {
+    display: none;
   }
 }
