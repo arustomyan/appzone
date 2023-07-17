@@ -1,0 +1,380 @@
+.numbers {
+    overflow: clip;
+    background-color: #171818;
+}
+
+
+.numbers__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.numbers__title-block {
+    position: relative;
+    z-index: 0;
+
+    flex: auto;
+
+    max-width: 690px;
+    padding-top: 34px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+
+.numbers__decor-0 {
+    position: absolute;
+    z-index: 0;
+    top: -140px;
+    left: -320px;
+
+    max-width: 1920px;
+}
+
+.numbers__decor-1 {
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    left: 35px;
+    transform: translate3d(0, 0, 0);
+
+    width: 384px;
+    height: 384px;
+
+    background: rgb(48 48 48 / 40%);
+    filter: blur(75px);
+    border-radius: 100%;
+}
+
+.numbers__title {
+    position: relative;
+
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+
+    max-width: 8ch;
+
+    font-size: min(68px, max(32px, 6.6vw));
+}
+
+
+
+
+.numbers__title span {
+    align-self: flex-end;
+}
+
+.numbers__title--highlite {
+    color: #0CDB92;
+}
+
+.numbers__el {
+    position: relative;
+    flex: auto;
+    padding: 40px 50px 50px;
+}
+
+@media (max-width: 1340px) {
+    .numbers__el {
+        padding: 30px 20px 40px;
+    }
+
+
+    .numbers__royalties {
+        max-width: 876px;
+        border: 1px solid #696969;
+    }
+}
+
+@media (max-width: 1100px) {
+    .numbers__title-block {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .numbers__el-title {
+        font-size: 30px;
+    }
+
+    .numbers__investment-list {
+        gap: 10px;
+    }
+
+    .numbers__royalties {
+        max-width: 100%;
+    }
+
+    .numbers__investment {
+        max-width: 740px;
+    }
+
+    .numbers__profitability {
+        border-left: 1px solid #696969;
+    }
+
+    .numbers__royalties .numbers__investment-list .numbers__investment-el {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 845px) {
+    .numbers__royalties .numbers__investment-list .numbers__investment-el {
+        align-items: center;
+    }
+
+    .numbers__royalties .numbers__investment-el-title {
+        max-width: 80px;
+        font-size: 16px;
+    }
+
+
+    .numbers__el-title {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 730px) {
+
+    .numbers__payback,
+    .numbers__profitability {
+        width: 100%;
+        max-width: 50%;
+    }
+
+    .numbers__profitability {
+        border-right: 1px solid #696969;
+    }
+
+    .numbers__revenue {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.numbers__investment {
+    flex: auto;
+    max-width: 690px;
+    border: 1px solid #696969;
+    border-bottom: none;
+}
+
+.numbers__el-title {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+
+    margin-bottom: 30px;
+
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.numbers__el-title::before {
+    content: "";
+
+    display: block;
+    flex-shrink: 0;
+
+    width: 12px;
+    height: 12px;
+
+    background: linear-gradient(270deg, #2794F9 0%, #0C5FDB 100%);
+    border-radius: 50%;
+}
+
+.numbers__investment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    padding-left: 30px;
+
+}
+
+.numbers__investment-el {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    font-family: "SF Pro Display", sans-serif;
+}
+
+.numbers__investment-el-title {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 150%;
+    color: #828282;
+
+}
+
+.numbers__investment-el-result {
+    display: flex;
+    gap: 10px;
+    align-items: start;
+}
+
+.numbers__investment-el-value {
+    font-size: min(68px, max(32px, 5.1vw));
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.numbers__unit {
+    font-size: 26px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 150%;
+    color: #828282;
+}
+
+.numbers__payback {
+    max-width: 320px;
+    border: 1px solid #696969;
+    border-bottom: none;
+
+}
+
+.numbers__profitability {
+    max-width: 370px;
+    border-top: 1px solid #696969;
+}
+
+
+
+.numbers__revenue {
+    max-width: 690px;
+
+    background-image: url("@images/numbers/numbers__revenue-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+.numbers__royalties {
+    max-width: 973px;
+    border: 1px solid #696969;
+}
+
+
+.numbers__royalties .numbers__investment-list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.numbers__royalties .numbers__investment-list .numbers__investment-el {
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: start;
+}
+
+
+@media (max-width: 601px) {
+    .numbers__container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .numbers__title {
+        padding-left: 0;
+        font-size: 30px;
+    }
+
+    .numbers__title-block {
+        padding-bottom: 40px;
+        padding-left: 0;
+    }
+
+
+    .numbers__el-title {
+        gap: 5px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+
+    .numbers__container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+    .numbers__investment-list {
+        padding-left: 11px;
+    }
+
+
+    .numbers__el {
+        padding: 20px;
+    }
+
+    .numbers__payback {
+        padding-right: 10px;
+        padding-left: 20px;
+
+    }
+
+    .numbers__profitability {
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+
+    .numbers__el-title::before {
+        width: 6px;
+        height: 6px;
+    }
+
+    .numbers__investment-el-title {
+        font-size: 14px;
+    }
+
+
+    .numbers__investment-el-result {
+        gap: 5px;
+    }
+
+    .numbers__investment-el-value {
+        font-size: 25px;
+    }
+
+    .numbers__unit {
+        font-size: 12px;
+    }
+
+
+    .numbers__royalties .numbers__investment-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .numbers__royalties .numbers__investment-list .numbers__investment-el {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .numbers__royalties .numbers__investment-list .numbers__investment-el-title {
+        max-width: 100%;
+    }
+
+    .numbers__decor-0 {
+        position: absolute;
+        z-index: 0;
+        top: -140px;
+        left: -200px px;
+
+        max-width: 1412px;
+
+
+    }
+
+    .numbers__decor-1 {
+        width: 200px;
+    }
+}
