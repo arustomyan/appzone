@@ -271,6 +271,36 @@ export function sliders() {
     fixedWidth: 400,
     gap: 30,
   });
+  let sliderBanner = new Splide(".proposal__splideSlider", {
+    type: "loop",
+    arrows: false,
+    pagination: false,
+
+    fixedWidth: "fit-width",
+    gap: 50,
+    drag: false,
+    flickMaxPages: 0,
+    drag: false,
+    rewindByDrag: false,
+
+    autoScroll: {
+      rewind: true,
+      speed: 1,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+    },
+
+    breakpoints: {
+      1000: {
+        gap: 30,
+      },
+
+      601: {
+        gap: 16,
+      },
+    },
+  });
 
   sliderCities.mount();
+  sliderBanner.mount(window.splide.Extensions);
 }
