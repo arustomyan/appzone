@@ -1,47 +1,95 @@
-.cities__slider {
-  position: relative;
-  display: none;
+.cities__splideSlider {
+  max-width: 400px;
 }
 
-.cities__slider-mobile {
-  display: none;
-}
-
-@media (max-width: 1150px) {
-  .cities__slider {
+@media (min-width: 1150px) {
+  .cities__splideSlider {
     display: none;
   }
+}
 
-  .cities__slider-mobile {
-    display: block;
-    max-width: 450px;
-    height: 100%;
-    margin-right: -20px;
+@media (max-width: 950px) {
+  .cities__splideSlider {
+    max-width: 500px;
+  }
+}
+
+.cities__slider-el {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+
+
+.splide__pagination {
+  bottom: -20px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.splide__pagination li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.splide__pagination__page {
+  display: block;
+  flex-shrink: 0;
+
+  width: 12px;
+  height: 12px;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: #fff;
+  border-radius: 6px;
+
+  transition: transform .2s linear, width 0.25s linear
+}
+
+.splide__pagination__page.is-active {
+  transform: scale(1);
+
+  flex-shrink: 0;
+
+  width: 50px;
+  height: 12px;
+
+  opacity: 1;
+  background: linear-gradient(270deg, #2794F9 0%, #0C5FDB 100%);
+  border-radius: 6px;
+}
+
+@media (max-width: 1030px) {
+  .cities__slider-el {
+    gap: 10px;
   }
 
-  .cities__slider-mobile .slick-track {
-    gap: 20px;
-  }
 
-  .cities__slider-mobile .slick-list {
-    overflow: hidden;
+  .splide__pagination {
+    bottom: 20px;
   }
+}
 
-  .cities__slider-mobile .slick-dots {
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+@media (max-width: 950px) {
+  .splide__pagination {
+    bottom: -20px;
   }
 }
 
 @media (max-width: 601px) {
-  .cities__slider-mobile {
-    overflow: hidden;
-    width: 300px;
-    margin-right: 0;
+  .splide__pagination__page {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
   }
 
-  .cities__slider-mobile .slick-list {
-    overflow: visible;
+  .splide__pagination__page.is-active {
+    width: 30px;
+    height: 6px;
   }
 }

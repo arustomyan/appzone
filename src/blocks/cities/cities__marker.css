@@ -98,6 +98,7 @@
 }
 
 .cities__marker:hover {
+  z-index: 3;
   transform: scale(1.2);
 }
 

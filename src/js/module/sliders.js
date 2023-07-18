@@ -243,13 +243,34 @@ export function sliders() {
     $(".reviews__slider-block").slick("slickPrev");
   });
 
-  $(".cities__slider-mobile").slick({
-    infinite: true,
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    fade: false,
-    dots: true,
+  // $(".cities__slider-mobile").slick({
+  //   infinite: true,
+  //   slidesToScroll: 1,
+  //   slidesToShow: 1,
+  //   fade: false,
+  //   dots: true,
+  //   arrows: false,
+  //   // variableWidth: true,
+  // });
+
+  let sliderCities = new Splide(".cities__splideSlider", {
+    perPage: 1,
+    type: "loop",
     arrows: false,
-    // variableWidth: true,
+    // pagination: false,
+    dragMinThreshold: 20,
+    breakpoints: {
+      950: {
+        fixedWidth: 500,
+      },
+
+      601: {
+        fixedWidth: 300,
+      },
+    },
+    fixedWidth: 400,
+    gap: 30,
   });
+
+  sliderCities.mount();
 }

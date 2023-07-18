@@ -449,12 +449,6 @@
 @import url("../blocks/cities/cities__el-num.css");
 @import url("../blocks/cities/cities__el-img.css");
 
-.cities__slider-mobile-el {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-bottom: 36px;
-}
 
 .cities__text-wrap {
   max-width: 475px;

@@ -7,8 +7,7 @@
   width: auto;
   padding: 30px 40px;
 
-  visibility: hidden;
-  opacity: 0;
+
   background: #171818;
   border-radius: 40px;
 
@@ -37,8 +36,16 @@
     border-radius: 20px;
   }
 }
+
 @media (max-width: 601px) {
   .cities__slider.cities__slider-mobile li.cities__el {
     width: 300px;
+
+  }
+
+
+  .cities__el {
+    padding: 26px 20px;
+    border-radius: 20px;
   }
 }
