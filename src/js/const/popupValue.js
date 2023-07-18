@@ -22,6 +22,15 @@ const titleLeave = `
           к франшизе appzone.co
         </span>
 `;
+const titleLeads = `
+        <h2 class="popup__title">
+          Оформи франшизу до 31 июля
+          <span class="text_green">
+            и не плати Роялти 3&nbsp;месяца
+          </span>
+        </h2>
+
+`;
 
 export const popupValue = {
   open: {
@@ -45,6 +54,14 @@ export const popupValue = {
     image: "popup__img-leave",
     button: "присоединиться к команде",
     sectionNameText: "Не упускайте шанс присоединиться к франшизе appzone.co",
+    valueInput: "Закрытая",
+  },
+  leads: {
+    title: titleLeads,
+    popupClass: "popup__leads",
+    image: "popup__img-leads",
+    button: "записаться на презентацию франшизы",
+    sectionNameText: "Оформи франшизу до 31 июля и не плати Роялти 3 месяца",
     valueInput: "Закрытая",
   },
 };

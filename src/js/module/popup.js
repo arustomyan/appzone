@@ -53,6 +53,12 @@ export const openPopup = (valueObj) => {
 
   body.style.overflow = `hidden`;
   $(document).off("mouseleave");
+
+  $(`#popupContainer`).removeClass("popup__leads");
+
+  if (!!valueObj.popupClass) {
+    $(`#popupContainer`).addClass(valueObj.popupClass);
+  }
 };
 
 export const closePopup = (popup) => {

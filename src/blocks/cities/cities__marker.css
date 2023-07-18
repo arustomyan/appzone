@@ -7,87 +7,94 @@
 
   display: flex;
 
+
   transition: transform 0.3s ease;
 }
 
+/* 
 #cities__marker-0 {
   top: 35.77%;
   left: 27.5%;
+} */
+
+#cities__marker-0 {
+  top: 38.66%;
+  left: 28.1875%;
 }
 
 #cities__marker-1 {
-  top: 87%;
-  left: 29.5%;
+  top: 89.8889%;
+  left: 30.1875%;
 }
 
 #cities__marker-2 {
-  top: 68.66%;
-  left: 28.12%;
+  top: 71.4444%;
+  left: 28.75%;
 }
 
 #cities__marker-3 {
-  top: 78.44%;
-  left: 36.56%;
+  top: 81.3333%;
+  left: 37.25%;
 }
 
 #cities__marker-4 {
-  top: 34%;
-  left: 41.37%;
+  top: 36.8889%;
+  left: 42%;
 }
 
 #cities__marker-5 {
-  top: 42.111%;
-  left: 39.75%;
+  top: 44.7778%;
+  left: 40.5%;
 }
 
 #cities__marker-6 {
-  top: 70.77%;
-  left: 39.87%;
+  top: 73.6667%;
+  left: 43.3125%;
 }
 
 #cities__marker-7 {
-  top: 66.44%;
-  left: 52.31%;
+  top: 69.3333%;
+  left: 52.93%;
 }
 
 #cities__marker-8 {
-  top: 40.22%;
-  left: 49.75%;
+  top: 43.111%;
+  left: 50.4375%;
 }
 
 #cities__marker-9 {
-  top: 28.66%;
-  left: 38.5%;
+  top: 31.3333%;
+  left: 39.125%;
 }
 
 #cities__marker-10 {
-  top: 26.66%;
-  left: 12.33%;
+  top: 29.5555%;
+  left: 7.625%;
 }
 
 #cities__marker-11 {
-  top: 14.11%;
-  left: 38.5%;
+  top: 17%;
+  left: 39.18%;
 }
 
 #cities__marker-12 {
-  top: 15.555%;
-  left: 33.06%;
+  top: 18.333%;
+  left: 33.68%;
 }
 
 #cities__marker-13 {
-  top: 20.66%;
-  left: 14.93%;
+  top: 23.5556%;
+  left: 15%;
 }
 
 #cities__marker-14 {
-  top: 54.6%;
-  left: 37.8%;
+  top: 57.55556%;
+  left: 38.5625%;
 }
 
 #cities__marker-15 {
-  top: 81.33%;
-  left: 32.8%;
+  top: 84.2222%;
+  left: 33.5%;
 }
 
 .cities__marker:hover {
@@ -98,4 +105,5 @@
   .cities__markers {
     display: none;
   }
+}
 }

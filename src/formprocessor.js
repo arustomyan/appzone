@@ -150,18 +150,18 @@ $(document).ready(function () {
         }
 
         if (activeInput.classList.contains("input_email")) {
-          let reg = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-          if (!reg.test(activeInput.value)) {
-            valOK = false;
-            activeInput.classList.add("input_error");
-          } else {
-            activeInput.classList.remove("input_error");
+          if (window.getComputedStyle(activeInput).display !== "none") {
+            let reg = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+            if (!reg.test(activeInput.value)) {
+              valOK = false;
+              activeInput.classList.add("input_error");
+            } else {
+              activeInput.classList.remove("input_error");
+            }
           }
         }
 
         if (activeInput.classList.contains("input_user")) {
-          console.log("dmkcd");
-
           if (activeInput.value == "") {
             valOK = false;
             activeInput.classList.add("input_error");
@@ -335,34 +335,34 @@ $(document).ready(function () {
         formData.append(data[i].name, data[i].value);
       }
       console.log(data);
-      $.ajax({
-        type: "POST",
-        url: "php/formProcessor.php",
-        data: formData,
-        processData: false,
-        contentType: false,
-        dataType: "json",
-        beforeSend: function () {
-          if (preloader) {
-            preloader.show();
-          }
-        },
-        success: function (resp) {
-          if (resp == 1) {
-            window.location.href = "./pages/thanks1.html";
-          } else if (resp == 2) {
-            $("button[data-fancybox-close]").trigger("click");
-            if (preloader) {
-              preloader.hide();
-            }
-          } else {
-            alert("Something was wrong. Please, contact administrator.");
-            if (preloader) {
-              preloader.hide();
-            }
-          }
-        },
-      });
+      // $.ajax({
+      //   type: "POST",
+      //   url: "php/formProcessor.php",
+      //   data: formData,
+      //   processData: false,
+      //   contentType: false,
+      //   dataType: "json",
+      //   beforeSend: function () {
+      //     if (preloader) {
+      //       preloader.show();
+      //     }
+      //   },
+      //   success: function (resp) {
+      //     if (resp == 1) {
+      //       window.location.href = "./pages/thanks1.html";
+      //     } else if (resp == 2) {
+      //       $("button[data-fancybox-close]").trigger("click");
+      //       if (preloader) {
+      //         preloader.hide();
+      //       }
+      //     } else {
+      //       alert("Something was wrong. Please, contact administrator.");
+      //       if (preloader) {
+      //         preloader.hide();
+      //       }
+      //     }
+      //   },
+      // });
       return false;
     }
   });

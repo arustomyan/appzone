@@ -1,18 +1,27 @@
-import { openPopup } from "./popup.js";
+import {openPopup} from "./popup.js";
 
-export const modalExit = (popupLeave) => {
-  $(document).mouseleave(() => {
-    let posMouse = null;
-    $(document).mousemove((e) => {
-      posMouse = e.clientY;
-    });
+const openPopupExit = (value) => {
+  openPopup(value);
 
-    setTimeout(() => {
-      if (posMouse === null || posMouse < 10) {
-        openPopup(popupLeave);
-        $(document).off("mouseleave");
-        $(document).off("mousemove");
-      }
-    }, 1000);
+  $(document).off("mouseleave");
+  $(document).off("mouseleave");
+  $(document).off("mousemove");
+  $(window).off("blur");
+  $(window).off("focus");
+};
+
+export const modalExit = (value) => {
+  let isActive = false;
+  $(document).mousemove((e) => {
+    if (e.clientY > document.documentElement.clientHeight / 2) {
+      $(document).off("mousemove");
+      isActive = true;
+    }
+  });
+
+  $(document).mouseleave((e) => {
+    if (isActive && e.clientY <= 0) {
+      openPopupExit(value);
+    }
   });
 };

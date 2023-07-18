@@ -1,6 +1,6 @@
 import {sliders} from "./module/sliders.js";
 import {supportSlider} from "./module/supportSlider.js";
-import {cities} from "./module/cities.js";
+// import {cities} from "./module/cities.js";
 import {sectionTopSlider} from "./module/sectionTopSlider.js";
 import {horizontalScroll} from "./module/horizontalScroll.js";
 import {appleAnimate} from "./module/appleAnimate.js";
@@ -12,16 +12,19 @@ import {popupValue} from "./const/popupValue.js";
 import {modalExit} from "./module/modalExit.js";
 import {newDate} from "./module/newDate.js";
 import {proposal} from "./module/proposal.js";
+// import {videoBlock} from "./module/videoBlock.js";
 
 if ($("#main-body").length > 0) {
   const video = document.querySelector("#sectionTopVideo");
+
+  // videoBlock(".video-block");
 
   $(document).ready(() => {
     const body = document.querySelector("body");
     newDate();
 
     $(".input_phone").inputmask("+7 (999) 999-99-99");
-    // modalExit(popupValue.leave);
+    modalExit(popupValue.leads);
 
     // Сброс валидации
     const inputs = document.querySelectorAll("input");
@@ -35,7 +38,7 @@ if ($("#main-body").length > 0) {
     sliders();
     galery();
     supportSlider();
-    cities();
+    // cities();
     sectionTopSlider();
     horizontalScroll();
     appleAnimate();
@@ -54,6 +57,10 @@ if ($("#main-body").length > 0) {
     ).click((e) => {
       openPopup(popupValue.open);
     });
+
+    // $("#sectionTop__button").click((e) => {
+    //   openPopup(popupValue.leads);
+    // });
 
     $(".order-call__button, #header__orderCallMobile").click((e) => {
       openPopup(popupValue.sidnUp);

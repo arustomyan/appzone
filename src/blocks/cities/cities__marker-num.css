@@ -1,10 +1,44 @@
 .cities__marker-num {
-  position: absolute;
-  top: calc(50% - 2px);
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* position: absolute; */
+
+  /* top: calc(50% - 2px); */
+
+  /* left: 50%; */
+
+  /* transform: translate(-50%, -50%); */
 
   font-size: 16px;
-  color: #171818;
+  font-weight: 400;
+
+  /* line-height: 140%; */
+  color: #696969;
   text-align: center;
+}
+
+.cities__marker-block-text {
+  position: absolute;
+  bottom: 7px;
+  transform: translate(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: max-content;
+  height: 34px;
+  padding: 6px 10px;
+
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.cities__marker svg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  width: 17px;
+  max-width: fit-content;
+  height: 12px;
 }

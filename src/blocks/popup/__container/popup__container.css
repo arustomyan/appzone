@@ -23,6 +23,43 @@
   border-radius: 40px;
 }
 
+
+#popupContainer.popup__leads {
+  max-width: 504px;
+}
+
+#popupContainer.popup__leads .popup__container-wrapper {
+  flex-direction: column;
+  align-items: center;
+  min-height: 0;
+}
+
+#popupContainer.popup__leads .input_user {
+  order: -1;
+}
+
+#popupContainer.popup__leads .input_email {
+  display: none;
+}
+
+#popupContainer.popup__leads .popup__title {
+  max-width: 15ch;
+  color: #fff;
+  text-align: center;
+}
+
+#popupContainer.popup__leads .popup__title span {
+  display: block;
+}
+
+#popupContainer.popup__leads #popupImg {
+  display: none;
+}
+
+#popupContainer.popup__leads button::after {
+  display: none;
+}
+
 .popup__img-blur {
   position: absolute;
   top: 0;
