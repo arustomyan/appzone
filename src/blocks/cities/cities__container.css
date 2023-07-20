@@ -1,9 +1,12 @@
 .cities__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   /* overflow: hidden; */
 
   max-width: 1600px;
   height: min(900px, max(56.25vw));
-  padding-top: 130px;
   padding-right: 118px;
 
   background-image: linear-gradient(270deg,
