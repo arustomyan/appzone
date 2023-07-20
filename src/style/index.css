@@ -400,7 +400,7 @@
 }
 
 .steps__height-block {
-  height: 10000px;
+  height: 15000px;
 }
 
 .steps__sticky-block {
@@ -436,6 +436,7 @@
 
 @import url("../blocks/cities/cities.css");
 @import url("../blocks/cities/cities__container.css");
+@import url("../blocks/cities/cities__markers.css");
 @import url("../blocks/cities/cities__marker.css");
 @import url("../blocks/cities/cities__marker-num.css");
 @import url("../blocks/cities/cities__content-block.css");
@@ -858,8 +859,6 @@
 
 @import url("../blocks/numbers/numbers.css");
 
-
-.video-block__content {}
 
 .demand__video-block {
   width: 100%;
