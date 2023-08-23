@@ -9,11 +9,12 @@
   height: min(900px, max(56.25vw));
   padding-right: 118px;
 
+  background-color: #151515;
   background-image: linear-gradient(270deg,
       rgb(31 31 31 / 90%) 1.97%,
-      rgb(31 31 31 / 67%) 39.97%,
+      rgb(31 31 31 / 67%) 30.97%,
       rgb(31 31 31 / 0%) 63.06%),
-    url("@images/cities/cities_bg.jpg");
+    url("@images/cities/cities__map-new.svg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: contain;
@@ -36,7 +37,7 @@
     padding-right: 20px;
     padding-bottom: 80px;
 
-    background-image: none;
+    background: none;
     border-radius: 0;
   }
 }

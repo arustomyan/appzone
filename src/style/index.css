@@ -450,6 +450,48 @@
 @import url("../blocks/cities/cities__el-img.css");
 
 
+
+.cities__legend-block {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+
+}
+
+@media (max-width: 950px) {
+  .cities__legend-block {
+    display: none;
+  }
+
+}
+
+.cities__legend-el {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 20px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 110%;
+  color: #828282;
+
+  background: #171818;
+  border-radius: 100px;
+
+}
+
+.cities__legend-el-icon {
+  flex-shrink: 0;
+
+}
+
+.cities__legend-el-text {}
+
+
 .cities__text-wrap {
   max-width: 475px;
 }
@@ -867,10 +909,11 @@
 
 .demand__video {
   position: relative;
+
   aspect-ratio: 1.7922;
   width: 100%;
-  margin-bottom: 80px;
-
+  max-width: 1100px;
+  margin: 0 auto 80px;
 }
 
 

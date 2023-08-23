@@ -1,97 +1,60 @@
-import {debounce} from "./debounce.js";
-
 const mainBlock = document.querySelector(".business-model__height-block");
 const stickyBlock = document.querySelector(".business-model__sticky-block");
 const scrollTrack = document.querySelector(".business-model__track");
 const slides = [
-  document.querySelector("#businessModel__sliderPhoto-0"),
-  document.querySelector("#businessModel__sliderPhoto-1"),
-  document.querySelector("#businessModel__sliderPhoto-2"),
-  document.querySelector("#businessModel__sliderPhoto-3"),
+  document.querySelector("#modelSlide-0"),
+  document.querySelector("#modelSlide-1"),
+  document.querySelector("#modelSlide-2"),
+  document.querySelector("#modelSlide-3"),
 ];
-const todler = document.querySelector(".business-model__progress-bar-toddler");
+
+const infoBlocks = document.querySelectorAll(".business-model__city-info-el");
+const todler = document.querySelector(".modelProgressBarToddler");
 
 const datePoints = [
   ...document.querySelectorAll(".business-model__progress-bar-el"),
 ];
 
-const countScroll = 800;
+const countScroll = 1500;
 
-const getTranslateX = (elem) => {
-  const transformString = elem.style.transform;
-  if (!transformString) return 0;
+const setActiveInfoBlock = (slide) => {
+  const ACTIVE_SELECTOR = "business-model__city-info-el_active";
+  const currentBlock = document.getElementById(`businessModel__info-${slide}`);
 
-  const startIndex = transformString.indexOf("translateX(");
-  const endIndex = transformString.indexOf("px");
-  return +transformString.slice(startIndex + 11, endIndex);
+  infoBlocks.forEach((block) => {
+    block.classList.remove(ACTIVE_SELECTOR);
+  });
+  currentBlock.classList.add(ACTIVE_SELECTOR);
 };
 
-const setSlidePosition = () => {
-  const translateX = getTranslateX(scrollTrack);
-  switch (translateX) {
-    case 0:
-      slides[0].style.transform = `translateY(225px)`;
-      slides[1].style.transform = `translateY(0)`;
-      slides[2].style.transform = `translateY(225px)`;
-      slides[3].style.transform = `translateY(151px)`;
-      setActivePoint(0);
-      moveToddler(0);
-      $(`.business-model__city-info-el`).removeClass(
-        "business-model__city-info-el_active",
-      );
-      $(`#businessModel__info-${0}`).addClass(
-        "business-model__city-info-el_active",
-      );
+let isAnimated = true;
+let isAnimatedBring = true;
 
-      break;
-    case -865:
-      slides[0].style.transform = `translateY(151px)`;
-      slides[1].style.transform = `translateY(225px)`;
-      slides[2].style.transform = `translateY(0)`;
-      slides[3].style.transform = `translateY(151px)`;
-      setActivePoint(1);
-      moveToddler(1);
-      $(`.business-model__city-info-el`).removeClass(
-        "business-model__city-info-el_active",
-      );
-      $(`#businessModel__info-${1}`).addClass(
-        "business-model__city-info-el_active",
-      );
+const setSlidePosition = (() => {
+  let prevSlide = null;
 
-      break;
-    case -1730:
-      slides[0].style.transform = `translateY(0px)`;
-      slides[1].style.transform = `translateY(151px)`;
-      slides[2].style.transform = `translateY(225px)`;
-      slides[3].style.transform = `translateY(0)`;
-      setActivePoint(2);
-      moveToddler(2);
-      $(`.business-model__city-info-el`).removeClass(
-        "business-model__city-info-el_active",
-      );
-      $(`#businessModel__info-${2}`).addClass(
-        "business-model__city-info-el_active",
-      );
-      break;
-    case -2595:
-      slides[0].style.transform = `translateY(151px)`;
-      slides[1].style.transform = `translateY(0)`;
-      slides[2].style.transform = `translateY(151px)`;
-      slides[3].style.transform = `translateY(225px)`;
-      setActivePoint(3);
-      moveToddler(3);
-      $(`.business-model__city-info-el`).removeClass(
-        "business-model__city-info-el_active",
-      );
-      $(`#businessModel__info-${3}`).addClass(
-        "business-model__city-info-el_active",
-      );
+  const pos = {
+    nextY: "translateY(0)",
+    currentY: "translateY(225px)",
+    prevY: "translateY(151px)",
+  };
 
-      break;
-    default:
-      break;
-  }
-};
+  return (slide) => {
+    if (prevSlide === slide) return;
+
+    slides[slide].style.transform = pos.currentY;
+    if (slide > 0) slides[slide - 1].style.transform = pos.prevY;
+    if (!!slides[slide + 1]) slides[slide + 1].style.transform = pos.nextY;
+    if (!!slides[slide + 2]) slides[slide + 2].style.transform = pos.prevY;
+
+    setActivePoint(slide);
+    moveToddler(slide);
+    setActiveInfoBlock(slide);
+    prevSlide = slide;
+  };
+})();
+
+let isTimeout = true;
 
 const setActivePoint = (numPoint) => {
   datePoints.forEach((item) => {
@@ -116,16 +79,22 @@ const animate = () => {
 
   const valueOffset = scroll;
 
+  let slide = 0;
+
   if (valueOffset < countScroll) {
+    slide = 0;
     scrollTrack.style.transform = `translateX(0)`;
   } else if (valueOffset > countScroll && valueOffset < countScroll * 2) {
+    slide = 1;
     scrollTrack.style.transform = `translateX(-865px)`;
   } else if (valueOffset > countScroll * 2 && valueOffset < countScroll * 3) {
+    slide = 2;
     scrollTrack.style.transform = `translateX(-1730px)`;
   } else if (valueOffset > countScroll * 3) {
+    slide = 3;
     scrollTrack.style.transform = `translateX(-2595px)`;
   }
-  setSlidePosition();
+  setSlidePosition(slide);
 };
 
 export const horizontalScroll = () => {
@@ -133,13 +102,16 @@ export const horizontalScroll = () => {
     const stickyBlockHeight = stickyBlock.getBoundingClientRect().height;
     const widthWindow = document.documentElement.clientWidth;
 
-    scrollTrack.style.transition = "transform 1s ease";
+    scrollTrack.style.transition = "transform 0.7s ease";
+    slides.forEach((slide) => {
+      slide.style.transition = "transform 0.5s ease";
+    });
+
     stickyBlock.style.top = `0px`;
-    $(".business-model__slider-photo").css("transition", "transform 1s ease");
 
     mainBlock.style.height =
       window.innerWidth > 1200
-        ? `${stickyBlockHeight + countScroll * 3 + 150}px`
+        ? `${stickyBlockHeight + countScroll * 3.5 + 150}px`
         : "auto";
 
     animate();

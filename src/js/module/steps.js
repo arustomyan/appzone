@@ -6,7 +6,8 @@ const slidersEl = [
     ".steps__slider:not(.steps__slider-mobile) .steps__slider-el",
   ),
 ];
-let countScroll = 800;
+
+let countScroll = 1200;
 const COUNT_SLIDES = slidersEl.length;
 const arr = [0];
 
@@ -34,7 +35,11 @@ const goToSlide = (() => {
       if (slide != 9) {
         slidersEl[slide - 1].style.opacity = "0.2";
       }
+      slidersEl[slide].style.transition =
+        "opacity 0.5s ease-in, transform 0.25s ease";
       slidersEl[slide].style.opacity = "1";
+      slidersEl[slide].style.transform = "none";
+      slidersEl[slide].style.zIndex = "0";
     }
 
     if (previousSlide > slide) {
@@ -45,24 +50,18 @@ const goToSlide = (() => {
     scrollTrack.style.transform = `translateY(-${arr[slide]}px)`;
 
     for (let i = 1; i <= 9; i++) {
+      const arrow = document.querySelector(`#steps__arrow-${i}`);
+      const line = document.querySelector(`#steps__line-${i}`);
+      const circle = document.querySelector(`#steps__circle-${i}`);
+
       if (i <= slide) {
-        document.querySelector(`#steps__arrow-${i}`).style.opacity = 1;
-        document
-          .querySelector(`#steps__line-${i}`)
-          .setAttribute("stroke", "#1775E7");
-        document
-          .querySelector(`#steps__circle-${i}`)
-          .setAttribute("fill", "url(#paint0_linear_411_680)");
+        arrow.style.opacity = 1;
+        line.setAttribute("stroke", "#1775E7");
+        circle.setAttribute("fill", "url(#paint0_linear_411_680)");
       } else {
-        document.querySelector(`#steps__arrow-${i}`).style.opacity = 0;
-        document
-          .querySelector(`#steps__line-${i}`)
-          .setAttribute("stroke", "#2e2e2e");
-        if (i != 9) {
-          document
-            .querySelector(`#steps__circle-${i}`)
-            .setAttribute("fill", "#2e2e2e");
-        }
+        arrow.style.opacity = 0;
+        line.setAttribute("stroke", "#2e2e2e");
+        if (i != 9) circle.setAttribute("fill", "#2e2e2e");
       }
     }
 
@@ -70,14 +69,28 @@ const goToSlide = (() => {
   };
 })();
 
+const getReadySlide = (slide, scroll, coefOpacity, coefTransform) => {
+  const scrollToNextSlide = scroll - slide * countScroll;
+  const currentSlide = document.querySelector(`#steps__sliderEl-${slide + 1}`);
+  const valueTranslateY = scrollToNextSlide * coefTransform;
+  if (!currentSlide) return;
+  currentSlide.style.transition = "none";
+  currentSlide.style.opacity = 0.2 + scrollToNextSlide * coefOpacity;
+  currentSlide.style.transform = `translateY(-${valueTranslateY}px)`;
+  currentSlide.style.zIndex = `5`;
+};
+
 const animate = () => {
   const mainBlockPosTop = mainBlock.getBoundingClientRect().top;
   const stickyBlockPosTop = stickyBlock.getBoundingClientRect().top;
+  const coefOpacity = 0.7 / countScroll;
+  const coefTransform = 50 / countScroll;
   const scroll = stickyBlockPosTop - mainBlockPosTop;
 
   if (scroll <= countScroll * 10) {
     const slide = Math.floor(scroll / countScroll);
     goToSlide(Math.min(slide, 9));
+    getReadySlide(slide, scroll, coefOpacity, coefTransform);
   }
 };
 
@@ -92,12 +105,10 @@ export const steps = () => {
     }
 
     for (let i = 1; i < COUNT_SLIDES; i++) {
-      const pos1 =
-        (slidersEl[i - 1].getBoundingClientRect().height +
-          slidersEl[i].getBoundingClientRect().height) /
-          2 +
-        60;
-      arr.push(arr[i - 1] + pos1);
+      const heightCurrentSlide = slidersEl[i].getBoundingClientRect().height;
+      const heightPreviousSlide = slidersEl[i].getBoundingClientRect().height;
+      const pos = (heightPreviousSlide + heightCurrentSlide) / 2 + 60;
+      arr.push(arr[i - 1] + pos);
     }
 
     const maxScroll =

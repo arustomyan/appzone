@@ -2,7 +2,7 @@
   max-width: 400px;
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 950px) {
   .cities__splideSlider {
     display: none;
   }
@@ -92,4 +92,11 @@
     width: 30px;
     height: 6px;
   }
+
+
+  .cities__splideSlider .splide__track {
+    overflow: visible;
+  }
+
+
 }

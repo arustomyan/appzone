@@ -1,4 +1,5 @@
 .cities {
+  overflow: clip;
   padding-bottom: 140px;
 }
 

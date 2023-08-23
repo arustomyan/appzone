@@ -5,20 +5,20 @@
   height: 410px;
 }
 
-#businessModel__sliderPhoto-0 {
+#modelSlide-0 {
   transform: translateY(225px);
 }
 
-#businessModel__sliderPhoto-2 {
+#modelSlide-2 {
   transform: translateY(151px);
 }
 
 @media (max-width: 1200px) {
-  #businessModel__sliderPhoto-0 {
+  #modelSlide-0 {
     transform: none;
   }
 
-  #businessModel__sliderPhoto-2 {
+  #modelSlide-2 {
     transform: none;
   }
 }
@@ -42,11 +42,11 @@
     margin-left: 20px; */
   }
 
-  #businessModel__sliderPhoto-0 {
+  #modelSlide-0 {
     transform: none;
   }
 
-  #businessModel__sliderPhoto-2 {
+  #modelSlide-2 {
     transform: none;
   }
 }

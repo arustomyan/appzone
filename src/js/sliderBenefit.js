@@ -1,30 +1,35 @@
+/**
+ * исправлять только значения
+ * значения только числа, без разделителей
+ */
+
 const arrayPrices = [
   // iPhone 13 / 128 Гб
   {
     // цена у наших поставщиков:
-    suppliers: 30000,
+    suppliers: 61500,
     // цена продажи:
-    sale: 30000,
+    sale: 69990,
     // средняя цена у конкурентов:
-    competitors: 30000,
+    competitors: 77990,
   },
   // Airpods Pro
   {
-    suppliers: 29000,
-    sale: 29000,
-    competitors: 29000,
+    suppliers: 19000,
+    sale: 21900,
+    competitors: 24990,
   },
-  // Apple Watch S8
+  // Apple Watch SE 2
   {
-    suppliers: 51510,
-    sale: 51510,
-    competitors: 51510,
+    suppliers: 31300,
+    sale: 34990,
+    competitors: 39990,
   },
   // MacBook 13 Pro M1
   {
-    suppliers: 14140,
-    sale: 14140,
-    competitors: 14140,
+    suppliers: 110500,
+    sale: 115990,
+    competitors: 132900,
   },
 ];
 
@@ -67,6 +72,7 @@ const startSlider = () => {
   $(".economy__slider-btns-block .slider-btn-prev").click(() => {
     $(".economy__block-slider-list").slick("slickPrev");
   });
+  economy(0);
 };
 
 window.addEventListener("load", startSlider);

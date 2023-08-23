@@ -1,4 +1,4 @@
-const todler = document.querySelector(".business-model__progress-bar-toddler");
+const todler = document.querySelector(".modelProgressBarToddler");
 
 const datePoints = [
   ...document.querySelectorAll(".business-model__progress-bar-el"),
@@ -266,6 +266,7 @@ export function sliders() {
 
       601: {
         fixedWidth: 300,
+        type: "slide",
       },
     },
     fixedWidth: 400,

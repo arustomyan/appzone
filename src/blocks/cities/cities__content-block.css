@@ -3,19 +3,22 @@
   margin-left: auto;
 }
 
-@media (max-width: 1150px) {
+/* @media (max-width: 1150px) {
   .cities__content-block {
     display: flex;
     justify-content: space-between;
     max-width: 100%;
     margin-left: 0;
   }
-}
+} */
 
 @media (max-width: 950px) {
   .cities__content-block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    max-width: 100%;
+    margin-left: 0;
   }
 }

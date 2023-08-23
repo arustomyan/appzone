@@ -1,4 +1,4 @@
-.business-model__progress-bar-toddler {
+.modelProgressBarToddler {
   position: absolute;
   top: 0;
   left: 230px;
@@ -13,7 +13,7 @@
 }
 
 @media (max-width: 800px) {
-  .business-model__progress-bar-toddler {
+  .modelProgressBarToddler {
     z-index: 2;
     left: calc(100vw / 2) !important;
     transform: translateX(-50%);
